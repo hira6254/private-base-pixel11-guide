@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel 9 → Pixel 11（ahamo）行動着火カラー手順書</title>
+  <meta name="description" content="行動科学・認知心理学ナッジ搭載：たった25分・時給40万円相当で17万円浮く、迷わない完全1本道カラー手順書" />
+  <style>
+    :root {
+      --bg-page: #f5f7fb;
+      --bg-card: #ffffff;
+      --text-main: #101828;
+      --text-sub: #475467;
+      --text-muted: #667085;
+      --border-soft: #e4e7ec;
+
+      --d1-main: #1d4ed8;
+      --d1-soft: #eff6ff;
+      --d1-mid: #bfdbfe;
+
+      --d2-main: #047857;
+      --d2-soft: #ecfdf5;
+      --d2-mid: #a7f3d0;
+
+      --d3-main: #b45309;
+      --d3-soft: #fffbeb;
+      --d3-mid: #fde68a;
+
+      --d4-main: #0f766e;
+      --d4-soft: #f0fdfa;
+      --d4-mid: #99f6e4;
+
+      --danger-main: #dc2626;
+      --danger-soft: #fef2f2;
+      --danger-border: #fecaca;
+
+      --warn-main: #d97706;
+      --warn-soft: #fffbeb;
+      --warn-border: #fde68a;
+
+      --tip-main: #0369a1;
+      --tip-soft: #f0f9ff;
+      --tip-border: #bae6fd;
+
+      --done-soft: #f0fdf4;
+      --done-border: #86efac;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "Yu Gothic UI", "Meiryo", "Noto Sans CJK JP", "Noto Sans JP", system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Sticky Top Progress & Reward Bar */
+    .sticky-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border-soft);
+      box-shadow: 0 3px 12px rgba(16, 24, 40, 0.06);
+      padding: 10px 16px;
+    }
+
+    .sticky-inner {
+      max-width: 880px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .progress-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .progress-label {
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .progress-count {
+      display: inline-block;
+      background: #1d4ed8;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 2px 10px;
+      border-radius: 999px;
+    }
+
+    .savings-pill {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      border: 1px solid #86efac;
+      font-size: 12.5px;
+      font-weight: 800;
+      padding: 2px 10px;
+      border-radius: 999px;
+      transition: transform 0.2s ease;
+    }
+
+    .savings-pill.bump {
+      transform: scale(1.08);
+    }
+
+    .progress-track {
+      flex: 1;
+      min-width: 120px;
+      height: 10px;
+      background: #e4e7ec;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 12%;
+      background: #16a34a;
+      border-radius: 999px;
+      transition: width 0.3s ease;
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .util-btn {
+      appearance: none;
+      border: 1px solid var(--border-soft);
+      background: #ffffff;
+      color: var(--text-sub);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .util-btn:hover {
+      background: #f9fafb;
+      border-color: #d0d5dd;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      padding-bottom: 2px;
+      scrollbar-width: none;
+    }
+
+    .filter-tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab-btn {
+      appearance: none;
+      border: 1px solid var(--border-soft);
+      background: #ffffff;
+      color: var(--text-sub);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 999px;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .tab-btn.active[data-day="1"] {
+      background: var(--d1-main);
+      color: #ffffff;
+      border-color: var(--d1-main);
+    }
+    .tab-btn.active[data-day="2"] {
+      background: var(--d2-main);
+      color: #ffffff;
+      border-color: var(--d2-main);
+    }
+    .tab-btn.active[data-day="3"] {
+      background: var(--d3-main);
+      color: #ffffff;
+      border-color: var(--d3-main);
+    }
+    .tab-btn.active[data-day="4"] {
+      background: var(--d4-main);
+      color: #ffffff;
+      border-color: var(--d4-main);
+    }
+    .tab-btn.active[data-day="all"] {
+      background: #101828;
+      color: #ffffff;
+      border-color: #101828;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 18px 16px 56px;
+    }
+
+    /* Behavioral Ignition Cockpit */
+    .ignition-card {
+      background: #fffbeb;
+      border: 2px solid #f59e0b;
+      border-radius: 16px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 6px 20px rgba(217, 119, 6, 0.08);
+    }
+
+    .deadline-banner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      border-radius: 12px;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+    }
+
+    .deadline-left {
+      font-size: 13.5px;
+      font-weight: 800;
+      color: #991b1b;
+    }
+
+    .deadline-clock {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: #dc2626;
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 4px 12px;
+      border-radius: 8px;
+      letter-spacing: 0.02em;
+    }
+
+    .psych-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .psych-box {
+      background: #ffffff;
+      border: 1px solid #fde68a;
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+
+    .psych-kicker {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #b45309;
+      margin-bottom: 2px;
+    }
+
+    .psych-big {
+      font-size: 18px;
+      font-weight: 900;
+      color: #101828;
+      line-height: 1.3;
+    }
+
+    .psych-sub {
+      font-size: 12px;
+      color: var(--text-sub);
+      margin-top: 3px;
+    }
+
+    /* 60-Second Starter Action + 15-Min Focus Timer */
+    .starter-strip {
+      background: #1d4ed8;
+      color: #ffffff;
+      border-radius: 14px;
+      padding: 16px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .starter-text {
+      flex: 1;
+      min-width: 240px;
+    }
+
+    .starter-title {
+      font-size: 16px;
+      font-weight: 900;
+      margin: 0 0 4px;
+    }
+
+    .starter-desc {
+      font-size: 13.5px;
+      margin: 0;
+      color: #dbeafe;
+      line-height: 1.5;
+    }
+
+    .starter-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .ignite-btn {
+      appearance: none;
+      border: none;
+      background: #facc15;
+      color: #0f172a;
+      font-size: 14.5px;
+      font-weight: 900;
+      padding: 11px 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .ignite-btn:hover {
+      background: #fde047;
+      transform: translateY(-1px);
+    }
+
+    .timer-display {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 18px;
+      font-weight: 900;
+      background: rgba(255, 255, 255, 0.16);
+      padding: 7px 14px;
+      border-radius: 10px;
+      display: none;
+    }
+
+    .relief-note {
+      margin-top: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      color: #78350f;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Visual 4-Day Roadmap */
+    .hero-box {
+      background: #ffffff;
+      border: 1px solid var(--border-soft);
+      border-radius: 16px;
+      padding: 16px 20px;
+      box-shadow: 0 2px 10px rgba(16, 24, 40, 0.03);
+      margin-bottom: 18px;
+    }
+
+    .hero-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .roadmap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    @media (max-width: 680px) {
+      .roadmap {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .road-step {
+      border-radius: 10px;
+      padding: 10px 12px;
+      cursor: pointer;
+      transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+
+    .road-step:hover {
+      transform: translateY(-1px);
+    }
+
+    .road-step.d1 { background: var(--d1-soft); border: 2px solid var(--d1-main); }
+    .road-step.d2 { background: var(--d2-soft); border: 1px solid var(--d2-mid); }
+    .road-step.d3 { background: var(--d3-soft); border: 1px solid var(--d3-mid); }
+    .road-step.d4 { background: var(--d4-soft); border: 1px solid var(--d4-mid); }
+
+    .road-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 999px;
+      color: #ffffff;
+      margin-bottom: 4px;
+    }
+    .d1 .road-badge { background: var(--d1-main); }
+    .d2 .road-badge { background: var(--d2-main); }
+    .d3 .road-badge { background: var(--d3-main); }
+    .d4 .road-badge { background: var(--d4-main); }
+
+    .road-date {
+      font-size: 13px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .road-desc {
+      font-size: 12px;
+      color: var(--text-sub);
+      line-height: 1.4;
+      margin-top: 2px;
+    }
+
+    /* Golden Rules Box */
+    .rules-box {
+      background: var(--danger-soft);
+      border: 1px solid var(--danger-border);
+      border-radius: 14px;
+      padding: 14px 18px;
+      margin-bottom: 18px;
+    }
+
+    .rules-title {
+      font-size: 14.5px;
+      font-weight: 800;
+      color: var(--danger-main);
+      margin: 0 0 6px;
+    }
+
+    .rules-list {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 13.5px;
+      color: #7f1d1d;
+    }
+
+    /* Safe Non-Secret Memo Box */
+    .memo-card {
+      background: #ffffff;
+      border: 1px solid var(--border-soft);
+      border-radius: 14px;
+      padding: 14px 18px;
+      margin-bottom: 20px;
+    }
+
+    .memo-header {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-sub);
+      margin-bottom: 10px;
+    }
+
+    .memo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 10px;
+    }
+
+    .memo-field label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .memo-field input {
+      width: 100%;
+      padding: 7px 10px;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      font-size: 13px;
+      color: var(--text-main);
+      background: #f9fafb;
+    }
+
+    /* Day Sections */
+    .day-section {
+      background: #ffffff;
+      border: 1px solid var(--border-soft);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 14px rgba(16, 24, 40, 0.04);
+    }
+
+    .day-header {
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .day-1 .day-header { background: var(--d1-soft); border-bottom: 2px solid var(--d1-mid); }
+    .day-2 .day-header { background: var(--d2-soft); border-bottom: 2px solid var(--d2-mid); }
+    .day-3 .day-header { background: var(--d3-soft); border-bottom: 2px solid var(--d3-mid); }
+    .day-4 .day-header { background: var(--d4-soft); border-bottom: 2px solid var(--d4-mid); }
+
+    .day-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .day-pill {
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 13px;
+      padding: 4px 12px;
+      border-radius: 999px;
+    }
+
+    .day-1 .day-pill { background: var(--d1-main); }
+    .day-2 .day-pill { background: var(--d2-main); }
+    .day-3 .day-pill { background: var(--d3-main); }
+    .day-4 .day-pill { background: var(--d4-main); }
+
+    .day-heading {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .time-badge {
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-sub);
+    }
+
+    .day-body {
+      padding: 18px 20px 22px;
+    }
+
+    .step-group-title {
+      font-size: 15px;
+      font-weight: 800;
+      margin: 18px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border-soft);
+      color: #0f172a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .step-group-title:first-child {
+      margin-top: 0;
+    }
+
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 2px 8px;
+      border-radius: 6px;
+    }
+
+    .day-1 .step-num { background: var(--d1-soft); color: var(--d1-main); }
+    .day-2 .step-num { background: var(--d2-soft); color: var(--d2-main); }
+    .day-3 .step-num { background: var(--d3-soft); color: var(--d3-main); }
+    .day-4 .step-num { background: var(--d4-soft); color: var(--d4-main); }
+
+    /* Interactive Check Items */
+    .check-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 14px;
+      border: 1px solid var(--border-soft);
+      border-radius: 12px;
+      background: #fcfcfd;
+      cursor: pointer;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .check-item.starter-highlight {
+      border: 2px solid #2563eb;
+      background: #eff6ff;
+    }
+
+    .check-item:hover {
+      background: #f5f7fa;
+      border-color: #d0d5dd;
+    }
+
+    .check-item.done {
+      background: var(--done-soft);
+      border-color: var(--done-border);
+    }
+
+    .check-item input[type="checkbox"] {
+      width: 21px;
+      height: 21px;
+      margin-top: 3px;
+      accent-color: #16a34a;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    .check-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .check-main-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+    }
+
+    .check-main {
+      font-weight: 800;
+      font-size: 15px;
+      color: #101828;
+    }
+
+    .reward-tag {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #166534;
+      background: #dcfce7;
+      padding: 1px 8px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .check-item.done .check-main {
+      color: #15803d;
+    }
+
+    .check-detail {
+      font-size: 13.5px;
+      color: var(--text-sub);
+      line-height: 1.65;
+    }
+
+    .ui-btn {
+      display: inline-block;
+      background: #e0e7ff;
+      color: #1e3a8a;
+      font-weight: 700;
+      font-size: 12.5px;
+      padding: 1px 8px;
+      border-radius: 6px;
+      border: 1px solid #c7d2fe;
+      margin: 0 2px;
+    }
+
+    .ui-price {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-weight: 800;
+      font-size: 13px;
+      padding: 1px 8px;
+      border-radius: 6px;
+      border: 1px solid #bbf7d0;
+    }
+
+    .ui-ng {
+      display: inline-block;
+      background: #fee2e2;
+      color: #991b1b;
+      font-weight: 800;
+      font-size: 12.5px;
+      padding: 1px 8px;
+      border-radius: 6px;
+      border: 1px solid #fecaca;
+    }
+
+    .ext-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #1d4ed8;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 13.5px;
+      padding: 7px 14px;
+      border-radius: 8px;
+      margin-top: 8px;
+    }
+
+    .ext-link:hover {
+      background: #1e40af;
+    }
+
+    .callout {
+      border-radius: 12px;
+      padding: 12px 15px;
+      margin: 12px 0;
+      font-size: 13.5px;
+      line-height: 1.6;
+    }
+
+    .callout-danger {
+      background: var(--danger-soft);
+      border: 1px solid var(--danger-border);
+      color: #7f1d1d;
+    }
+
+    .callout-warn {
+      background: var(--warn-soft);
+      border: 1px solid var(--warn-border);
+      color: #78350f;
+    }
+
+    .callout-tip {
+      background: var(--tip-soft);
+      border: 1px solid var(--tip-border);
+      color: #0c4a6e;
+    }
+
+    .day1-finish-banner {
+      margin-top: 16px;
+      background: #ecfdf5;
+      border: 2px solid #10b981;
+      border-radius: 14px;
+      padding: 14px 16px;
+      color: #065f46;
+      font-weight: 700;
+      font-size: 14px;
+      display: none;
+    }
+
+    .day1-finish-banner.show {
+      display: block;
+    }
+
+    .next-days-prompt {
+      text-align: center;
+      margin: 12px 0 24px;
+    }
+
+    .show-all-btn {
+      appearance: none;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      color: #334155;
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .show-all-btn:hover {
+      background: #f8fafc;
+    }
+
+    .hidden-day {
+      display: none;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .sticky-bar, .next-days-prompt {
+        display: none !important;
+      }
+      .hidden-day {
+        display: block !important;
+      }
+      .day-section {
+        break-inside: avoid;
+        box-shadow: none;
+      }
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 上部固定プログレス＆リアルタイム節約獲得バー -->
+  <header class="sticky-bar">
+    <div class="sticky-inner">
+      <div class="progress-row">
+        <div class="progress-label">
+          <span>🔥 今日のゴール（1日目）</span>
+          <span id="progress-badge" class="progress-count">準備完了 15%</span>
+          <span id="savings-badge" class="savings-pill">💰 確定節約ロック：¥15,000 / ¥170,000</span>
+        </div>
+        <div class="progress-track" aria-label="進捗バー">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        <div class="top-actions">
+          <button type="button" id="btn-print" class="util-btn" onclick="printAll()">🖨️ 全日程を印刷/PDF</button>
+          <button type="button" id="btn-reset" class="util-btn" onclick="resetChecks()">リセット</button>
+        </div>
+      </div>
+
+      <nav class="filter-tabs" aria-label="日程切り替え">
+        <button type="button" class="tab-btn active" data-day="1" onclick="filterDay('1')">🔥 今やる：1日目・注文だけ（8項目）</button>
+        <button type="button" class="tab-btn" data-day="2" onclick="filterDay('2')">② 週末到着日（6項目）</button>
+        <button type="button" class="tab-btn" data-day="3" onclick="filterDay('3')">③ 12/1〜 返却申込（2項目）</button>
+        <button type="button" class="tab-btn" data-day="4" onclick="filterDay('4')">④ 初期化＆投函（6項目）</button>
+        <button type="button" class="tab-btn" data-day="all" onclick="filterDay('all')">全日程を一覧表示</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- 行動着火コックピット（損失回避 × 時給換算 × 60秒着火スイッチ） -->
+    <section class="ignition-card" aria-label="行動着火スイッチ">
+      <div class="deadline-banner">
+        <div class="deadline-left">
+          ⏰ <strong>12月分のソフトバンク代（約6,000円）のムダ払いを防ぐ注文リミット（11/25 23:59）まで：</strong>
+        </div>
+        <div id="deadline-clock" class="deadline-clock">計算中...</div>
+      </div>
+
+      <div class="psych-grid">
+        <div class="psych-box">
+          <div class="psych-kicker">💎 25分間の時給換算</div>
+          <div class="psych-big">時給 408,000円 相当</div>
+          <div class="psych-sub">25分の作業で世帯トータル約17万円が確実に手元に残ります</div>
+        </div>
+        <div class="psych-box">
+          <div class="psych-kicker">⚠️ 先延ばしコスト（損失回避）</div>
+          <div class="psych-big">1日遅れ＝約6,000円消失</div>
+          <div class="psych-sub">配送4日のため明日を逃すと11月末開通に間に合いません（MNP4.3万円割引も予告なし終了あり）</div>
+        </div>
+        <div class="psych-box">
+          <div class="psych-kicker">🧠 脳の負担ゼロ設計</div>
+          <div class="psych-big">今日は「8タップ」で終了！</div>
+          <div class="psych-sub">2日目以降はスマホが届く週末まで完全に忘れてOK（今は非表示にしてあります）</div>
+        </div>
+      </div>
+
+      <div class="starter-strip">
+        <div class="starter-text">
+          <h1 class="starter-title">🚀 迷ったら「最初の60秒」だけ今すぐやってください！</h1>
+          <p class="starter-desc">
+            「全部やろう」と思わなくて大丈夫です。まずは<strong>お財布からマイナンバーカードとクレカの2枚を出して机に置くだけ</strong>で脳のエンジンの8割がかかります。
+          </p>
+        </div>
+        <div class="starter-actions">
+          <button type="button" id="ignite-btn" class="ignite-btn" onclick="startFocusSprint()">⏱️ 20分集中タイマーを回して①から始める！</button>
+          <div id="timer-display" class="timer-display">20:00</div>
+        </div>
+      </div>
+
+      <div class="relief-note">
+        ✨ <strong>実はもう「プラン調査・比較・手順整理（全体の15%）」はすでに完了しています！</strong> あとは下の①から順番になぞるだけです。
+      </div>
+    </section>
+
+    <!-- 全体4日間の現在地ミニマップ -->
+    <section class="hero-box">
+      <div class="hero-top-row">
+        <h2 class="hero-title">🗺️ 全体の現在地マップ（タップで切り替え可能）</h2>
+      </div>
+      <div class="roadmap">
+        <div class="road-step d1" onclick="filterDay('1')">
+          <span class="road-badge">👉 今ここ！</span>
+          <div class="road-date">11/24(火)〜25(水)</div>
+          <div class="road-desc"><strong>注文だけ済ませる</strong><br />（約20〜25分）</div>
+        </div>
+        <div class="road-step d2" onclick="filterDay('2')">
+          <span class="road-badge">週末まで忘れる</span>
+          <div class="road-date">11/28〜30頃（到着日）</div>
+          <div class="road-desc">おサイフ預入・開通・コピー</div>
+        </div>
+        <div class="road-step d3" onclick="filterDay('3')">
+          <span class="road-badge">来週以降</span>
+          <div class="road-date">12/1(火)以降</div>
+          <div class="road-desc">WebからPixel 9返却申込</div>
+        </div>
+        <div class="road-step d4" onclick="filterDay('4')">
+          <span class="road-badge">12月中旬</span>
+          <div class="road-date">キット受取後</div>
+          <div class="road-desc">初期化3チェック・投函</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 控えメモ欄 -->
+    <section class="memo-card">
+      <div class="memo-header">
+        📝 <strong>手続きナンバー控えメモ</strong>（※この端末内だけに自動保存され外部送信されません／パスワード類は紙にメモしてください）
+      </div>
+      <div class="memo-grid">
+        <div class="memo-field">
+          <label for="memo-cutoff">① SoftBank締め日（確認結果）</label>
+          <input id="memo-cutoff" type="text" placeholder="例：末日締め（11/1〜11/30）" oninput="saveMemos()" />
+        </div>
+        <div class="memo-field">
+          <label for="memo-order">② ahamo受付番号（13桁）</label>
+          <input id="memo-order" type="text" placeholder="⑧の注文完了後に入力" oninput="saveMemos()" />
+        </div>
+        <div class="memo-field">
+          <label for="memo-track">③ 返却キット追跡番号（12月用）</label>
+          <input id="memo-track" type="text" placeholder="12月のポスト投函時に入力" oninput="saveMemos()" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DAY 1 ==================== -->
+    <section id="section-day-1" class="day-section day-1" data-section="1">
+      <div class="day-header">
+        <div class="day-title-wrap">
+          <span class="day-pill">🔥 今日やるのはこの枠だけ！</span>
+          <h2 class="day-heading">1日目：事前チェック ＆ ahamo注文（全8チェック）</h2>
+        </div>
+        <span class="time-badge">⏱️ 実質 20〜25分</span>
+      </div>
+
+      <div class="day-body">
+        <div class="callout callout-danger">
+          🛑 <strong>ソフトバンクへの事前連絡・解約・MNP予約番号の取得は「一切不要」です！</strong> そのまま①からスタートしてください。
+        </div>
+
+        <h3 class="step-group-title"><span class="step-num">STEP 1</span> 60秒着火アクション（まずこれだけ！）</h3>
+        <div class="check-list">
+          <label id="first-step-card" class="check-item starter-highlight">
+            <input type="checkbox" data-step="d1-1" data-yen="10000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">① 財布から「マイナンバーカード」と「クレジットカード」を出して机に置く</span>
+                <span class="reward-tag">🎯 60秒で完了！ +¥10,000前進</span>
+              </div>
+              <div class="check-detail">
+                マイナンバーカードは役所で作った時の<strong>「数字4桁」</strong>と<strong>「英大文字＋数字 6〜16桁（署名用電子証明書）」</strong>の暗証番号を使います（控えの紙があれば一緒に置きます）。連絡メールは普段の <code>@gmail.com</code> を使います。
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <h3 class="step-group-title"><span class="step-num">STEP 2</span> 今のPixel 9で「My SoftBankアプリ」を3分だけ見る</h3>
+        <div class="check-list">
+          <label class="check-item">
+            <input type="checkbox" data-step="d1-2" data-yen="6000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">② 請求締め日が「末日締め（11/1〜11/30）」か10秒で確認する</span>
+                <span class="reward-tag">💰 来月分¥6,000防衛</span>
+              </div>
+              <div class="check-detail">
+                My SoftBankアプリの <span class="ui-btn">料金・支払い管理</span> を開きます。<code>11月1日〜11月30日</code> と書いてあれば末日締め確定です！（※もし20日締めなら12月中旬までゆっくりでOK）
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d1-3" data-yen="10000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">③ 「SoftBank ID（英数字）」と「パスワード」を紙にメモする</span>
+                <span class="reward-tag">🔑 詰まり防止 +¥10,000</span>
+              </div>
+              <div class="check-detail">
+                右上の <span class="ui-btn">メニュー</span> → <span class="ui-btn">アカウント設定</span> で英数字のSoftBank IDを確認。パスワードが曖昧なら今この場で再設定しておきます（直後のワンストップ認証と、12/1以降の返却申込で使います）。
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d1-4" data-yen="14000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">④ ご家族のスマホに「おうち割 光セット（-1,100円）」が付いているか確認する</span>
+                <span class="reward-tag">🏠 光名義変更不要 +¥14,000</span>
+              </div>
+              <div class="check-detail">
+                ご家族のMy SoftBank割引欄に <span class="ui-btn">おうち割 光セット</span> があれば<strong>SoftBank光の名義変更は何もしなくてOK</strong>！（※もしご家族側に未登録だった場合だけ、乗り換え前にご家族のMy SoftBankからおうち割を紐付けておきます）
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <h3 class="step-group-title"><span class="step-num">STEP 3</span> ahamo公式から「Pixel 11（256GB）」を注文する（15分）</h3>
+        <div class="check-list">
+          <label class="check-item">
+            <input type="checkbox" data-step="d1-5" data-yen="43879" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑤ 下の青いボタンを押し、「他社からの乗り換え」＋「いつでもカエドキ（22,033円）」を選ぶ</span>
+                <span class="reward-tag">🔥 MNP割 ¥43,879獲得！</span>
+              </div>
+              <div class="check-detail">
+                好きな色を選び、<span class="ui-btn">他社からの乗り換え（MNP）</span> → <span class="ui-btn">いつでもカエドキプログラム</span> を選択。<br />
+                <span class="ui-price">お客さま負担額：22,033円</span> になっていることを確認して <span class="ui-btn">購入する</span> をタップ！<br />
+                <a class="ext-link" href="https://ahamo.com/products/android/google-pixel-11-256gb/index.html" target="_blank" rel="noopener noreferrer">👉 今すぐ開く：ahamo公式 Google Pixel 11 (256GB) 申込画面</a>
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d1-6" data-yen="15000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑥ 「SIMカード」＋「かけ放題：申し込まない（5分無料つき）」＋「dアカウント新規作成」</span>
+                <span class="reward-tag">⚡ 手数料¥0 +¥15,000</span>
+              </div>
+              <div class="check-detail">
+                SIMは一番確実な <span class="ui-btn">SIMカード</span>、かけ放題は5分無料が標準付帯なので <span class="ui-btn">申し込まない</span>、dアカウントは <span class="ui-btn">持っていない（新規作成）</span> を選んでGmailアドレスで作成します（設定した<strong>4桁の暗証番号</strong>も紙にメモ！）。
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div class="callout callout-danger">
+          🛑 <strong>【ここだけ絶対注意！】</strong><br />
+          「MNP予約番号を取得していますか？」と聞かれたら、<strong>必ず <span class="ui-btn">取得していない（持っていない）</span> をタップ！</strong>（<span class="ui-ng">取得している</span> を押すと止まります）
+        </div>
+
+        <div class="check-list">
+          <label class="check-item">
+            <input type="checkbox" data-step="d1-7" data-yen="15000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑦ 自動で開くソフトバンク画面にログインし、乗り換え同意ボタンを押す</span>
+                <span class="reward-tag">🔓 ワンストップ突破 +¥15,000</span>
+              </div>
+              <div class="check-detail">
+                乗り換え元で <span class="ui-btn">ソフトバンク</span> を選び、メモしたSoftBank IDでログイン → 一番下までスクロールして同意ボタンを押すと自動でahamo画面に戻ります（※まだ解約されないのでご安心ください）。
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d1-8" data-yen="11121" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑧ マイナカードをPixel 9の背中に5秒当てて本人確認 → 最短到着日で「注文確定」！</span>
+                <span class="reward-tag">🏆 今日のゴール達成！+¥11,121</span>
+              </div>
+              <div class="check-detail">
+                ケースを外してPixel 9の背面中央にマイナンバーカードをピタッと5秒当てて読み取り、クレジットカードを入力。受取希望日は<strong>選べる一番早い日（11/28〜30頃）</strong>を選んで注文確定！13桁の受付番号を上部のメモ欄に控えたら<strong>今日のミッション完全クリア</strong>です！
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <div id="day1-finish-banner" class="day1-finish-banner">
+          🎉 <strong>お見事です！！1日目の注文ミッション完全クリアです！！</strong><br />
+          これで4.3万円割引のPixel 11確保＆11月末開通ルートに乗りました！今日はもうスマホを閉じてゆっくり休んでください（AmazonでPixel 11用のケースとガラスフィルムだけポチっておくと完璧です）。続きは端末が届いた日に「② 週末到着日」タブを開くだけです！
+        </div>
+      </div>
+    </section>
+
+    <div id="next-days-prompt" class="next-days-prompt">
+      <button type="button" class="show-all-btn" onclick="filterDay('all')">👀 2日目以降（到着日・12/1返却）の手順も予習で見る場合はこちらをタップ</button>
+    </div>
+
+    <!-- ==================== DAY 2 (初期は非表示にして認知負荷をゼロに！) ==================== -->
+    <section id="section-day-2" class="day-section day-2 hidden-day" data-section="2">
+      <div class="day-header">
+        <div class="day-title-wrap">
+          <span class="day-pill">2日目｜新スマホ到着</span>
+          <h2 class="day-heading">到着日（目安 11/28〜30）：おサイフ預入・開通・丸ごとデータ移行</h2>
+        </div>
+        <span class="time-badge">⏱️ 所要：約60分（朝9:00〜夜20:00に実施）</span>
+      </div>
+
+      <div class="day-body">
+        <div class="callout callout-warn">
+          ⚠️ <strong>自宅のWi-Fiが繋がる場所で、必ず「朝9:00〜夜20:00」の間に始めてください！</strong>（MNP開通受付は夜21:00まで）
+        </div>
+
+        <h3 class="step-group-title"><span class="step-num">STEP 4</span> 【SIMを抜く前に！】古いPixel 9のおサイフケータイを預ける（10分）</h3>
+        <div class="check-list">
+          <label class="check-item">
+            <input type="checkbox" data-step="d2-1" data-yen="3000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑨ 古いPixel 9の「おサイフケータイ アプリ」で交通系IC（Suica/PASMO/ICOCA）を「預ける」</span>
+                <span class="reward-tag">🚃 残高保護</span>
+              </div>
+              <div class="check-detail">
+                1. 古いPixel 9で<strong>「おサイフケータイ アプリ」</strong>を開き、左上メニューでログイン中のGoogleアカウント（<code>@gmail.com</code>）を確認。<br />
+                2. <span class="ui-btn">マイ サービス</span> → 交通系カードの <span class="ui-btn">メインカードの確認・切替</span>（※絵ではなく文字をタップ）→ <span class="ui-btn">カードを預ける（機種変更）</span> → <span class="ui-btn">預ける</span> をタップ。<br />
+                3. <strong>「カードを預けました」</strong>と出たら退避完了！（LINEも設定 → トークのバックアップ → <span class="ui-btn">今すぐバックアップ</span> を押しておきます）
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <h3 class="step-group-title"><span class="step-num">STEP 5</span> 新しいPixel 11にSIMカードを入れて「ahamo開通」を押す（10分）</h3>
+        <div class="check-list">
+          <label class="check-item">
+            <input type="checkbox" data-step="d2-2" data-yen="2000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑩ 届いた「ahamoのSIMカード」を新しいPixel 11に差し込む</span>
+                <span class="reward-tag">📲 セット完了</span>
+              </div>
+              <div class="check-detail">
+                台紙から一番小さいSIMカード（nanoSIM）を外し、Pixel 11箱内の金属ピンを本体側面の穴にグッと刺して出たトレイに乗せ、奥まで戻します。
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d2-3" data-yen="5000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑪ 古いPixel 9（Wi-Fi接続）からahamoの「開通する」ボタンを押す！</span>
+                <span class="reward-tag">🎉 SB自動解約＆開通！</span>
+              </div>
+              <div class="check-detail">
+                ahamoサイト（またはアプリの「配送状況・開通へ」）にログインし、<span class="ui-btn">切り替え（開通）のお手続きへ</span> → <span class="ui-btn">開通する</span> をタップ！この瞬間にソフトバンクが自動解約され、電話番号がPixel 11へ移ります。
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <h3 class="step-group-title"><span class="step-num">STEP 6</span> ケーブル1本で丸ごとコピー ＆ おサイフケータイ受け取り（40分）</h3>
+        <div class="check-list">
+          <label class="check-item">
+            <input type="checkbox" data-step="d2-4" data-yen="2000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑫ 新しいPixel 11を起動し、付属ケーブルで2台をつないで丸ごとコピー＆「111」発信テスト</span>
+                <span class="reward-tag">📦 データ引越完了</span>
+              </div>
+              <div class="check-detail">
+                Pixel 11を起動して自宅Wi-Fiに繋ぎ、箱内の白いUSB-CケーブルでPixel 9と直接つないで <span class="ui-btn">コピー</span> をタップ！完了後に電話アプリで <strong>「111」</strong>（無料テスト）に発信して繋がればOK！
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d2-5" data-yen="2000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑬ 新しいPixel 11の「おサイフケータイ アプリ」で交通系ICを「受け取る」</span>
+                <span class="reward-tag">🚃 改札タッチ復活</span>
+              </div>
+              <div class="check-detail">
+                古いPixel 9と同じGoogleアカウントでログイン → <span class="ui-btn">マイ サービス</span> の <span class="ui-btn">●●系ICカードの受け取り</span> → <span class="ui-btn">受け取る</span> → <span class="ui-btn">メインカードにする</span> を確認。
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d2-6" data-yen="1000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑭ 「Google ウォレット」を開いて iD / QUICPay（タッチ決済）を有効化する</span>
+                <span class="reward-tag">💳 店舗タッチ復活</span>
+              </div>
+              <div class="check-detail">
+                「Google ウォレット」を開き、カード裏面3桁のコードとSMS認証を入れるだけでタッチ決済が復活します（LINE・PayPayもログイン確認）。<br />
+                <strong>※古いPixel 9はまだ初期化せず、2〜3日お守りとして机に置いておきます！</strong>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DAY 3 ==================== -->
+    <section id="section-day-3" class="day-section day-3 hidden-day" data-section="3">
+      <div class="day-header">
+        <div class="day-title-wrap">
+          <span class="day-pill">3日目｜12月1日解禁</span>
+          <h2 class="day-heading">2026年12月1日(火)以降：WebからPixel 9の返却キットを申し込む</h2>
+        </div>
+        <span class="time-badge">⏱️ 所要時間：約10分</span>
+      </div>
+
+      <div class="day-body">
+        <div class="callout callout-danger">
+          🛑 <strong>MNP後は「My SoftBankアプリ」からは入れません！必ず「Wi-Fi接続 ＋ Chromeブラウザ」から入ります。</strong>
+        </div>
+
+        <div class="check-list">
+          <label class="check-item">
+            <input type="checkbox" data-step="d3-1" data-yen="3000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑮ 【必ず12月1日以降】解約済み向けMy SoftBank（Web）から「特典を利用する」を押す</span>
+                <span class="reward-tag">📦 無料回収箱手配</span>
+              </div>
+              <div class="check-detail">
+                Chromeで「My SoftBank」を開き、画面下の <span class="ui-btn">ソフトバンクをご解約済みのお客さま（My SoftBankトップへ）</span> からSoftBank IDでログイン。<code>新トクするサポート（スタンダード）[Google Pixel 9]</code> の <span class="ui-btn">▶ 特典を利用する</span> を押して送付キットを取り寄せます。
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d3-2" data-yen="2000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑯ Pixel 9に「あんしん保証パック」が付いていたら解除する</span>
+                <span class="reward-tag">✂️ 継続課金カット</span>
+              </div>
+              <div class="check-detail">
+                オプション一覧に「あんしん保証パック」が残っていれば、割れ・故障がないことを確認して <span class="ui-btn">解除</span> します。
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== DAY 4 ==================== -->
+    <section id="section-day-4" class="day-section day-4 hidden-day" data-section="4">
+      <div class="day-header">
+        <div class="day-title-wrap">
+          <span class="day-pill">4日目｜フィニッシュ</span>
+          <h2 class="day-heading">12月中旬頃：玄関受取 → 3大チェック初期化 → ポスト投函</h2>
+        </div>
+        <span class="time-badge">⏱️ 所要時間：約20分</span>
+      </div>
+
+      <div class="day-body">
+        <div class="check-list">
+          <label class="check-item">
+            <input type="checkbox" data-step="d4-1" data-yen="1000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑰ 佐川急便を「契約者ご本人」が玄関でマイナンバーカードを見せて受け取る</span>
+                <span class="reward-tag">📬 受取完了</span>
+              </div>
+              <div class="check-detail">本人確認配達のため、ご本人がマイナンバーカード（または免許証）を提示して受け取ります。</div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d4-2" data-yen="1000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑱ 【初期化チェック1】古いPixel 9のおサイフケータイが「未利用（0ブロック）」か確認</span>
+                <span class="reward-tag">🛡️ 査定NG防止①</span>
+              </div>
+              <div class="check-detail">
+                「おサイフケータイ アプリ」→ 左上メニュー → サポート・規約 → <span class="ui-btn">メモリ使用状況</span> が<strong>『未利用（0ブロック）』</strong>ならOK！（残っていれば本体「設定」→「システム」→「リセット オプション」内の <span class="ui-btn">おサイフケータイ メモリ消去</span> を実行）
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d4-3" data-yen="1000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑲ 【初期化チェック2】古いPixel 9の「Googleアカウント」を手動で削除する</span>
+                <span class="reward-tag">🛡️ 査定NG防止②</span>
+              </div>
+              <div class="check-detail">
+                古いPixel 9の「設定」→ <span class="ui-btn">パスワードとアカウント</span> → 自分の <code>@gmail.com</code> → <span class="ui-btn">アカウントを削除</span> をタップ（盗難防止ロック作動を防ぎます）。
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d4-4" data-yen="1000" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">⑳ 【初期化チェック3】出荷時リセットを実行し、古いソフトバンクSIMを抜く</span>
+                <span class="reward-tag">🧹 完全消去</span>
+              </div>
+              <div class="check-detail">
+                「設定」→ <span class="ui-btn">システム</span> → <span class="ui-btn">リセット オプション</span> → <span class="ui-btn">すべてのデータを消去（出荷時リセット）</span>。初期画面に戻ったら電源を切り、古いソフトバンクSIMカードを抜いて破棄します（空トレイは戻す）。
+              </div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d4-5" data-yen="500" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">㉑ プチプチ袋に「Pixel 9本体のみ」と記入済みの申込書を入れる</span>
+                <span class="reward-tag">📦 梱包完了</span>
+              </div>
+              <div class="check-detail">外箱や充電ケーブルは不要です（本体のみ入れます）。</div>
+            </div>
+          </label>
+
+          <label class="check-item">
+            <input type="checkbox" data-step="d4-6" data-yen="5500" onchange="toggleStep(this)" />
+            <div class="check-content">
+              <div class="check-main-row">
+                <span class="check-main">㉒ 控えシール（追跡番号）を剥がして保管し、郵便ポストへ投函！</span>
+                <span class="reward-tag">🎊 残債免除 ¥170,000達成！</span>
+              </div>
+              <div class="check-detail">
+                査定完了メールが届けばPixel 9の残り24回分が完全0円になり全工程クリアです！
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const STORAGE_CHECKS = "pixel11_ahamo_checks_v1";
+    const STORAGE_MEMOS = "pixel11_ahamo_memos_v1";
+    const BASE_YEN = 15000; // Endowed progress: 調査・プラン確定分として最初から¥15,000ロック済！
+
+    let timerInterval = null;
+    let remainingSec = 20 * 60;
+
+    function updateDeadlineClock() {
+      // 注文推奨リミット: 2026-11-25 23:59:59 JST (+09:00)
+      const deadline = new Date("2026-11-25T23:59:59+09:00").getTime();
+      const now = Date.now();
+      const diff = deadline - now;
+      const el = document.getElementById("deadline-clock");
+      if (!el) return;
+      if (diff <= 0) {
+        el.textContent = "本日中の注文が最優先！";
+        return;
+      }
+      const hours = Math.floor(diff / (1000 * 60 * 60));
+      const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const secs = Math.floor((diff % (1000 * 60)) / 1000);
+      el.textContent =
+        "残り " +
+        hours +
+        "時間 " +
+        String(mins).padStart(2, "0") +
+        "分 " +
+        String(secs).padStart(2, "0") +
+        "秒";
+    }
+
+    function startFocusSprint() {
+      filterDay("1");
+      const firstCard = document.getElementById("first-step-card");
+      if (firstCard) {
+        firstCard.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+      const btn = document.getElementById("ignite-btn");
+      const disp = document.getElementById("timer-display");
+      disp.style.display = "inline-block";
+      btn.textContent = "🔥 集中モード稼働中！まずは①をタップ";
+      if (timerInterval) return;
+      timerInterval = setInterval(() => {
+        if (remainingSec > 0) {
+          remainingSec--;
+          const m = String(Math.floor(remainingSec / 60)).padStart(2, "0");
+          const s = String(remainingSec % 60).padStart(2, "0");
+          disp.textContent = "⏱️ " + m + ":" + s;
+        } else {
+          clearInterval(timerInterval);
+          disp.textContent = "⏰ ナイスファイト！";
+        }
+      }, 1000);
+    }
+
+    function updateProgress(animateBump) {
+      const allBoxes = document.querySelectorAll('input[type="checkbox"][data-step]');
+      const d1Boxes = document.querySelectorAll('#section-day-1 input[type="checkbox"][data-step]');
+      let doneAll = 0;
+      let doneD1 = 0;
+      let yenLocked = BASE_YEN;
+
+      allBoxes.forEach((box) => {
+        const item = box.closest(".check-item");
+        if (box.checked) {
+          doneAll++;
+          yenLocked += Number(box.dataset.yen || 0);
+          if (item) item.classList.add("done");
+        } else {
+          if (item) item.classList.remove("done");
+        }
+      });
+
+      d1Boxes.forEach((b) => {
+        if (b.checked) doneD1++;
+      });
+
+      // Endowed progress: start at 15% (3 virtual steps out of 25) so brain feels momentum immediately
+      const virtualPct = Math.min(100, Math.round(((doneAll + 3.8) / (allBoxes.length + 3.8)) * 100));
+      document.getElementById("progress-badge").textContent =
+        "今日 " + doneD1 + " / 8 完了（全体 " + virtualPct + "%）";
+      document.getElementById("progress-fill").style.width = virtualPct + "%";
+
+      const savEl = document.getElementById("savings-badge");
+      savEl.textContent = "💰 確定節約ロック：¥" + yenLocked.toLocaleString() + " / ¥170,000";
+      if (animateBump) {
+        savEl.classList.add("bump");
+        setTimeout(() => savEl.classList.remove("bump"), 220);
+      }
+
+      const banner = document.getElementById("day1-finish-banner");
+      if (banner) {
+        banner.classList.toggle("show", doneD1 === d1Boxes.length);
+      }
+    }
+
+    function toggleStep(box) {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_CHECKS) || "{}");
+        saved[box.dataset.step] = box.checked;
+        localStorage.setItem(STORAGE_CHECKS, JSON.stringify(saved));
+      } catch (e) {}
+      updateProgress(true);
+    }
+
+    function loadState() {
+      try {
+        const saved = JSON.parse(localStorage.getItem(STORAGE_CHECKS) || "{}");
+        document.querySelectorAll('input[type="checkbox"][data-step]').forEach((box) => {
+          if (saved[box.dataset.step]) {
+            box.checked = true;
+          }
+        });
+        const memos = JSON.parse(localStorage.getItem(STORAGE_MEMOS) || "{}");
+        if (memos.cutoff) document.getElementById("memo-cutoff").value = memos.cutoff;
+        if (memos.order) document.getElementById("memo-order").value = memos.order;
+        if (memos.track) document.getElementById("memo-track").value = memos.track;
+      } catch (e) {}
+      updateProgress(false);
+    }
+
+    function saveMemos() {
+      try {
+        const memos = {
+          cutoff: document.getElementById("memo-cutoff").value,
+          order: document.getElementById("memo-order").value,
+          track: document.getElementById("memo-track").value
+        };
+        localStorage.setItem(STORAGE_MEMOS, JSON.stringify(memos));
+      } catch (e) {}
+    }
+
+    function resetChecks() {
+      document.querySelectorAll('input[type="checkbox"][data-step]').forEach((box) => {
+        box.checked = false;
+      });
+      try {
+        localStorage.removeItem(STORAGE_CHECKS);
+      } catch (e) {}
+      updateProgress(false);
+    }
+
+    function filterDay(day) {
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.classList.toggle("active", btn.dataset.day === day);
+      });
+      document.querySelectorAll(".day-section").forEach((sec) => {
+        if (day === "all" || sec.dataset.section === day) {
+          sec.classList.remove("hidden-day");
+        } else {
+          sec.classList.add("hidden-day");
+        }
+      });
+      const promptEl = document.getElementById("next-days-prompt");
+      if (promptEl) {
+        promptEl.style.display = day === "1" ? "block" : "none";
+      }
+      if (day !== "all") {
+        const target = document.getElementById("section-day-" + day);
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    }
+
+    function printAll() {
+      filterDay("all");
+      window.print();
+    }
+
+    loadState();
+    updateDeadlineClock();
+    setInterval(updateDeadlineClock, 1000);
+  </script>
+</body>
+</html>
