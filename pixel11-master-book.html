@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow, noarchive" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel 9 → Pixel 11 劇的進化＆ステルス活用バイブル（🔒秘密基地 完全版）</title>
+  <style>
+    :root {
+      --ink: #0f172a;
+      --ink-sub: #334155;
+      --ink-muted: #64748b;
+      --line: #e2e8f0;
+      --bg-soft: #f8fafc;
+
+      --blue: #1d4ed8;
+      --blue-deep: #1e3a8a;
+      --blue-soft: #eff6ff;
+      --blue-mid: #bfdbfe;
+
+      --emerald: #047857;
+      --emerald-soft: #ecfdf5;
+      --emerald-mid: #a7f3d0;
+
+      --violet: #6d28d9;
+      --violet-soft: #f5f3ff;
+      --violet-mid: #ddd6fe;
+
+      --amber: #b45309;
+      --amber-soft: #fffbeb;
+      --amber-mid: #fde68a;
+
+      --rose: #be123c;
+      --rose-soft: #fff1f2;
+      --rose-mid: #fecdd3;
+
+      --vault-bg: #0b1120;
+      --vault-card: #111c33;
+      --vault-gold: #f59e0b;
+      --vault-cyan: #38bdf8;
+      --vault-mint: #34d399;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #cbd5e1;
+      color: var(--ink);
+      font-family: "Noto Sans CJK JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "Yu Gothic UI", "Meiryo", "Noto Color Emoji", system-ui, sans-serif;
+      line-height: 1.5;
+      font-size: 12px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Web-only Top Navigation Bar */
+    .web-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(8px);
+      color: #ffffff;
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .web-toolbar-inner {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .web-toolbar-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .vault-pill {
+      background: #f59e0b;
+      color: #0f172a;
+      font-size: 11px;
+      font-weight: 900;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    .web-toolbar-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tb-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      font-size: 12.5px;
+      font-weight: 800;
+      padding: 7px 13px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.12s ease, opacity 0.12s ease;
+    }
+
+    .tb-btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .tb-btn-primary {
+      background: #38bdf8;
+      color: #0f172a;
+    }
+
+    .tb-btn-ghost {
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    /* Magazine Sheet Container */
+    .book-wrap {
+      padding: 20px 0 44px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .a4-page {
+      width: 210mm;
+      height: 297mm;
+      background: #ffffff;
+      padding: 10.5mm 12mm 10mm;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 12px 34px rgba(15, 23, 42, 0.22);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Page Header & Footer */
+    .page-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--ink);
+      margin-bottom: 8px;
+    }
+
+    .page-kicker {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 10.5px;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink-sub);
+    }
+
+    .cat-tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 10px;
+      font-weight: 900;
+      color: #ffffff;
+    }
+
+    .page-title-row {
+      margin-bottom: 8px;
+    }
+
+    .page-h2 {
+      margin: 0;
+      font-size: 18.5px;
+      font-weight: 900;
+      line-height: 1.28;
+      color: var(--ink);
+      letter-spacing: -0.01em;
+    }
+
+    .page-lead {
+      margin: 2px 0 0;
+      font-size: 11.2px;
+      color: var(--ink-sub);
+      font-weight: 600;
+    }
+
+    .page-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 5px;
+      border-top: 1px solid var(--line);
+      font-size: 9.5px;
+      font-weight: 700;
+      color: var(--ink-muted);
+      margin-top: auto;
+    }
+
+    /* Cover Specifics (Page 1) */
+    .cover-masthead {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2.5px solid var(--ink);
+      padding-bottom: 5px;
+      margin-bottom: 8px;
+    }
+
+    .cover-brand {
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.1em;
+      color: var(--ink);
+    }
+
+    .cover-issue {
+      background: var(--ink);
+      color: #fbbf24;
+      font-size: 10px;
+      font-weight: 900;
+      padding: 2.5px 9px;
+      border-radius: 999px;
+    }
+
+    .cover-hero {
+      position: relative;
+      height: 88mm;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 9px;
+      background: #090d16;
+      border: 1px solid #1e293b;
+    }
+
+    .cover-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 45%;
+      opacity: 0.88;
+      display: block;
+    }
+
+    .cover-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(9, 13, 22, 0.25) 0%, rgba(9, 13, 22, 0.65) 50%, rgba(9, 13, 22, 0.95) 100%);
+      padding: 13px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #ffffff;
+    }
+
+    .cover-chip-row {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .cover-chip {
+      background: rgba(15, 23, 42, 0.78);
+      border: 1px solid rgba(56, 189, 248, 0.55);
+      color: #e0f2fe;
+      font-size: 9.8px;
+      font-weight: 800;
+      padding: 2.5px 8px;
+      border-radius: 999px;
+    }
+
+    .cover-chip.gold {
+      border-color: rgba(251, 191, 36, 0.7);
+      color: #fef3c7;
+    }
+
+    .cover-headline-box h1 {
+      margin: 0 0 4px;
+      font-size: 24.5px;
+      font-weight: 900;
+      line-height: 1.22;
+      letter-spacing: -0.01em;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .cover-headline-box h1 .hl-cyan {
+      color: #38bdf8;
+    }
+
+    .cover-headline-box h1 .hl-gold {
+      color: #fbbf24;
+    }
+
+    .cover-sub {
+      margin: 0;
+      font-size: 11.8px;
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+
+    /* 3 Pillars Strip on Cover */
+    .pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 9px;
+    }
+
+    .pillar-card {
+      border-radius: 10px;
+      padding: 8px 10px;
+      border: 1.5px solid var(--line);
+    }
+
+    .pillar-card.p-fde { background: var(--blue-soft); border-color: var(--blue-mid); }
+    .pillar-card.p-ai  { background: var(--violet-soft); border-color: var(--violet-mid); }
+    .pillar-card.p-fx  { background: #0f172a; border-color: #334155; color: #f8fafc; }
+
+    .pillar-top {
+      font-size: 10px;
+      font-weight: 900;
+      margin-bottom: 2px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .p-fde .pillar-top { color: var(--blue); }
+    .p-ai .pillar-top  { color: var(--violet); }
+    .p-fx .pillar-top  { color: #fbbf24; }
+
+    .pillar-title {
+      font-size: 12.2px;
+      font-weight: 900;
+      line-height: 1.28;
+      margin-bottom: 3px;
+    }
+
+    .pillar-desc {
+      font-size: 10px;
+      line-height: 1.4;
+      color: var(--ink-sub);
+    }
+    .p-fx .pillar-desc { color: #cbd5e1; }
+
+    /* Comparison Matrix Table on Page 1 */
+    .matrix-box {
+      border: 1.5px solid var(--ink);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+
+    .matrix-head {
+      background: var(--ink);
+      color: #ffffff;
+      padding: 5px 10px;
+      font-size: 11.2px;
+      font-weight: 900;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    table.comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10.2px;
+    }
+
+    .comp-table th {
+      background: #f1f5f9;
+      color: var(--ink);
+      text-align: left;
+      padding: 4.5px 8px;
+      font-weight: 900;
+      border-bottom: 1.5px solid #cbd5e1;
+    }
+
+    .comp-table td {
+      padding: 4.8px 8px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: middle;
+    }
+
+    .comp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comp-table td.col-axis {
+      width: 21%;
+      font-weight: 900;
+      background: #f8fafc;
+      color: var(--ink);
+    }
+
+    .comp-table td.col-p9 {
+      width: 34%;
+      color: #64748b;
+      background: #ffffff;
+    }
+
+    .comp-table td.col-p11 {
+      width: 45%;
+      font-weight: 800;
+      color: #0f172a;
+      background: #f0f9ff;
+    }
+
+    .win-badge {
+      display: inline-block;
+      background: #1d4ed8;
+      color: #ffffff;
+      font-size: 9px;
+      font-weight: 900;
+      padding: 1px 5px;
+      border-radius: 4px;
+      margin-right: 3px;
+    }
+
+    .win-badge.gold {
+      background: #d97706;
+    }
+
+    /* Feature Comparison Scene Card (Before vs After Phone UI) */
+    .scene-card {
+      border: 1.5px solid var(--line);
+      border-radius: 12px;
+      padding: 9px 11px;
+      background: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    .scene-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 7px;
+      padding-bottom: 5px;
+      border-bottom: 1px dashed #cbd5e1;
+    }
+
+    .scene-title-group {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .scene-num {
+      background: var(--ink);
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    .scene-h3 {
+      margin: 0;
+      font-size: 13.8px;
+      font-weight: 900;
+      color: var(--ink);
+    }
+
+    .exclusive-pill {
+      font-size: 9.5px;
+      font-weight: 900;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #fef2f2;
+      color: #b91c1c;
+      border: 1px solid #fecaca;
+      white-space: nowrap;
+    }
+
+    .exclusive-pill.blue {
+      background: var(--blue-soft);
+      color: var(--blue);
+      border-color: var(--blue-mid);
+    }
+
+    /* Before -> After 2-Column Layout */
+    .ba-grid {
+      display: grid;
+      grid-template-columns: 1fr 22px 1.28fr;
+      gap: 6px;
+      align-items: stretch;
+    }
+
+    .ba-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--blue);
+    }
+
+    .ba-col {
+      border-radius: 10px;
+      padding: 8px 9px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .ba-before {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+    }
+
+    .ba-after {
+      background: linear-gradient(180deg, #eff6ff 0%, #f5f3ff 100%);
+      border: 2px solid #3b82f6;
+    }
+
+    .ba-label {
+      font-size: 9.8px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 4px;
+    }
+
+    .ba-before .ba-label { color: #64748b; }
+    .ba-after .ba-label  { color: #1d4ed8; }
+
+    .tag-before {
+      background: #e2e8f0;
+      color: #334155;
+      font-size: 9.2px;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .tag-after {
+      background: #1d4ed8;
+      color: #ffffff;
+      font-size: 9.2px;
+      font-weight: 900;
+      padding: 2px 8px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .try-now-box {
+      margin-top: 9px;
+      background: linear-gradient(90deg, #0f172a 0%, #1e3a8a 100%);
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 9px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border: 1px solid #38bdf8;
+    }
+
+    .try-now-kicker {
+      background: #fbbf24;
+      color: #0f172a;
+      font-size: 9.5px;
+      font-weight: 900;
+      padding: 2.5px 8px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .try-now-text {
+      flex: 1;
+      font-size: 10.3px;
+      line-height: 1.42;
+      color: #f1f5f9;
+      font-weight: 600;
+    }
+
+    .try-now-text strong {
+      color: #7dd3fc;
+    }
+
+    /* Realistic Smartphone UI Mockup */
+    .phone-ui {
+      background: #ffffff;
+      border: 2px solid #334155;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(15, 23, 42, 0.08);
+      font-size: 10px;
+    }
+
+    .phone-ui.p11-frame {
+      border-color: #0f172a;
+      border-width: 2.2px;
+      box-shadow: 0 4px 12px rgba(29, 78, 216, 0.14);
+    }
+
+    .status-bar {
+      background: #0f172a;
+      color: #ffffff;
+      padding: 2.5px 8px;
+      font-size: 8.5px;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .punch-hole {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #475569;
+      display: inline-block;
+    }
+
+    .ui-body {
+      padding: 7px 8px;
+    }
+
+    .ui-caption {
+      margin-top: 5px;
+      font-size: 10px;
+      line-height: 1.38;
+      color: var(--ink-sub);
+      font-weight: 600;
+    }
+
+    .ba-after .ui-caption {
+      color: #1e293b;
+      font-weight: 700;
+    }
+
+    /* Chat & Keyboard Mockup Elements */
+    .chat-bubble {
+      padding: 5px 8px;
+      border-radius: 9px;
+      font-size: 9.8px;
+      line-height: 1.35;
+      margin-bottom: 5px;
+    }
+
+    .chat-them {
+      background: #f1f5f9;
+      color: #0f172a;
+      border-top-left-radius: 2px;
+      max-width: 88%;
+    }
+
+    .chat-me-draft {
+      background: #dcfce7;
+      border: 1px solid #86efac;
+      color: #14532d;
+      border-top-right-radius: 2px;
+      margin-left: auto;
+      max-width: 92%;
+      font-weight: 700;
+    }
+
+    .input-box-bad {
+      background: #fff1f2;
+      border: 1px solid #fda4af;
+      border-radius: 7px;
+      padding: 5px 7px;
+      color: #881337;
+      font-size: 9.6px;
+      margin-bottom: 5px;
+    }
+
+    .strike-err {
+      text-decoration: line-through;
+      color: #e11d48;
+      background: #ffe4e6;
+      padding: 0 2px;
+    }
+
+    .input-box-good {
+      background: #ecfdf5;
+      border: 1.5px solid #10b981;
+      border-radius: 7px;
+      padding: 5px 7px;
+      color: #064e3b;
+      font-weight: 800;
+      font-size: 10.2px;
+      margin-bottom: 5px;
+    }
+
+    .gboard-bar {
+      background: linear-gradient(90deg, #1e3a8a, #6d28d9);
+      color: #ffffff;
+      border-radius: 6px;
+      padding: 3.5px 7px;
+      font-size: 9px;
+      font-weight: 800;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mini-keys {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 2px;
+      margin-top: 4px;
+      background: #e2e8f0;
+      padding: 3px;
+      border-radius: 5px;
+    }
+
+    .mini-key {
+      background: #ffffff;
+      border-radius: 3px;
+      text-align: center;
+      font-size: 8px;
+      padding: 2px 0;
+      color: #475569;
+      font-weight: 700;
+    }
+
+    /* Overlay Sheet inside Phone UI */
+    .assist-sheet {
+      background: #0f172a;
+      color: #ffffff;
+      border-radius: 8px;
+      padding: 6px 8px;
+      margin-top: 4px;
+      border: 1px solid #38bdf8;
+    }
+
+    .assist-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #dbeafe;
+      border: 1px solid #60a5fa;
+      color: #1e3a8a;
+      font-size: 9.2px;
+      font-weight: 900;
+      padding: 2.5px 8px;
+      border-radius: 999px;
+      margin-bottom: 4px;
+    }
+
+    .cal-slot {
+      display: flex;
+      justify-content: space-between;
+      font-size: 9px;
+      padding: 2px 5px;
+      border-radius: 4px;
+      margin-top: 2px;
+    }
+
+    .cal-busy { background: rgba(244, 63, 94, 0.22); color: #fecdd3; }
+    .cal-free { background: rgba(16, 185, 129, 0.25); color: #a7f3d0; font-weight: 800; }
+
+    /* Compact Sub-Feature Row */
+    .sub-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .sub-box {
+      background: var(--bg-soft);
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 7px 10px;
+    }
+
+    .sub-box h4 {
+      margin: 0 0 3px;
+      font-size: 11.2px;
+      font-weight: 900;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .sub-box p {
+      margin: 0;
+      font-size: 10px;
+      color: var(--ink-sub);
+      line-height: 1.4;
+    }
+
+    /* Camera Finder Mockup (Page 4) */
+    .cam-finder {
+      background: #1e293b;
+      color: #ffffff;
+      padding: 7px;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .wb-board {
+      background: #f8fafc;
+      color: #0f172a;
+      border: 2px solid #94a3b8;
+      border-radius: 5px;
+      padding: 5px 7px;
+      font-size: 9px;
+      font-weight: 800;
+      position: relative;
+    }
+
+    .wb-blur {
+      filter: blur(1.6px);
+      opacity: 0.65;
+    }
+
+    .circle-lasso {
+      border: 2px dashed #38bdf8;
+      background: rgba(56, 189, 248, 0.14);
+      border-radius: 999px;
+      padding: 3px 6px;
+      display: inline-block;
+    }
+
+    .zoom-pills {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+      margin-top: 5px;
+    }
+
+    .z-pill {
+      font-size: 8.5px;
+      padding: 1.5px 6px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      color: #cbd5e1;
+    }
+
+    .z-pill.active {
+      background: #fbbf24;
+      color: #0f172a;
+      font-weight: 900;
+    }
+
+    .frame-strip {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      margin-top: 5px;
+    }
+
+    .frame-card {
+      background: #0f172a;
+      border: 1.5px solid #38bdf8;
+      border-radius: 5px;
+      padding: 4px;
+      text-align: center;
+      color: #e0f2fe;
+      font-size: 8.5px;
+      font-weight: 800;
+    }
+
+    /* Page 5: Stealth Vault Architecture */
+    .vault-banner {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      gap: 10px;
+      background: var(--vault-bg);
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-bottom: 8px;
+      border: 1.5px solid #1e293b;
+      align-items: center;
+    }
+
+    .vault-banner img {
+      width: 100%;
+      height: 42mm;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      display: block;
+    }
+
+    .vault-logic h3 {
+      margin: 0 0 4px;
+      font-size: 13.5px;
+      font-weight: 900;
+      color: #fbbf24;
+      line-height: 1.3;
+    }
+
+    .vault-logic p {
+      margin: 0 0 5px;
+      font-size: 10.2px;
+      color: #cbd5e1;
+      line-height: 1.42;
+    }
+
+    .vault-rule-tag {
+      display: inline-block;
+      background: rgba(52, 211, 153, 0.16);
+      border: 1px solid #34d399;
+      color: #6ee7b7;
+      font-size: 9.5px;
+      font-weight: 800;
+      padding: 2.5px 7px;
+      border-radius: 6px;
+    }
+
+    .dual-screen-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .floor-card {
+      border-radius: 12px;
+      padding: 9px 10px;
+    }
+
+    .floor-1f {
+      background: #f0f9ff;
+      border: 2px solid #0284c7;
+    }
+
+    .floor-b1 {
+      background: #0f172a;
+      border: 2px solid #f59e0b;
+      color: #ffffff;
+    }
+
+    .floor-badge {
+      display: inline-block;
+      font-size: 9.8px;
+      font-weight: 900;
+      padding: 2px 8px;
+      border-radius: 999px;
+      margin-bottom: 4px;
+    }
+
+    .floor-1f .floor-badge { background: #0284c7; color: #ffffff; }
+    .floor-b1 .floor-badge { background: #f59e0b; color: #0f172a; }
+
+    .floor-title {
+      margin: 0 0 6px;
+      font-size: 12.5px;
+      font-weight: 900;
+    }
+
+    .notif-card {
+      background: #ffffff;
+      border: 1.5px solid #94a3b8;
+      border-radius: 8px;
+      padding: 6px 8px;
+      color: #0f172a;
+      margin-bottom: 5px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+
+    .app-grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5px;
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    .app-icon {
+      border-radius: 8px;
+      padding: 5px 2px;
+      font-size: 8.5px;
+      font-weight: 800;
+    }
+
+    .app-clean {
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #cbd5e1;
+    }
+
+    .app-secret {
+      background: #1e293b;
+      color: #fde68a;
+      border: 1px solid #f59e0b;
+    }
+
+    /* Page 6: Trap Warning & 7-Step Setup Checklist */
+    .trap-box {
+      background: var(--rose-soft);
+      border: 2px solid #e11d48;
+      border-radius: 12px;
+      padding: 9px 11px;
+      margin-bottom: 8px;
+    }
+
+    .trap-head {
+      font-size: 12.8px;
+      font-weight: 900;
+      color: #9f1239;
+      margin: 0 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .trap-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 5px;
+    }
+
+    .trap-ng, .trap-ok {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 6px 8px;
+      font-size: 9.8px;
+    }
+
+    .trap-ng { border: 1.5px solid #fb7185; }
+    .trap-ok { border: 2px solid #10b981; background: #f0fdf4; }
+
+    .setup-list {
+      display: flex;
+      flex-direction: column;
+      gap: 5.5px;
+    }
+
+    .setup-item {
+      display: grid;
+      grid-template-columns: 24px 1fr auto;
+      gap: 8px;
+      align-items: center;
+      border: 1.2px solid #cbd5e1;
+      border-radius: 9px;
+      padding: 6px 9px;
+      background: #ffffff;
+    }
+
+    .setup-check {
+      width: 18px;
+      height: 18px;
+      border: 2px solid #1d4ed8;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 900;
+      color: #1d4ed8;
+    }
+
+    .setup-main strong {
+      display: block;
+      font-size: 11.2px;
+      color: var(--ink);
+    }
+
+    .setup-path {
+      font-size: 9.6px;
+      color: var(--ink-sub);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: #f1f5f9;
+      padding: 1px 5px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 1px;
+    }
+
+    .setup-tag {
+      font-size: 9px;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    /* Responsive Mobile Web View */
+    @media screen and (max-width: 840px) {
+      .book-wrap {
+        padding: 10px 8px 36px;
+        gap: 14px;
+      }
+      .a4-page {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 16px 14px;
+        border-radius: 12px;
+      }
+      .pillar-grid,
+      .ba-grid,
+      .sub-strip,
+      .vault-banner,
+      .dual-screen-grid,
+      .trap-compare {
+        grid-template-columns: 1fr;
+      }
+      .ba-arrow {
+        transform: rotate(90deg);
+        height: 18px;
+      }
+      .cover-hero {
+        height: 220px;
+      }
+    }
+
+    /* Exact Print / PDF Generation Rules */
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 0;
+      }
+      html, body {
+        background: #ffffff;
+        width: 210mm;
+      }
+      .web-toolbar {
+        display: none !important;
+      }
+      .book-wrap {
+        padding: 0;
+        gap: 0;
+        display: block;
+      }
+      .a4-page {
+        width: 210mm;
+        height: 297mm;
+        box-shadow: none;
+        margin: 0;
+        page-break-after: always;
+        break-after: page;
+      }
+      .a4-page:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Web閲覧時のみのツールバー（PDF出力時は自動非表示） -->
+  <header class="web-toolbar">
+    <div class="web-toolbar-inner">
+      <div class="web-toolbar-title">
+        <span class="vault-pill">🔒 秘密基地・完全版</span>
+        <span>Pixel 9 → Pixel 11 劇的進化＆ステルス活用バイブル（全6ページ）</span>
+      </div>
+      <div class="web-toolbar-actions">
+        <a class="tb-btn tb-btn-primary" href="./Pixel11_Master_Book.pdf" target="_blank" rel="noopener">📥 PDF版を開く／保存（A4印刷対応）</a>
+        <a class="tb-btn tb-btn-ghost" href="./index.html">← 乗り換え手順書へ戻る</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="book-wrap">
+
+    <!-- ==================== PAGE 1 : COVER & MATRIX ==================== -->
+    <section class="a4-page" id="page-1">
+      <div>
+        <div class="cover-masthead">
+          <div class="cover-brand">PRIVATE BASE SPECIAL EDITION • PIXEL 11 MASTER BOOK</div>
+          <div class="cover-issue">🔒 自分専用・全部入り虎の巻（全6P）</div>
+        </div>
+
+        <div class="cover-hero">
+          <img src="./assets/pixel11-cover.jpg" alt="Pixel 11 Cover Visual" />
+          <div class="cover-overlay">
+            <div class="cover-chip-row">
+              <span class="cover-chip">2nm世代 Tensor G6</span>
+              <span class="cover-chip">Gemini Intelligence 認定機</span>
+              <span class="cover-chip">光学5倍望遠 × 256GB標準</span>
+              <span class="cover-chip">Pixelsnap Qi2.2 (25W)</span>
+              <span class="cover-chip gold">新防壁 Titan M3 チップ</span>
+            </div>
+            <div class="cover-headline-box">
+              <h1>Pixel 9 → Pixel 11<br /><span class="hl-cyan">「これまで」</span>が劇的に変わる<br /><span class="hl-gold">AI × 社内FDE × 自動売買</span> 完全図鑑</h1>
+              <p class="cover-sub">2026年11月最新アップデート反映｜実際の画面イメージでわかる「届いた初日から使い倒すための6ページ」</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="pillar-grid">
+          <div class="pillar-card p-ai">
+            <div class="pillar-top">✨ 進化① AIヘビー活用</div>
+            <div class="pillar-title">Pixel 9が「足切り」された新世代AIが日本語解禁</div>
+            <div class="pillar-desc">話し言葉の「言い直し」自動修正、LINE画面上の日程調整＆返信作成、仮想画面のアプリ操作代行、AI電卓まで一挙搭載。</div>
+          </div>
+          <div class="pillar-card p-fde">
+            <div class="pillar-top">🚀 進化② 社内FDE推進</div>
+            <div class="pillar-title">無印初の「光学5倍望遠」＆マグネット25W急速充電</div>
+            <div class="pillar-desc">遠い会議室ボードも席からクッキリ撮影し即AI解析。デスクではPixelsnapでカチッと貼るだけ、カメラ突起も40%薄型化。</div>
+          </div>
+          <div class="pillar-card p-fx">
+            <div class="pillar-top">🛡️ 進化③ 自動売買ステルス</div>
+            <div class="pillar-title">社員に画面を見せても露出ゼロ×重要通知は即検知</div>
+            <div class="pillar-desc">耐量子暗号Titan M3＋「地下金庫（プライベートスペース）×1階ステルス通知」の2階建て設計で公私4重隔離を完全自動化。</div>
+          </div>
+        </div>
+
+        <div class="matrix-box">
+          <div class="matrix-head">
+            <span>📊 一目でわかる！「これまでの Pixel 9」vs「これからの Pixel 11（256GB）」決定的な差</span>
+            <span style="font-size:9.5px; color:#93c5fd;">※すべて無印Pixel 11（Pro不要）で使える機能</span>
+          </div>
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>活用シーン</th>
+                <th>これまでの Pixel 9（Tensor G4）</th>
+                <th>これからの Pixel 11（Tensor G6 / Android 17）</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-axis">🎤 音声入力</td>
+                <td class="col-p9">言い淀みや「言い直し」がそのまま文字になり手で修正</td>
+                <td class="col-p11"><span class="win-badge">足切り突破</span>文脈を読んで<strong>「言い直し」まで自動で書き換え整形</strong></td>
+              </tr>
+              <tr>
+                <td class="col-axis">📅 LINE日程調整</td>
+                <td class="col-p9">LINEを閉じてカレンダーを開き、記憶して戻って手打ち</td>
+                <td class="col-p11"><span class="win-badge">足切り突破</span><strong>LINEの上に空き予定が重なり、返信文まで自動生成</strong></td>
+              </tr>
+              <tr>
+                <td class="col-axis">🤖 アプリ操作</td>
+                <td class="col-p9">予約・注文・手配はすべて自分で画面をタップして入力</td>
+                <td class="col-p11"><span class="win-badge">11月日本解禁</span><strong>仮想画面でGeminiが手配を代行</strong>し、最後に承認するだけ</td>
+              </tr>
+              <tr>
+                <td class="col-axis">🧮 ロット・試算</td>
+                <td class="col-p9">普通の電卓のみ（証拠金や単価計算はシートと往復）</td>
+                <td class="col-p11"><span class="win-badge">11限定専売</span><strong>AI電卓「Pixel Solver」</strong>が自然言語で逆算＆テンプレ保存</td>
+              </tr>
+              <tr>
+                <td class="col-axis">🔭 現場・会議撮影</td>
+                <td class="col-p9">望遠レンズなし（デジタルズームで遠い文字が滲む）</td>
+                <td class="col-p11"><span class="win-badge">無印初搭載</span><strong>光学5倍望遠（最大30倍）</strong>＋カメラのまま「かこって検索」</td>
+              </tr>
+              <tr>
+                <td class="col-axis">🎬 家族・動画撮影</td>
+                <td class="col-p9">シャッター瞬間の目つぶり・ブレ／動画と写真は別撮り</td>
+                <td class="col-p11"><span class="win-badge">11限定専売</span><strong>マジックキャプチャー</strong>が約400フレームから最高写真も自動保存</td>
+              </tr>
+              <tr>
+                <td class="col-axis">⚡ 充電・机上設置</td>
+                <td class="col-p9">マグネット非内蔵・15W低速・カメラ突起で机でガタつく</td>
+                <td class="col-p11"><span class="win-badge">快適ハード</span><strong>Pixelsnap（Qi2.2・25W急速）磁石内蔵</strong>＆カメラバー40%薄型化</td>
+              </tr>
+              <tr>
+                <td class="col-axis">🔒 FX隔離・防衛</td>
+                <td class="col-p9">Titan M2／容量128GB基準で余裕が少なめ</td>
+                <td class="col-p11"><span class="win-badge gold">秘密基地</span><strong>Titan M3＋256GB標準＋2階建てステルス通知＆Linux母艦</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="page-foot">
+        <span>🔒 PRIVATE BASE ONLY — 社内共有・転載禁止</span>
+        <span>1 / 6</span>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 2 : AI VOICE & PROACTIVE ASSIST ==================== -->
+    <section class="a4-page" id="page-2">
+      <div>
+        <div class="page-head">
+          <div class="page-kicker">
+            <span class="cat-tag" style="background:var(--violet);">AI EVOLUTION 01</span>
+            <span>GEMINI INTELLIGENCE × GBOARD &amp; LINE</span>
+          </div>
+          <div style="font-size:10px; font-weight:800; color:var(--violet);">Pixel 9 非対応（足切り突破エリア）</div>
+        </div>
+
+        <div class="page-title-row">
+          <h2 class="page-h2">雑にしゃべった「言い直し」もLINEの「予定調整」も、裏でAIが勝手に整える</h2>
+          <p class="page-lead">Pixel 11のオンデバイスAI（最新Gemini Nano）は最大3.5倍高速。キーボードとチャット画面そのものが賢く変化します。</p>
+        </div>
+
+        <!-- SCENE 01 -->
+        <div class="scene-card">
+          <div class="scene-header">
+            <div class="scene-title-group">
+              <span class="scene-num">SCENE 01</span>
+              <h3 class="scene-h3">Gboard『AI音声入力』— 話しながらの「あ、やっぱり変更！」まで自動で清書</h3>
+            </div>
+            <span class="exclusive-pill">日本語対応済・Pixel 9 非対応</span>
+          </div>
+
+          <div class="ba-grid">
+            <div class="ba-col ba-before">
+              <div class="ba-label"><span class="tag-before">BEFORE｜Pixel 9</span><span>通常の音声文字起こし</span></div>
+              <div class="phone-ui">
+                <div class="status-bar"><span>9:41</span><span class="punch-hole"></span><span>5G 88%</span></div>
+                <div class="ui-body">
+                  <div style="font-size:8.8px; color:#64748b; margin-bottom:3px;">🎙️ 吹き込んだ音声そのまま：</div>
+                  <div class="input-box-bad">
+                    <span class="strike-err">えーっと</span>来週の<span class="strike-err">水曜日の午後あごめんやっぱり</span>木曜日の14時でお願いします<span class="strike-err">ー</span>
+                  </div>
+                  <div style="font-size:8.8px; color:#be123c; font-weight:700;">▲ カーソルを戻して手で消す二度手間が発生…</div>
+                </div>
+              </div>
+              <div class="ui-caption">喋った通りの生テキストが並ぶため、結局あとから親指でバックスペース連打が必要だった。</div>
+            </div>
+
+            <div class="ba-arrow">➔</div>
+
+            <div class="ba-col ba-after">
+              <div class="ba-label"><span class="tag-after">✨ AFTER｜Pixel 11</span><span>Gemini Intelligence 音声整形</span></div>
+              <div class="phone-ui p11-frame">
+                <div class="status-bar"><span>9:41</span><span class="punch-hole"></span><span>5G 100%</span></div>
+                <div class="ui-body">
+                  <div style="font-size:8.8px; color:#047857; font-weight:800; margin-bottom:3px;">✨ 同じ話し言葉なのに、話し終えた瞬間に自動清書：</div>
+                  <div class="input-box-good">
+                    来週の木曜日の14:00でお願いします。
+                  </div>
+                  <div class="gboard-bar">
+                    <span>✨ AI音声入力：フィラー除去＆言い直し反映済</span>
+                    <span style="background:rgba(255,255,255,0.2); padding:1px 5px; border-radius:4px;">🎙️ 待機中</span>
+                  </div>
+                  <div class="mini-keys">
+                    <div class="mini-key">あ</div><div class="mini-key">か</div><div class="mini-key">さ</div><div class="mini-key">た</div>
+                    <div class="mini-key">な</div><div class="mini-key">は</div><div class="mini-key">ま</div><div class="mini-key" style="background:#dbeafe; color:#1d4ed8;">送信</div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">「水曜→やっぱり木曜」の訂正意図をAIが汲み取り、最初から完成したビジネス文で入力完了！（固有名詞だけ最後に1秒目視でOK）</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCENE 02 -->
+        <div class="scene-card">
+          <div class="scene-header">
+            <div class="scene-title-group">
+              <span class="scene-num">SCENE 02</span>
+              <h3 class="scene-h3">『先回りアシスト』— LINEを閉じずにカレンダー空き確認＆返信文まで自動生成</h3>
+            </div>
+            <span class="exclusive-pill">11月アプデで大幅進化！</span>
+          </div>
+
+          <div class="ba-grid">
+            <div class="ba-col ba-before">
+              <div class="ba-label"><span class="tag-before">BEFORE｜Pixel 9</span><span>アプリを3回行ったり来たり</span></div>
+              <div class="phone-ui">
+                <div class="status-bar"><span>12:15</span><span class="punch-hole"></span><span>5G</span></div>
+                <div class="ui-body">
+                  <div class="chat-bubble chat-them">来週の日曜、打ち合わせかランチ空いてる？</div>
+                  <div style="background:#f8fafc; border:1px dashed #94a3b8; border-radius:6px; padding:6px; font-size:9px; color:#475569;">
+                    ① 一旦LINEを閉じる<br />
+                    ② Googleカレンダーを開いて日曜を探す<br />
+                    ③ 空き時間を暗記してLINEに戻る<br />
+                    ④ 返信文をゼロから手打ちする
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">移動中や立ち話の合間だと「あとで見て返そう」と思ってそのまま返信忘れになりがち。</div>
+            </div>
+
+            <div class="ba-arrow">➔</div>
+
+            <div class="ba-col ba-after">
+              <div class="ba-label"><span class="tag-after">✨ AFTER｜Pixel 11</span><span>LINEの上に予定と返信案が出現！</span></div>
+              <div class="phone-ui p11-frame">
+                <div class="status-bar"><span>12:15</span><span class="punch-hole"></span><span>5G</span></div>
+                <div class="ui-body">
+                  <div class="chat-bubble chat-them">来週の日曜、打ち合わせかランチ空いてる？</div>
+                  <div class="assist-chip">✨ スケジュールの確認（先回りアシスト）</div>
+                  <div class="assist-sheet">
+                    <div style="font-size:9px; font-weight:900; color:#38bdf8; margin-bottom:2px;">📅 来週日曜（12/6）のGoogleカレンダー</div>
+                    <div class="cal-slot cal-busy"><span>10:00 - 12:30</span><span>家族でお出かけ（予定あり）</span></div>
+                    <div class="cal-slot cal-free"><span>13:30 以降</span><span>⭕ 空き時間（予定なし）</span></div>
+                    <div style="margin-top:5px; padding-top:4px; border-top:1px solid #334155; font-size:8.8px; color:#fde68a;">
+                      💡 <strong>1タップ返信下書き：</strong>「日曜は13時半以降なら空いてるよ！」
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">LINE画面から1歩も出ずに空き時間を即チェックし、AIが作った返信案を1タップで入力欄へ流し込める！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bonus Sub-Strip -->
+        <div class="sub-strip">
+          <div class="sub-box">
+            <h4>✍️ Gboard『文章作成ツール（自分専用の文体学習）』</h4>
+            <p>箇条書きメモから「社内向けの謙虚で丁寧な報告文」や「簡潔な要点3行」へ即変換。普段の書き方のクセまで学習して自然な日本語に整えます。</p>
+          </div>
+          <div class="sub-box">
+            <h4>🚃 日本の通勤に効く『電車内モード × AI代理電話応答』</h4>
+            <p>電車乗車を自動検知してマナーモード化。乗車中の着信にはAIが自動で出て相手の用件を画面にリアルタイム文字起こし＆ボタン1つで折り返し連絡を伝えられます。</p>
+          </div>
+        </div>
+
+        <div class="try-now-box">
+          <span class="try-now-kicker">🎯 届いたら30秒実験！</span>
+          <div class="try-now-text">
+            メモ帳を開いてマイクを押し、わざと<strong>「えーっと明日の13時…あ違ったやっぱり15時でよろしく」</strong>と吹き込んでみてください。一発で清書される快感に痺れます！
+          </div>
+        </div>
+      </div>
+
+      <div class="page-foot">
+        <span>🔒 PRIVATE BASE ONLY — AI EVOLUTION 01 (VOICE &amp; MESSAGING)</span>
+        <span>2 / 6</span>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 3 : AGENT AUTOMATION & PIXEL SOLVER ==================== -->
+    <section class="a4-page" id="page-3">
+      <div>
+        <div class="page-head">
+          <div class="page-kicker">
+            <span class="cat-tag" style="background:var(--blue);">AI EVOLUTION 02</span>
+            <span>SCREEN AUTOMATION &amp; PIXEL SOLVER</span>
+          </div>
+          <div style="font-size:10px; font-weight:800; color:var(--blue);">2026年11月 日本上陸 ＆ Pixel 11限定機能</div>
+        </div>
+
+        <div class="page-title-row">
+          <h2 class="page-h2">アプリ操作をAIが肩代わりし、面倒なロット・単価逆算も電卓と会話するだけ</h2>
+          <p class="page-lead">「調べるAI」から「代わりに手を動かす・試算するAI」へ。Pixel 11ならではのエージェント機能＆AI電卓です。</p>
+        </div>
+
+        <!-- SCENE 03 -->
+        <div class="scene-card">
+          <div class="scene-header">
+            <div class="scene-title-group">
+              <span class="scene-num">SCENE 03</span>
+              <h3 class="scene-h3">『スクリーンオートメーション』— 仮想画面でGeminiがアプリを自動操作</h3>
+            </div>
+            <span class="exclusive-pill blue">2026年11月 日本語解禁！</span>
+          </div>
+
+          <div class="ba-grid">
+            <div class="ba-col ba-before">
+              <div class="ba-label"><span class="tag-before">BEFORE｜Pixel 9</span><span>AIは「やり方」を教えるだけ</span></div>
+              <div class="phone-ui">
+                <div class="status-bar"><span>18:20</span><span class="punch-hole"></span><span>5G</span></div>
+                <div class="ui-body">
+                  <div class="chat-bubble chat-them" style="background:#eef2ff;">「梅田駅近くで19時から入れる店を探して予約準備して」</div>
+                  <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:6px; font-size:9px; color:#64748b;">
+                    💬 <strong>従来のGemini：</strong><br />
+                    「おすすめの店舗リストはこちらです。予約は各アプリを開いてご自身で入力してください」<br />
+                    <span style="color:#be123c; font-weight:700;">→ 結局5〜6画面のタップ入力は人間任せ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">検索まではしてくれても、実際のアプリ画面を開いて条件を入れる作業は人間がやるしかなかった。</div>
+            </div>
+
+            <div class="ba-arrow">➔</div>
+
+            <div class="ba-col ba-after">
+              <div class="ba-label"><span class="tag-after">✨ AFTER｜Pixel 11</span><span>仮想画面でAIが入力を進め、人間は承認だけ</span></div>
+              <div class="phone-ui p11-frame">
+                <div class="status-bar"><span>18:20</span><span class="punch-hole"></span><span>5G</span></div>
+                <div class="ui-body">
+                  <div style="background:#0f172a; color:#ffffff; border-radius:8px; padding:7px 8px; border:1.5px solid #60a5fa;">
+                    <div style="display:flex; justify-content:space-between; font-size:9px; color:#93c5fd; font-weight:800; margin-bottom:4px;">
+                      <span>🤖 Gemini 仮想画面オートメーション稼働中</span>
+                      <span>STEP 3 / 4</span>
+                    </div>
+                    <div style="background:#1e293b; border-radius:5px; padding:5px 7px; font-size:9px; line-height:1.4; color:#e2e8f0;">
+                      ✅ アプリを起動してエリア「梅田」を選択<br />
+                      ✅ 本日 19:00・2名の空き枠を選択済<br />
+                      ⏸️ <strong>最終確定ボタンの手前で待機しています</strong>
+                    </div>
+                    <div style="display:flex; gap:5px; margin-top:6px;">
+                      <div style="flex:1; background:#38bdf8; color:#0f172a; text-align:center; font-weight:900; font-size:9px; padding:4px; border-radius:5px;">✔ 画面を確認して承認</div>
+                      <div style="background:#334155; color:#ffffff; font-size:8.8px; padding:4px 7px; border-radius:5px;">自分で引き継ぐ</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">配車・注文・予約などの対応アプリをAIが裏の仮想画面で操作！決済・確定の直前で必ず確認が来るので誤発注もゼロ。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCENE 04 -->
+        <div class="scene-card">
+          <div class="scene-header">
+            <div class="scene-title-group">
+              <span class="scene-num">SCENE 04</span>
+              <h3 class="scene-h3">Pixel 11限定『Pixel Solver』— 電卓が「ロット逆算＆粗利シミュレーター」に変身</h3>
+            </div>
+            <span class="exclusive-pill">Pixel 11シリーズ専売（10も非対応）</span>
+          </div>
+
+          <div class="ba-grid">
+            <div class="ba-col ba-before">
+              <div class="ba-label"><span class="tag-before">BEFORE｜Pixel 9</span><span>ただの四則演算電卓</span></div>
+              <div class="phone-ui">
+                <div class="status-bar"><span>21:05</span><span class="punch-hole"></span><span>Wi-Fi</span></div>
+                <div class="ui-body">
+                  <div style="background:#f1f5f9; border-radius:6px; padding:8px; text-align:right; font-family:monospace; font-size:13px; font-weight:800; color:#334155; margin-bottom:5px;">
+                    1500000 × 0.015 ÷ ...?
+                  </div>
+                  <div style="font-size:9px; color:#64748b; line-height:1.4;">
+                    ・1pipsの価値っていくらだっけ？<br />
+                    ・損切り幅を変えたら何ロットになる？<br />
+                    ・複数拠点の単価比較も毎回打ち直し…
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">少しでも条件が複雑な計算になると、結局PCを開いてスプレッドシートを触る羽目になっていた。</div>
+            </div>
+
+            <div class="ba-arrow">➔</div>
+
+            <div class="ba-col ba-after">
+              <div class="ba-label"><span class="tag-after">✨ AFTER｜Pixel 11</span><span>話し言葉で多段階試算＆マイ電卓テンプレ化</span></div>
+              <div class="phone-ui p11-frame">
+                <div class="status-bar"><span>21:05</span><span class="punch-hole"></span><span>Wi-Fi</span></div>
+                <div class="ui-body">
+                  <div style="background:#f5f3ff; border:1px solid #c4b5fd; border-radius:6px; padding:4px 7px; font-size:9px; font-weight:700; color:#4c1d95; margin-bottom:5px;">
+                    💬「証拠金150万円・許容損失1.5%・損切り25pips（クロス円）の適正ロットは？」
+                  </div>
+                  <div style="background:#0f172a; color:#ffffff; border-radius:7px; padding:6px 8px;">
+                    <div style="display:flex; justify-content:space-between; align-items:baseline; border-bottom:1px solid #334155; padding-bottom:3px; margin-bottom:4px;">
+                      <span style="font-size:9px; color:#a7f3d0; font-weight:800;">✨ Pixel Solver 算出結果</span>
+                      <span style="font-size:14px; font-weight:900; color:#38bdf8;">0.90 Lot（9万通貨）</span>
+                    </div>
+                    <div style="font-size:8.6px; color:#cbd5e1; line-height:1.35;">
+                      ① 最大許容損失：¥1,500,000 × 1.5% ＝ <strong>¥22,500</strong><br />
+                      ② 25pips逆行時の1Lot損失：¥25,000 → <strong>0.90 Lotでピタリ収まります</strong>
+                    </div>
+                    <div style="margin-top:4px; background:#1e293b; color:#fde68a; font-size:8.5px; font-weight:800; padding:2.5px 6px; border-radius:4px; text-align:center;">
+                      📌 「FXロット計算機」として電卓テンプレに固定済（数値変更も1秒）
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">一度言葉で作らせれば「自分専用の計算機テンプレート」として保存可能！社内の利益率・単価試算にも超便利。</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-strip">
+          <div class="sub-box">
+            <h4>📚 渡した資料だけで答える『Gemini Notebook』統合</h4>
+            <p>社内規定PDFや検証レポートを読み込ませ、「この資料だけを根拠に答えて」とハルシネーション（推測混入）ゼロで要点抽出・質問ができます。</p>
+          </div>
+          <div class="sub-box">
+            <h4>🛡️ 巧妙なSMS・通知を見抜く『オンデバイスAI詐欺検出』</h4>
+            <p>宅配業者や金融機関を装う不審なメッセージを、外部サーバーに送らず端末内AIがリアルタイム解析して即座に赤色アラートで警告します。</p>
+          </div>
+        </div>
+
+        <div class="try-now-box">
+          <span class="try-now-kicker">🎯 届いたら30秒実験！</span>
+          <div class="try-now-text">
+            標準の「電卓」を開いて <strong>✨ Pixel Solver</strong> をタップし、<strong>「残高100万円・許容損失2%・損切り20pipsの適正ロット数を計算機にして」</strong>と話しかけてみてください！
+          </div>
+        </div>
+      </div>
+
+      <div class="page-foot">
+        <span>🔒 PRIVATE BASE ONLY — AI EVOLUTION 02 (AGENT &amp; SOLVER)</span>
+        <span>3 / 6</span>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 4 : FDE HARDWARE, CAMERA & MULTITASK ==================== -->
+    <section class="a4-page" id="page-4">
+      <div>
+        <div class="page-head">
+          <div class="page-kicker">
+            <span class="cat-tag" style="background:var(--emerald);">FDE &amp; CAMERA 03</span>
+            <span>5X OPTICAL TELEPHOTO • MAGIC CAPTURE • PIXELSNAP</span>
+          </div>
+          <div style="font-size:10px; font-weight:800; color:var(--emerald);">無印モデル最大のハードウェア飛び級</div>
+        </div>
+
+        <div class="page-title-row">
+          <h2 class="page-h2">遠いホワイトボードも席から光学5倍で一発AI化、動画から最高写真も自動切り出し</h2>
+          <p class="page-lead">これまでProモデルだけの特権だった「望遠レンズ」と、iPhone勢が羨む「本体内蔵マグネット急速充電」が無印Pixel 11に集結。</p>
+        </div>
+
+        <!-- SCENE 05 -->
+        <div class="scene-card">
+          <div class="scene-header">
+            <div class="scene-title-group">
+              <span class="scene-num">SCENE 05</span>
+              <h3 class="scene-h3">無印初の『光学5倍望遠（最大30倍）』× カメラ直結『かこって検索』</h3>
+            </div>
+            <span class="exclusive-pill blue">Pixel 9は望遠レンズ非搭載！</span>
+          </div>
+
+          <div class="ba-grid">
+            <div class="ba-col ba-before">
+              <div class="ba-label"><span class="tag-before">BEFORE｜Pixel 9</span><span>デジタル引き伸ばしで文字が潰れる</span></div>
+              <div class="phone-ui">
+                <div class="status-bar"><span>14:00</span><span class="punch-hole"></span><span>Camera</span></div>
+                <div class="ui-body">
+                  <div class="cam-finder">
+                    <div class="wb-board wb-blur">
+                      【業務フロー改善案】<br />
+                      ① 受注データ取込 → ② 在庫引当チェック<br />
+                      ※例外コード #402 は手動確認…
+                    </div>
+                    <div class="zoom-pills">
+                      <span class="z-pill">.5</span><span class="z-pill">1x</span><span class="z-pill active">2x (デジタル限界)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">会議室の端や倉庫の遠い棚ラベルを撮ると文字が滲み、AIに読ませても読み取りミスが起きやすかった。</div>
+            </div>
+
+            <div class="ba-arrow">➔</div>
+
+            <div class="ba-col ba-after">
+              <div class="ba-label"><span class="tag-after">✨ AFTER｜Pixel 11</span><span>専用5倍望遠レンズ＋シャッター不要で丸囲み解析</span></div>
+              <div class="phone-ui p11-frame">
+                <div class="status-bar"><span>14:00</span><span class="punch-hole"></span><span>Camera 5x</span></div>
+                <div class="ui-body">
+                  <div class="cam-finder">
+                    <div class="wb-board">
+                      <div class="circle-lasso">
+                        【業務フロー改善案】<br />
+                        ① 受注データ取込 → ② 在庫引当チェック
+                      </div>
+                      <div style="font-size:8.2px; color:#0284c7; margin-top:2px;">✨ かこって検索 / Geminiへ即テキスト抽出！</div>
+                    </div>
+                    <div class="zoom-pills">
+                      <span class="z-pill">.5</span><span class="z-pill">1x</span><span class="z-pill">2x</span><span class="z-pill active">5x 光学</span><span class="z-pill">30x</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">席に座ったまま光学5倍でクッキリ捕捉！さらに写真を撮らなくてもファインダー上で指で囲むだけで検索・翻訳・文字起こしが完結。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCENE 06 -->
+        <div class="scene-card">
+          <div class="scene-header">
+            <div class="scene-title-group">
+              <span class="scene-num">SCENE 06</span>
+              <h3 class="scene-h3">Pixel 11専売『マジック キャプチャー』＆ 原稿が流れる『クリエイター スイート』</h3>
+            </div>
+            <span class="exclusive-pill">家族イベント＆社内動画で大活躍</span>
+          </div>
+
+          <div class="ba-grid">
+            <div class="ba-col ba-before">
+              <div class="ba-label"><span class="tag-before">BEFORE｜Pixel 9</span><span>画面を凝視してシャッター連打</span></div>
+              <div class="phone-ui">
+                <div class="status-bar"><span>11:30</span><span class="punch-hole"></span><span>Photo</span></div>
+                <div class="ui-body">
+                  <div style="background:#f1f5f9; border-radius:6px; padding:9px; text-align:center; font-size:9.2px; color:#64748b;">
+                    📸 パシャッ → 「あっ、目をつぶった！」<br />
+                    🎥 動画モードに切替 → 「今の笑顔、写真でも欲しかった…」
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">決定的瞬間を逃さないようスマホ画面ばかり見ることになり、自分の目でその場を楽しめなかった。</div>
+            </div>
+
+            <div class="ba-arrow">➔</div>
+
+            <div class="ba-col ba-after">
+              <div class="ba-label"><span class="tag-after">✨ AFTER｜Pixel 11</span><span>1タップ録画→AIが約400フレームから最高写真を自動納品</span></div>
+              <div class="phone-ui p11-frame">
+                <div class="status-bar"><span>11:30</span><span class="punch-hole"></span><span>Magic Capture</span></div>
+                <div class="ui-body">
+                  <div style="background:#0f172a; color:#ffffff; border-radius:7px; padding:6px 8px;">
+                    <div style="font-size:8.8px; color:#fde68a; font-weight:800;">✨ マジック キャプチャー解析完了（400フレーム走査）</div>
+                    <div class="frame-strip">
+                      <div class="frame-card">🏆 Best #1<br /><span style="font-size:7.5px; color:#94a3b8;">笑顔＋ブレ補正済</span></div>
+                      <div class="frame-card">✨ Best #2<br /><span style="font-size:7.5px; color:#94a3b8;">黄金比トリミング</span></div>
+                      <div class="frame-card">🎬 元動画<br /><span style="font-size:7.5px; color:#94a3b8;">高画質クリップ保存</span></div>
+                    </div>
+                    <div style="margin-top:5px; font-size:8.5px; color:#cbd5e1; border-top:1px solid #334155; padding-top:3px;">
+                      📜 <strong>クリエイタースイート内蔵：</strong>カメラ画面上に台本を自動スクロール表示（ショート動画や現場マニュアル撮影でカンペ不要！）
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-caption">スマホを向けて回すだけで「動画」と「プロ並みに整えたベスト静止画」が両方同時に手に入る！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hardware & Multitask Strip -->
+        <div class="sub-strip">
+          <div class="sub-box" style="background:#ecfdf5; border-color:#6ee7b7;">
+            <h4>🧲 本体磁石『Pixelsnap (Qi2.2・25W)』＋ カメラ突起40%薄型化</h4>
+            <p>会社のデスクのマグネット充電スタンドに「カチッ」と貼るだけで25W急速充電しながらサブ画面化。背面の出っ張りも40%薄くなり、机に平置きして音声入力してもガタつきません。</p>
+          </div>
+          <div class="sub-box" style="background:#eff6ff; border-color:#93c5fd;">
+            <h4>📱 Android 17『90:10 分割画面』でスマホFDE検品が爆速化</h4>
+            <p>画面の90%でテスト中のWebアプリ（<code>/dev</code>）を触りながら、上部10%にサイボウズや指示メモをチラ見待機。10%バーを1タップするだけで上下の主役が瞬時に入れ替わります！</p>
+          </div>
+        </div>
+
+        <div class="try-now-box">
+          <span class="try-now-kicker">🎯 届いたら30秒実験！</span>
+          <div class="try-now-text">
+            部屋の端から<strong>カメラの「5x」を押して遠くの細かい文字</strong>を映し、シャッターを切らずに画面下のバー長押しで<strong>指でグルッと囲んで</strong>テキスト抽出してみてください！
+          </div>
+        </div>
+      </div>
+
+      <div class="page-foot">
+        <span>🔒 PRIVATE BASE ONLY — FDE HARDWARE &amp; CAMERA AI</span>
+        <span>4 / 6</span>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 5 : STEALTH FX VAULT ARCHITECTURE ==================== -->
+    <section class="a4-page" id="page-5">
+      <div>
+        <div class="page-head">
+          <div class="page-kicker">
+            <span class="cat-tag" style="background:#0f172a; color:#fbbf24;">🔒 SECRET BASE 04</span>
+            <span>TITAN M3 × ANDROID 17 TWO-STORY STEALTH ARCHITECTURE</span>
+          </div>
+          <div style="font-size:10px; font-weight:900; color:#b45309;">公私4重隔離・自動売買ステルス設計</div>
+        </div>
+
+        <div class="page-title-row">
+          <h2 class="page-h2">社員にスマホを渡してもFX露出ゼロ × 重要アラートだけは日中に即キャッチ</h2>
+          <p class="page-lead">「プライベートスペースをロックすると中の通知も止まる」仕様を逆手に取った、表と裏の『2階建てステルス運用』が完成形です。</p>
+        </div>
+
+        <!-- Top Isometric Concept Banner -->
+        <div class="vault-banner">
+          <div class="vault-logic">
+            <h3>💡 なぜ「2階建て」にするのか？</h3>
+            <p>Androidの隠し金庫（プライベートスペース）は、ロックすると中のアプリが完全停止し<strong>通知も一切鳴らなくなります</strong>。そのため「発注・チャート本体は地下金庫で完全消滅」させつつ、「重要サイン通知だけ業務監視風の1行コードで1階へ届ける」のが最強の解です。</p>
+            <span class="vault-rule-tag">🛡️ 耐量子暗号チップ「Titan M3」が金庫領域をハードウェア保護</span>
+          </div>
+          <img src="./assets/pixel11-vault.jpg" alt="2-Layer Digital Vault Architecture" />
+        </div>
+
+        <!-- Dual Screen Actual UI Mockups -->
+        <div class="dual-screen-grid">
+          <!-- 1F: Office Daytime Screen -->
+          <div class="floor-card floor-1f">
+            <span class="floor-badge">🏢 1階：普段の社内モード（社員に見せても100%クリーン）</span>
+            <h3 class="floor-title" style="color:#0c4a6e;">画面上のFXアイコン0個 × ステルス1行通知</h3>
+
+            <div class="phone-ui">
+              <div class="status-bar"><span>15:02（社内打合せ中）</span><span class="punch-hole"></span><span>5G</span></div>
+              <div class="ui-body">
+                <div class="notif-card">
+                  <div style="display:flex; justify-content:space-between; font-size:8.5px; color:#64748b; font-weight:700;">
+                    <span>⚙️ System Monitor（Webhook / 専用通知）</span><span>今</span>
+                  </div>
+                  <div style="font-size:10.2px; font-weight:900; color:#0f172a; margin-top:2px;">
+                    📌 [Node-A1] Status Check Required (#104)
+                  </div>
+                </div>
+                <div style="font-size:8.5px; color:#64748b; margin:4px 0 2px; font-weight:700;">普段のホーム画面・アプリ一覧：</div>
+                <div class="app-grid-4">
+                  <div class="app-icon app-clean">📧<br />Gmail</div>
+                  <div class="app-icon app-clean">📅<br />予定表</div>
+                  <div class="app-icon app-clean">🏢<br />サイボウズ</div>
+                  <div class="app-icon app-clean">✨<br />Gemini</div>
+                </div>
+                <div style="font-size:8.6px; color:#0369a1; font-weight:800; background:#e0f2fe; padding:3.5px 6px; border-radius:5px; margin-top:4px;">
+                  🔒 画面共有・録画中はOSが自動で全通知ポップアップを遮断！
+                </div>
+              </div>
+            </div>
+            <div class="ui-caption" style="color:#0c4a6e;">
+              TradingViewの決済・異常アラートをWebhook等で「システム監視風の英語1行」に変換して受信。社員が横から見てもFXとは絶対に分かりません。
+            </div>
+          </div>
+
+          <!-- B1F: Private Space Vault Screen -->
+          <div class="floor-card floor-b1">
+            <span class="floor-badge">🔑 地下1階：プライベートスペース（別指紋で3秒解錠）</span>
+            <h3 class="floor-title" style="color:#fef3c7;">席を外した瞬間だけ現れる「自動売買コックピット」</h3>
+
+            <div class="phone-ui" style="border-color:#f59e0b; background:#0f172a; color:#ffffff;">
+              <div class="status-bar" style="background:#1e293b;"><span>15:03</span><span style="color:#fbbf24;">🔓 Private Vault</span><span>VPN</span></div>
+              <div class="ui-body">
+                <div style="font-size:8.5px; color:#94a3b8; margin-bottom:4px;">個人専用Googleアカウント（社内履歴・写真と完全分離）：</div>
+                <div class="app-grid-4">
+                  <div class="app-icon app-secret">📈<br />MT5</div>
+                  <div class="app-icon app-secret">📊<br />TradingView</div>
+                  <div class="app-icon app-secret">🏦<br />証券アプリ</div>
+                  <div class="app-icon app-secret">🔐<br />秘密基地</div>
+                </div>
+                <div style="background:#1e293b; border:1px solid #334155; border-radius:6px; padding:5px 7px; font-size:8.8px; color:#e2e8f0; margin-top:5px; line-height:1.38;">
+                  ✅ ポジション確認・緊急決済を実行<br />
+                  ✅ 画面を消した瞬間に<strong>自動で再ロック＆アイコン完全消滅</strong>（マルチタスク履歴にも一切残りません）
+                </div>
+              </div>
+            </div>
+            <div class="ui-caption" style="color:#fde68a;">
+              通知で異常に気づいたら、休憩スペースで専用指紋を当てるだけ。使い終わって画面を閉じれば再び影も形も消え去ります。
+            </div>
+          </div>
+        </div>
+
+        <!-- Titan M3 & Linux Emergency Strip -->
+        <div class="sub-strip">
+          <div class="sub-box">
+            <h4>🚨 外出先の盗難でも鉄壁『本人確認（Identity Check）』</h4>
+            <p>自宅や会社以外の場所（信頼できる場所以外）では、万が一PINコードを盗み見られても<strong>生体認証（指紋・顔）なしでは重要設定やパスワード金庫を一切開けない</strong>Android 17の強力ロックです。</p>
+          </div>
+          <div class="sub-box">
+            <h4>💻 緊急時のポケット母艦『Linuxターミナル（Debian標準内蔵）』</h4>
+            <p>PCを持っていない外出先で自動売買のPineコードや検証スクリプトを緊急修正したい時、開発者向けオプションから本物のDebian Linuxを起動して <code>git</code> や <code>python3</code>・SSHが叩けます。</p>
+          </div>
+        </div>
+
+        <div class="try-now-box">
+          <span class="try-now-kicker">🔑 ステルス通知テンプレ</span>
+          <div class="try-now-text">
+            TradingViewのアラート本文を <strong><code>[Monitor] Node-{{ticker}} Check ({{interval}})</code></strong> のようなシステム監視ログ形式にしておけば、万が一チラ見えしても100%社内インフラ通知に見えます。
+          </div>
+        </div>
+      </div>
+
+      <div class="page-foot">
+        <span>🔒 PRIVATE BASE ONLY — TWO-STORY FX STEALTH VAULT</span>
+        <span>5 / 6</span>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 6 : DAY-1 SETUP RECIPE & BUG AVOIDANCE ==================== -->
+    <section class="a4-page" id="page-6">
+      <div>
+        <div class="page-head">
+          <div class="page-kicker">
+            <span class="cat-tag" style="background:var(--rose);">ACTION CHECKLIST 05</span>
+            <span>5-MINUTE INITIAL SETUP &amp; CRITICAL TRAP AVOIDANCE</span>
+          </div>
+          <div style="font-size:10px; font-weight:800; color:var(--rose);">保存版・箱を開けたら見るページ</div>
+        </div>
+
+        <div class="page-title-row">
+          <h2 class="page-h2">到着初日に上からなぞるだけ！「覚醒7ステップ」＆ 絶対に踏まない2つの罠</h2>
+          <p class="page-lead">データ移行が終わったら、このページの通りに5分設定するだけで「AIフル稼働 × 社内完全ステルス」が完成します。</p>
+        </div>
+
+        <!-- CRITICAL TRAP BOX -->
+        <div class="trap-box">
+          <div class="trap-head">
+            <span>⚠️【最重要】2026年11月現在の既知バグ：「ダークモード自動切替」は必ずOFFにする！</span>
+            <span style="background:#e11d48; color:#fff; font-size:9px; padding:2px 7px; border-radius:999px;">Android 17 QPR2 注意報</span>
+          </div>
+          <div style="font-size:10px; color:#881337; line-height:1.4;">
+            プライベートスペースを「アプリ一覧から非表示」に設定していても、<strong>時間帯（日の入り〜日の出）でライト／ダークが自動切替わると、アプリ一覧の一番下に隠し金庫の枠がひょっこり現れてしまう現象</strong>が確認されています。
+          </div>
+          <div class="trap-compare">
+            <div class="trap-ng">
+              <strong style="color:#be123c;">❌ 危険な設定（バグ誘発）</strong><br />
+              ダークテーマのスケジュール：「日の入りから日の出まで」をON → 夕方に切り替わった瞬間、隠したはずのプライベートスペース入口が露出！
+            </div>
+            <div class="trap-ok">
+              <strong style="color:#047857;">⭕ 鉄壁の設定（100%回避）</strong><br />
+              <code>設定 ＞ ディスプレイとタップ ＞ ダークテーマ</code> のスケジュールを<strong>「なし（ライト固定 または ダーク固定）」</strong>にするだけで完全防止！
+            </div>
+          </div>
+        </div>
+
+        <!-- 7-STEP CHECKLIST -->
+        <div class="setup-list">
+          <div class="setup-item">
+            <div class="setup-check">1</div>
+            <div class="setup-main">
+              <strong>画面テーマを「手動固定」にしてステルス露出バグを封じる</strong>
+              <span class="setup-path">設定 ＞ ディスプレイとタップ ＞ ダークテーマ ＞ スケジュール「なし」</span>
+            </div>
+            <span class="setup-tag" style="background:#ffe4e6; color:#be123c;">🔒 ステルス必須</span>
+          </div>
+
+          <div class="setup-item">
+            <div class="setup-check">2</div>
+            <div class="setup-main">
+              <strong>地下金庫「プライベートスペース」を別アカウント＆専用指紋で作る</strong>
+              <span class="setup-path">設定 ＞ セキュリティとプライバシー ＞ プライベートスペース（自動ロック＝画面オフ時／非表示ON）</span>
+            </div>
+            <span class="setup-tag" style="background:#fef3c7; color:#92400e;">🔑 地下金庫</span>
+          </div>
+
+          <div class="setup-item">
+            <div class="setup-check">3</div>
+            <div class="setup-main">
+              <strong>MT4/MT5・TradingView本体を「地下金庫の中だけ」にインストールする</strong>
+              <span class="setup-path">アプリ一覧最下部で検索「プライベートスペース」＞ 専用指紋で解錠 ＞ 中のPlayストアから導入</span>
+            </div>
+            <span class="setup-tag" style="background:#fef3c7; color:#92400e;">📈 FX隔離</span>
+          </div>
+
+          <div class="setup-item">
+            <div class="setup-check">4</div>
+            <div class="setup-main">
+              <strong>ロック画面の機密通知オフ ＆ 外出先盗難ガード「本人確認」をONにする</strong>
+              <span class="setup-path">設定 ＞ 通知 ＞ 機密性の高い通知をOFF ／ セキュリティ ＞ デバイスのロック解除 ＞ 本人確認ON</span>
+            </div>
+            <span class="setup-tag" style="background:#e0f2fe; color:#0369a1;">🛡️ Titan M3防衛</span>
+          </div>
+
+          <div class="setup-item">
+            <div class="setup-check">5</div>
+            <div class="setup-main">
+              <strong>Gboardの「AI音声入力（言い直し自動修正）」＆「文章作成ツール」をON</strong>
+              <span class="setup-path">キーボードの⚙️設定 ＞ 音声入力 ＞ AI音声入力（シームレス整形）をON</span>
+            </div>
+            <span class="setup-tag" style="background:#f3e8ff; color:#6d28d9;">🎤 AI覚醒</span>
+          </div>
+
+          <div class="setup-item">
+            <div class="setup-check">6</div>
+            <div class="setup-main">
+              <strong>LINE日程調整が動くよう「パーソナルインテリジェンス（先回りアシスト）」をON</strong>
+              <span class="setup-path">Geminiアプリ ＞ 右上アイコン ＞ 設定 ＞ パーソナルインテリジェンス（表アカウントのみ接続）</span>
+            </div>
+            <span class="setup-tag" style="background:#f3e8ff; color:#6d28d9;">✨ AI先回り</span>
+          </div>
+
+          <div class="setup-item">
+            <div class="setup-check">7</div>
+            <div class="setup-main">
+              <strong>電卓アプリを開いて「FXロット逆算テンプレート」を1個作っておく</strong>
+              <span class="setup-path">電卓アプリ ＞ ✨ Pixel Solver ＞ 許容損失％と損切りpipsからのロット算出を保存</span>
+            </div>
+            <span class="setup-tag" style="background:#dcfce7; color:#047857;">🧮 11専売</span>
+          </div>
+        </div>
+
+        <div class="try-now-box" style="margin-top:9px;">
+          <span class="try-now-kicker">🚀 COMPLETE!</span>
+          <div class="try-now-text">
+            この7ステップ（所要約5分）を終えた瞬間、Pixel 11は<strong>「社内最強のFDE推進ツール」兼「誰にも見えない自動売買の要塞」</strong>としてフル稼働します！（Bluetooth 6.0 / Wi-Fi 6E 対応）
+          </div>
+        </div>
+      </div>
+
+      <div class="page-foot">
+        <span>🔒 PRIVATE BASE ONLY — PIXEL 11 MASTER BOOK COMPLETE</span>
+        <span>6 / 6</span>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
