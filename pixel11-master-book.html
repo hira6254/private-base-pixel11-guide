@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="robots" content="noindex, nofollow, noarchive" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pixel 9 → Pixel 11 脳科学ビジュアル進化図鑑（🔒秘密基地 第2版）</title>
+  <title>Pixel 9 → Pixel 11 特濃AI＆ステルス完全バイブル（🔒秘密基地 全10P 第3版）</title>
   <style>
     :root {
       --ink: #0f172a;
@@ -33,8 +33,8 @@
       background: #94a3b8;
       color: var(--ink);
       font-family: "Noto Sans CJK JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", "Yu Gothic UI", "Meiryo", "Noto Color Emoji", system-ui, sans-serif;
-      line-height: 1.45;
-      font-size: 11.5px;
+      line-height: 1.44;
+      font-size: 11.4px;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -43,7 +43,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(15, 23, 42, 0.95);
+      background: rgba(15, 23, 42, 0.96);
       backdrop-filter: blur(10px);
       color: #ffffff;
       padding: 10px 16px;
@@ -52,7 +52,7 @@
     }
 
     .web-toolbar-inner {
-      max-width: 830px;
+      max-width: 840px;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -95,16 +95,8 @@
       border-radius: 8px;
     }
 
-    .tb-btn-primary {
-      background: #38bdf8;
-      color: #0f172a;
-    }
-
-    .tb-btn-ghost {
-      background: rgba(255, 255, 255, 0.14);
-      color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.25);
-    }
+    .tb-btn-primary { background: #38bdf8; color: #0f172a; }
+    .tb-btn-ghost { background: rgba(255, 255, 255, 0.14); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.25); }
 
     /* Book Pages */
     .book-wrap {
@@ -119,7 +111,7 @@
       width: 210mm;
       height: 297mm;
       background: #ffffff;
-      padding: 9.5mm 11.5mm 9mm;
+      padding: 9.5mm 11.5mm 8.5mm;
       position: relative;
       overflow: hidden;
       box-shadow: 0 16px 40px rgba(15, 23, 42, 0.32);
@@ -134,7 +126,7 @@
       justify-content: space-between;
       padding-bottom: 5px;
       border-bottom: 2px solid var(--ink);
-      margin-bottom: 7px;
+      margin-bottom: 6px;
     }
 
     .page-kicker {
@@ -143,7 +135,7 @@
       gap: 7px;
       font-size: 10px;
       font-weight: 900;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
       color: var(--ink-sub);
     }
 
@@ -154,30 +146,32 @@
       font-size: 9.8px;
       font-weight: 900;
       color: #ffffff;
+      white-space: nowrap;
     }
 
     .neuro-pill {
-      font-size: 9.8px;
+      font-size: 9.4px;
       font-weight: 900;
       padding: 2px 9px;
       border-radius: 999px;
       background: #fef3c7;
       color: #92400e;
       border: 1px solid #fcd34d;
+      white-space: nowrap;
     }
 
     .page-h2 {
       margin: 0 0 2px;
-      font-size: 18px;
+      font-size: 17.6px;
       font-weight: 900;
-      line-height: 1.25;
+      line-height: 1.24;
       color: var(--ink);
       letter-spacing: -0.01em;
     }
 
     .page-lead {
-      margin: 0 0 8px;
-      font-size: 10.8px;
+      margin: 0 0 7px;
+      font-size: 10.5px;
       color: var(--ink-sub);
       font-weight: 600;
     }
@@ -194,19 +188,19 @@
       margin-top: auto;
     }
 
-    /* ================= PAGE 1 : VISUAL COVER & DAY SIMULATION ================= */
+    /* ================= PAGE 1 : COVER ================= */
     .cover-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 2.5px solid var(--ink);
       padding-bottom: 5px;
-      margin-bottom: 7px;
+      margin-bottom: 8px;
     }
 
     .cover-hero {
       position: relative;
-      height: 100mm;
+      height: 98mm;
       border-radius: 14px;
       overflow: hidden;
       margin-bottom: 9px;
@@ -225,40 +219,33 @@
     .cover-hero-grad {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(9, 13, 22, 0.18) 0%, rgba(9, 13, 22, 0.52) 52%, rgba(9, 13, 22, 0.94) 100%);
-      padding: 14px 16px;
+      background: linear-gradient(180deg, rgba(9, 13, 22, 0.18) 0%, rgba(9, 13, 22, 0.5) 52%, rgba(9, 13, 22, 0.95) 100%);
+      padding: 13px 16px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       color: #ffffff;
     }
 
-    .chip-row {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
+    .chip-row { display: flex; gap: 6px; flex-wrap: wrap; }
 
     .glass-chip {
-      background: rgba(15, 23, 42, 0.78);
-      border: 1px solid rgba(56, 189, 248, 0.6);
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(56, 189, 248, 0.65);
       color: #e0f2fe;
-      font-size: 9.8px;
+      font-size: 9.6px;
       font-weight: 800;
       padding: 2.5px 9px;
       border-radius: 999px;
     }
 
-    .glass-chip.gold {
-      border-color: #fbbf24;
-      color: #fef3c7;
-    }
+    .glass-chip.gold { border-color: #fbbf24; color: #fef3c7; }
 
     .cover-h1 {
       margin: 0 0 4px;
-      font-size: 25px;
+      font-size: 24.5px;
       font-weight: 900;
-      line-height: 1.22;
+      line-height: 1.2;
       text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
     }
 
@@ -266,44 +253,30 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 8px;
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
 
     .kpi-pill-card {
       background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
       color: #ffffff;
       border-radius: 10px;
-      padding: 9px 11px;
+      padding: 8px 11px;
       border-left: 4px solid #38bdf8;
     }
 
     .kpi-pill-card.k2 { border-left-color: #a855f7; }
     .kpi-pill-card.k3 { border-left-color: #fbbf24; }
-
-    .kpi-small {
-      font-size: 9.2px;
-      font-weight: 800;
-      color: #94a3b8;
-    }
-
-    .kpi-big {
-      font-size: 15.5px;
-      font-weight: 900;
-      color: #ffffff;
-      line-height: 1.22;
-      margin: 2px 0;
-    }
-
+    .kpi-small { font-size: 9px; font-weight: 800; color: #94a3b8; }
+    .kpi-big { font-size: 15px; font-weight: 900; color: #ffffff; line-height: 1.2; margin: 2px 0; }
     .kpi-big span { color: #38bdf8; }
     .kpi-pill-card.k2 .kpi-big span { color: #d8b4fe; }
     .kpi-pill-card.k3 .kpi-big span { color: #fbbf24; }
 
-    /* 4-Scene Mirror Neuron Photo Filmstrip on Cover */
     .filmstrip-title {
-      font-size: 11.2px;
+      font-size: 11px;
       font-weight: 900;
       color: var(--ink);
-      margin: 0 0 6px;
+      margin: 0 0 5px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -313,7 +286,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 7px;
-      margin-bottom: 10px;
+      margin-bottom: 9px;
     }
 
     .film-card {
@@ -325,101 +298,63 @@
       position: relative;
     }
 
-    .film-card img {
-      width: 100%;
-      height: 41mm;
-      object-fit: cover;
-      display: block;
-    }
+    .film-card img { width: 100%; height: 39mm; object-fit: cover; display: block; }
 
     .film-time {
       position: absolute;
       top: 5px;
       left: 5px;
-      background: rgba(15, 23, 42, 0.85);
+      background: rgba(15, 23, 42, 0.86);
       color: #fbbf24;
-      font-size: 8.5px;
+      font-size: 8.4px;
       font-weight: 900;
       padding: 1.5px 6px;
       border-radius: 999px;
       border: 1px solid rgba(251, 191, 36, 0.5);
     }
 
-    .film-cap {
-      padding: 6px 7px;
-      font-size: 9.4px;
-      line-height: 1.35;
-      font-weight: 700;
-      color: #f1f5f9;
-    }
+    .film-cap { padding: 5.5px 7px; font-size: 9.2px; line-height: 1.32; font-weight: 700; color: #f1f5f9; }
+    .film-cap strong { display: block; color: #7dd3fc; font-size: 9.8px; margin-bottom: 1px; }
 
-    .film-cap strong {
-      display: block;
-      color: #7dd3fc;
-      font-size: 10px;
-      margin-bottom: 2px;
-    }
-
-    /* Compact Cover Matrix */
-    .mini-matrix {
-      border: 1.5px solid var(--ink);
-      border-radius: 10px;
-      overflow: hidden;
-    }
-
+    .mini-matrix { border: 1.5px solid var(--ink); border-radius: 10px; overflow: hidden; }
     .mini-matrix-head {
       background: var(--ink);
       color: #ffffff;
-      padding: 5.5px 10px;
-      font-size: 10.5px;
+      padding: 5px 10px;
+      font-size: 10.2px;
       font-weight: 900;
       display: flex;
       justify-content: space-between;
     }
-
-    .mini-matrix table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 10px;
-    }
-
-    .mini-matrix td {
-      padding: 5.2px 8px;
-      border-bottom: 1px solid var(--line);
-    }
-
+    .mini-matrix table { width: 100%; border-collapse: collapse; font-size: 9.6px; }
+    .mini-matrix td { padding: 4.5px 8px; border-bottom: 1px solid var(--line); }
     .mini-matrix tr:last-child td { border-bottom: none; }
-    .mm-cat { width: 19%; font-weight: 900; background: #f8fafc; }
-    .mm-old { width: 34%; color: #64748b; text-decoration: line-through; text-decoration-color: #cbd5e1; }
+    .mm-cat { width: 20%; font-weight: 900; background: #f8fafc; }
+    .mm-old { width: 33%; color: #64748b; text-decoration: line-through; text-decoration-color: #cbd5e1; }
     .mm-new { width: 47%; font-weight: 900; background: #f0f9ff; color: #0f172a; }
 
-    /* ================= APPLE/GOOGLE VISUAL SCENE SPREAD CARD ================= */
+    /* ================= VISUAL SHOWCASE CARDS (PAGES 2-6, 8) ================= */
     .visual-showcase {
       border-radius: 13px;
       border: 1.5px solid #cbd5e1;
       overflow: hidden;
       background: #ffffff;
-      margin-bottom: 11px;
+      margin-bottom: 10px;
       box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
     }
 
     .vs-top-photo-row {
       display: grid;
       grid-template-columns: 1.12fr 1fr;
-      min-height: 82mm;
+      min-height: 84mm;
     }
 
-    .vs-photo-pane {
-      position: relative;
-      background: #0f172a;
-      overflow: hidden;
-    }
-
+    .vs-photo-pane { position: relative; background: #0f172a; overflow: hidden; }
     .vs-photo-pane img {
       width: 100%;
       height: 100%;
-      min-height: 82mm;
-      max-height: 85mm;
+      min-height: 84mm;
+      max-height: 87mm;
       object-fit: cover;
       display: block;
     }
@@ -427,27 +362,22 @@
     .vs-photo-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(15, 23, 42, 0.15) 0%, rgba(15, 23, 42, 0.18) 45%, rgba(15, 23, 42, 0.9) 100%);
-      padding: 8px 10px;
+      background: linear-gradient(180deg, rgba(15, 23, 42, 0.16) 0%, rgba(15, 23, 42, 0.18) 48%, rgba(15, 23, 42, 0.93) 100%);
+      padding: 9px 11px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       color: #ffffff;
     }
 
-    .vs-badge-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 4px;
-    }
+    .vs-badge-top { display: flex; justify-content: space-between; align-items: center; gap: 4px; }
 
     .time-trigger {
       background: rgba(15, 23, 42, 0.85);
       color: #fbbf24;
       font-size: 9px;
       font-weight: 900;
-      padding: 2px 7px;
+      padding: 2px 8px;
       border-radius: 999px;
       border: 1px solid rgba(251, 191, 36, 0.55);
     }
@@ -457,31 +387,30 @@
       color: #052e16;
       font-size: 9px;
       font-weight: 900;
-      padding: 2px 7px;
+      padding: 2px 8px;
       border-radius: 999px;
     }
 
     .vs-scene-copy strong {
       display: block;
-      font-size: 13px;
+      font-size: 13.2px;
       font-weight: 900;
       line-height: 1.25;
       color: #ffffff;
-      margin-bottom: 2px;
-      text-shadow: 0 1px 6px rgba(0,0,0,0.7);
+      margin-bottom: 3px;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.75);
     }
 
     .vs-scene-copy span {
       font-size: 9.6px;
       color: #e2e8f0;
       font-weight: 600;
-      line-height: 1.32;
+      line-height: 1.35;
       display: block;
     }
 
-    /* Right Side Crisp Screen Zoom */
     .vs-screen-pane {
-      padding: 8px 10px;
+      padding: 9px 11px;
       background: linear-gradient(180deg, #f8fafc 0%, #eff6ff 100%);
       display: flex;
       flex-direction: column;
@@ -493,11 +422,11 @@
       background: #fff1f2;
       border: 1px solid #fecdd3;
       border-radius: 7px;
-      padding: 4px 7px;
+      padding: 4px 8px;
       font-size: 9.2px;
       color: #9f1239;
-      margin-bottom: 5px;
-      line-height: 1.32;
+      margin-bottom: 6px;
+      line-height: 1.34;
     }
 
     .old-pain-bar b {
@@ -520,133 +449,176 @@
     .pz-bar {
       background: #0f172a;
       color: #ffffff;
-      font-size: 8.2px;
+      font-size: 8.4px;
       font-weight: 800;
-      padding: 2.5px 8px;
+      padding: 3px 8px;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .pz-dot {
-      width: 5px;
-      height: 5px;
-      background: #64748b;
-      border-radius: 50%;
-    }
-
-    .pz-body {
-      padding: 6px 8px;
-      font-size: 9.5px;
-    }
+    .pz-dot { width: 5px; height: 5px; background: #64748b; border-radius: 50%; }
+    .pz-body { padding: 7px 9px; font-size: 9.5px; }
 
     .dopamine-footer {
       margin-top: 5px;
-      font-size: 9.5px;
+      font-size: 9.4px;
       font-weight: 800;
       color: #1e3a8a;
-      line-height: 1.34;
+      line-height: 1.36;
     }
 
-    /* Sub Photo / Bonus Feature Strip */
+    /* Killer Voice Prompt Trio Box (On Every AI Page!) */
+    .prompt-trio-box {
+      background: #0f172a;
+      color: #ffffff;
+      border-radius: 11px;
+      padding: 9px 11px;
+      border: 1.5px solid #38bdf8;
+    }
+
+    .pt-head {
+      font-size: 10.2px;
+      font-weight: 900;
+      color: #fbbf24;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .pt-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .pt-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 7px 8px;
+      font-size: 9.3px;
+      line-height: 1.4;
+      color: #f1f5f9;
+    }
+
+    .pt-tag {
+      display: inline-block;
+      font-size: 8.4px;
+      font-weight: 900;
+      padding: 1.5px 7px;
+      border-radius: 999px;
+      margin-bottom: 3.5px;
+    }
+
+    .pt-fde  { background: #dbeafe; color: #1e3a8a; }
+    .pt-life { background: #dcfce7; color: #065f46; }
+    .pt-fx   { background: #fef3c7; color: #92400e; }
+
+    /* Photo Bonus Row */
     .photo-bonus-row {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 8px;
+      margin-bottom: 7px;
     }
 
     .bonus-card {
       border: 1.5px solid #cbd5e1;
       border-radius: 10px;
-      padding: 7px 10px;
+      padding: 6px 9px;
       background: #f8fafc;
     }
 
-    .bonus-card h4 {
-      margin: 0 0 2px;
-      font-size: 11px;
-      font-weight: 900;
-      color: var(--ink);
-    }
+    .bonus-card h4 { margin: 0 0 2px; font-size: 10.5px; font-weight: 900; color: var(--ink); }
+    .bonus-card p { margin: 0; font-size: 9.2px; color: var(--ink-sub); line-height: 1.34; }
 
-    .bonus-card p {
-      margin: 0;
-      font-size: 9.6px;
-      color: var(--ink-sub);
-      line-height: 1.36;
-    }
-
-    .micro-trigger-strip {
-      margin-top: 7px;
-      background: linear-gradient(90deg, #0f172a 0%, #1e3a8a 100%);
-      color: #ffffff;
-      border-radius: 10px;
-      padding: 7px 11px;
-      display: flex;
-      align-items: center;
-      gap: 9px;
-      border: 1px solid #38bdf8;
-    }
-
-    .mt-badge {
-      background: #fbbf24;
-      color: #0f172a;
-      font-size: 9.2px;
-      font-weight: 900;
-      padding: 2px 8px;
-      border-radius: 999px;
-      white-space: nowrap;
-    }
-
-    .mt-text {
-      font-size: 9.8px;
-      font-weight: 600;
-      color: #f1f5f9;
-      line-height: 1.35;
-    }
-
-    .mt-text strong { color: #7dd3fc; }
-
-    /* ================= PAGE 4 : 3rd PHOTO STRIP (PIXELSNAP) ================= */
-    .pixelsnap-wide {
-      display: grid;
-      grid-template-columns: 64mm 1fr;
-      border: 1.5px solid #6ee7b7;
-      background: linear-gradient(90deg, #ecfdf5 0%, #eff6ff 100%);
-      border-radius: 11px;
+    /* ================= PAGE 7 : 12-PROMPT ORCHESTRA COOKBOOK ================= */
+    .conductor-hero {
+      position: relative;
+      height: 72mm;
+      border-radius: 12px;
       overflow: hidden;
+      margin-bottom: 9px;
+      border: 2px solid #1e3a8a;
     }
 
-    .pixelsnap-wide img {
+    .conductor-hero img {
       width: 100%;
-      height: 40mm;
+      height: 100%;
       object-fit: cover;
+      object-position: right 24%;
       display: block;
     }
 
-    .pixelsnap-copy {
-      padding: 8px 12px;
+    .conductor-grad {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(15, 23, 42, 0.94) 0%, rgba(15, 23, 42, 0.72) 44%, rgba(15, 23, 42, 0.08) 78%);
+      padding: 13px 15px;
+      color: #ffffff;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-between;
     }
 
-    .pixelsnap-copy h4 {
-      margin: 0 0 4px;
-      font-size: 12px;
+    .cookbook-section {
+      border-radius: 10px;
+      padding: 8px 11px;
+      margin-bottom: 8px;
+      border: 1.5px solid #cbd5e1;
+    }
+
+    .cb-sec-title {
+      font-size: 11.2px;
       font-weight: 900;
-      color: #065f46;
+      margin: 0 0 6px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
-    .pixelsnap-copy p {
-      margin: 0;
-      font-size: 10px;
-      color: #1e293b;
-      line-height: 1.44;
-      font-weight: 600;
+    .cb-2col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7px;
     }
 
-    /* ================= PAGE 5 : DUAL PHOTO STEALTH VAULT ================= */
+    .cb-item {
+      background: #ffffff;
+      border-radius: 8px;
+      padding: 6.5px 9px;
+      border: 1px solid #cbd5e1;
+      font-size: 9.5px;
+      line-height: 1.4;
+    }
+
+    .cb-item strong {
+      display: block;
+      font-size: 9.8px;
+      color: #0f172a;
+      margin-bottom: 2px;
+    }
+
+    .cb-voice {
+      color: #1d4ed8;
+      font-weight: 800;
+    }
+
+    /* ================= PAGE 8 : FDE HARDWARE & MULTITASK ================= */
+    .split-9010-card {
+      border: 2px solid #3b82f6;
+      background: linear-gradient(90deg, #eff6ff 0%, #f8fafc 100%);
+      border-radius: 12px;
+      padding: 9px 12px;
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 10px;
+      align-items: center;
+    }
+
+    /* ================= PAGE 9 : STEALTH VAULT ================= */
     .stealth-dual-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -654,36 +626,12 @@
       margin-bottom: 10px;
     }
 
-    .stealth-col {
-      border-radius: 12px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
+    .stealth-col { border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+    .stealth-day { border: 2px solid #0284c7; background: #f0f9ff; }
+    .stealth-night { border: 2px solid #f59e0b; background: #0f172a; color: #ffffff; }
 
-    .stealth-day {
-      border: 2px solid #0284c7;
-      background: #f0f9ff;
-    }
-
-    .stealth-night {
-      border: 2px solid #f59e0b;
-      background: #0f172a;
-      color: #ffffff;
-    }
-
-    .sc-photo-top {
-      position: relative;
-      height: 68mm;
-      overflow: hidden;
-    }
-
-    .sc-photo-top img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+    .sc-photo-top { position: relative; height: 70mm; overflow: hidden; }
+    .sc-photo-top img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
     .sc-photo-label {
       position: absolute;
@@ -694,23 +642,13 @@
       color: #ffffff;
       padding: 4.5px 9px;
       border-radius: 7px;
-      font-size: 9.8px;
+      font-size: 9.6px;
       font-weight: 900;
       border-left: 3.5px solid #38bdf8;
     }
 
-    .stealth-night .sc-photo-label {
-      border-left-color: #fbbf24;
-      color: #fef3c7;
-    }
-
-    .sc-body {
-      padding: 10px 11px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
+    .stealth-night .sc-photo-label { border-left-color: #fbbf24; color: #fef3c7; }
+    .sc-body { padding: 10px 11px; flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
 
     .vault-arch-strip {
       display: grid;
@@ -734,7 +672,7 @@
       display: block;
     }
 
-    /* ================= PAGE 6 : UNBOXING DOPAMINE QUEST BOARD ================= */
+    /* ================= PAGE 10 : 10-QUEST UNBOXING BOARD ================= */
     .unbox-hero {
       position: relative;
       height: 70mm;
@@ -744,19 +682,13 @@
       border: 2px solid #0f172a;
     }
 
-    .unbox-hero img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center 52%;
-      display: block;
-    }
+    .unbox-hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 52%; display: block; }
 
     .unbox-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(90deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 56%, rgba(15, 23, 42, 0.15) 100%);
-      padding: 13px 16px;
+      background: linear-gradient(90deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.6) 56%, rgba(15, 23, 42, 0.15) 100%);
+      padding: 12px 15px;
       color: #ffffff;
       display: flex;
       flex-direction: column;
@@ -764,91 +696,110 @@
     }
 
     .endowed-bar-wrap {
-      background: rgba(15, 23, 42, 0.78);
-      border-radius: 9px;
-      padding: 7px 11px;
+      background: rgba(15, 23, 42, 0.82);
+      border-radius: 8px;
+      padding: 6px 11px;
       max-width: 72%;
       border: 1px solid rgba(251, 191, 36, 0.65);
     }
 
-    .endowed-track {
-      height: 8px;
-      background: rgba(255, 255, 255, 0.22);
-      border-radius: 999px;
-      overflow: hidden;
-      margin-top: 4px;
-    }
-
-    .endowed-fill {
-      width: 32%;
-      height: 100%;
-      background: linear-gradient(90deg, #fbbf24, #34d399);
-      border-radius: 999px;
-    }
+    .endowed-track { height: 8px; background: rgba(255, 255, 255, 0.22); border-radius: 999px; overflow: hidden; margin-top: 4px; }
+    .endowed-fill { width: 32%; height: 100%; background: linear-gradient(90deg, #fbbf24, #34d399); border-radius: 999px; }
 
     .boss-trap-card {
       background: #fff1f2;
       border: 2px solid #e11d48;
       border-radius: 10px;
-      padding: 9px 12px;
-      margin-bottom: 9px;
+      padding: 8px 11px;
+      margin-bottom: 8px;
     }
 
-    .quest-grid {
-      display: flex;
-      flex-direction: column;
+    .quest-grid-10 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 7px;
     }
 
-    .quest-row {
-      display: grid;
-      grid-template-columns: 58px 1fr auto;
-      gap: 9px;
-      align-items: center;
+    .quest-card-sm {
       border: 1.5px solid #cbd5e1;
-      border-radius: 10px;
-      padding: 7.5px 11px;
+      border-radius: 9px;
+      padding: 7px 9px;
       background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .quest-lv {
+    .qc-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3px;
+    }
+
+    .qc-lv {
       background: #0f172a;
       color: #fbbf24;
-      font-size: 9.5px;
+      font-size: 8.8px;
       font-weight: 900;
-      text-align: center;
-      padding: 4px 4px;
-      border-radius: 6px;
+      padding: 2px 7px;
+      border-radius: 4px;
     }
 
-    .quest-info strong {
-      display: block;
-      font-size: 11.2px;
+    .qc-xp {
+      font-size: 8.4px;
+      font-weight: 900;
+      padding: 2px 7px;
+      border-radius: 999px;
+    }
+
+    .qc-title {
+      font-size: 10.4px;
+      font-weight: 900;
       color: var(--ink);
+      line-height: 1.3;
+      margin-bottom: 3px;
     }
 
-    .quest-path {
-      font-size: 9px;
+    .qc-path {
+      font-size: 8.4px;
       color: #475569;
       background: #f1f5f9;
-      padding: 1px 5px;
+      padding: 1.5px 5px;
       border-radius: 4px;
       font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
     }
 
-    .xp-pill {
-      font-size: 8.8px;
+    .micro-trigger-strip {
+      margin-top: 7px;
+      background: linear-gradient(90deg, #0f172a 0%, #1e3a8a 100%);
+      color: #ffffff;
+      border-radius: 10px;
+      padding: 7px 11px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      border: 1px solid #38bdf8;
+    }
+
+    .mt-badge {
+      background: #fbbf24;
+      color: #0f172a;
+      font-size: 9px;
       font-weight: 900;
-      padding: 2.5px 7px;
+      padding: 2px 8px;
       border-radius: 999px;
       white-space: nowrap;
     }
+
+    .mt-text { font-size: 9.6px; font-weight: 600; color: #f1f5f9; line-height: 1.35; }
+    .mt-text strong { color: #7dd3fc; }
 
     /* Mobile Web Responsive */
     @media screen and (max-width: 840px) {
       .book-wrap { padding: 10px 8px 36px; gap: 16px; }
       .a4-page { width: 100%; height: auto; padding: 14px 12px; border-radius: 12px; }
-      .dopamine-kpi-row, .filmstrip-grid, .vs-top-photo-row, .photo-bonus-row, .pixelsnap-wide, .stealth-dual-grid, .vault-arch-strip {
+      .dopamine-kpi-row, .filmstrip-grid, .vs-top-photo-row, .pt-grid, .photo-bonus-row, .cb-2col, .split-9010-card, .stealth-dual-grid, .vault-arch-strip, .quest-grid-10 {
         grid-template-columns: 1fr;
       }
       .vs-screen-pane { border-left: none; border-top: 1.5px solid #cbd5e1; }
@@ -878,15 +829,14 @@
 </head>
 <body>
 
-  <!-- Web閲覧時のみのツールバー -->
   <header class="web-toolbar">
     <div class="web-toolbar-inner">
       <div class="web-toolbar-title">
-        <span class="vault-pill">🔒 秘密基地・脳科学ビジュアル第2版</span>
-        <span>Pixel 9 → Pixel 11 劇的進化＆ステルス活用バイブル（全6ページ）</span>
+        <span class="vault-pill">🔒 秘密基地・第3版（AI超特濃 全10P）</span>
+        <span>Pixel 9 → Pixel 11 特濃AI＆ステルス完全バイブル</span>
       </div>
       <div class="web-toolbar-actions">
-        <a class="tb-btn tb-btn-primary" href="./Pixel11_Master_Book.pdf" target="_blank" rel="noopener">📥 A4カラー図鑑PDFを開く／保存</a>
+        <a class="tb-btn tb-btn-primary" href="./Pixel11_Master_Book.pdf" target="_blank" rel="noopener">📥 A4カラー図鑑PDF（全10P）を開く</a>
         <a class="tb-btn tb-btn-ghost" href="./index.html">← 乗り換え手順書へ戻る</a>
       </div>
     </div>
@@ -894,127 +844,124 @@
 
   <main class="book-wrap">
 
-    <!-- ==================== PAGE 1 : VISUAL COVER & 1-DAY SIMULATION ==================== -->
+    <!-- ==================== PAGE 1 : COVER & 10-PAGE MASTER MAP ==================== -->
     <section class="a4-page" id="page-1">
       <div>
         <div class="cover-top">
-          <span style="font-size:10.5px; font-weight:900; letter-spacing:0.08em;">PIXEL 11 VISUAL MASTER BOOK • BRAIN-SCIENCE EDITION</span>
-          <span style="background:#0f172a; color:#fbbf24; font-size:9.5px; font-weight:900; padding:2px 9px; border-radius:999px;">🔒 自分専用・全部入り完全版</span>
+          <span style="font-size:10.5px; font-weight:900; letter-spacing:0.08em;">PIXEL 11 AI ULTRA-DEEP MASTER BOOK • VOL.3 (10 PAGES)</span>
+          <span style="background:#0f172a; color:#fbbf24; font-size:9.5px; font-weight:900; padding:2px 9px; border-radius:999px;">🔒 AI特集6ページ増量・完全版</span>
         </div>
 
         <div class="cover-hero">
           <img src="./assets/pixel11-cover.jpg" alt="Pixel 11 Cover" />
           <div class="cover-hero-grad">
             <div class="chip-row">
-              <span class="glass-chip">2nm Tensor G6</span>
+              <span class="glass-chip">2nm Tensor G6 (AI 3.5倍速)</span>
               <span class="glass-chip">Gemini Intelligence 認定機</span>
-              <span class="glass-chip">光学5倍望遠 × 256GB標準</span>
-              <span class="glass-chip">Pixelsnap Qi2.2 磁石内蔵</span>
+              <span class="glass-chip">Gemini Live 画面・カメラ対話</span>
+              <span class="glass-chip">光学5倍望遠 × Qi2.2磁石</span>
               <span class="glass-chip gold">耐量子暗号 Titan M3</span>
             </div>
             <div>
-              <h1 class="cover-h1">箱を開けた瞬間、あなたの<br /><span style="color:#38bdf8;">「1日の体感速度」</span>が書き換わる。</h1>
-              <div style="font-size:11.2px; color:#e2e8f0; font-weight:700;">Pixel 9 → Pixel 11｜社内FDE × 足切り突破の最新AI × 自動売買ステルス金庫</div>
+              <h1 class="cover-h1">ただの機種変更ではない。<br /><span style="color:#38bdf8;">「12人の専属AIチーム」</span>を<br />ポケットに雇う10ページ。</h1>
+              <div style="font-size:11px; color:#e2e8f0; font-weight:700;">Pixel 9 → Pixel 11｜実写シーン×実画面×そのまま言えるキラーフレーズ完全収録</div>
             </div>
           </div>
         </div>
 
-        <!-- 3 Dopamine Value Cards -->
         <div class="dopamine-kpi-row">
           <div class="kpi-pill-card">
-            <div class="kpi-small">🧠 入力・手直し・アプリ往復</div>
-            <div class="kpi-big">脳の摩擦 <span>-80%</span> 削減</div>
-            <div style="font-size:8.8px; color:#cbd5e1;">言い直し自動清書＆LINE上での予定完結</div>
+            <div class="kpi-small">🤖 収録AIスキル＆プロンプト</div>
+            <div class="kpi-big">特濃AI <span>全6ページ</span></div>
+            <div style="font-size:8.8px; color:#cbd5e1;">音声清書・Live視覚対話・記憶AI・自動操作</div>
           </div>
           <div class="kpi-pill-card k2">
-            <div class="kpi-small">⏱️ AI代行＋5倍望遠＋磁石充電</div>
-            <div class="kpi-big">年間 <span>+120時間</span> 創出</div>
-            <div style="font-size:8.8px; color:#cbd5e1;">1日20分の細切れロスの積み重ねを回収</div>
+            <div class="kpi-small">🧠 入力・検索・議事録・試算</div>
+            <div class="kpi-big">脳の摩擦 <span>-85%</span> 削減</div>
+            <div style="font-size:8.8px; color:#cbd5e1;">「手で打つ・探す・計算する」を声と視覚へ</div>
           </div>
           <div class="kpi-pill-card k3">
-            <div class="kpi-small">🛡️ 社内画面チラ見えリスク</div>
-            <div class="kpi-big">FX露出 <span>0.0%</span> 完全隔離</div>
-            <div style="font-size:8.8px; color:#cbd5e1;">地下金庫消滅×1階システム監視風通知</div>
+            <div class="kpi-small">🛡️ 社内チラ見えリスク</div>
+            <div class="kpi-big">FX露出 <span>0.0%</span> 要塞</div>
+            <div style="font-size:8.8px; color:#cbd5e1;">地下金庫消滅×1階サーバー監視風通知</div>
           </div>
         </div>
 
-        <!-- 4-Photo Mirror Neuron Daily Filmstrip -->
         <div class="filmstrip-title">
-          <span>🎬 届いた翌日から始まる「あなたの新しい1日」イメージ（ミラーニューロン予行演習）</span>
-          <span style="font-size:9.2px; color:#1d4ed8;">各ページの大型ビジュアルで詳解 ➔</span>
+          <span>🎬 全10ページの見どころガイド（P.2〜P.7の6ページが丸ごと「AI超特濃パート」！）</span>
+          <span style="font-size:9.2px; color:#1d4ed8;">全ページに実戦キラーフレーズ付き！</span>
         </div>
         <div class="filmstrip-grid">
           <div class="film-card">
-            <img src="./assets/scene-voice-walk.jpg" alt="Morning Walk Voice AI" />
-            <span class="film-time">🌅 08:40 通勤路</span>
+            <img src="./assets/scene-voice-walk.jpg" alt="Voice & LINE" />
+            <span class="film-time">P.2 声＆LINE</span>
             <div class="film-cap">
-              <strong>歩き喋りで一発清書</strong>
-              「あ、やっぱり木曜で」の言い直しもAIが勝手に修正（P.2）
+              <strong>言い直し清書＆先回り</strong>
+              歩き喋りの訂正もLINE日程調整も裏で自動完結
             </div>
           </div>
           <div class="film-card">
-            <img src="./assets/scene-pixelsnap-desk.jpg" alt="Office Desk Pixelsnap" />
-            <span class="film-time">🏢 14:00 社内FDE</span>
+            <img src="./assets/scene-live-screen.jpg" alt="Gemini Live Vision" />
+            <span class="film-time">P.3〜4 視覚＆記憶</span>
             <div class="film-cap">
-              <strong>磁石で貼る＆5倍望遠</strong>
-              カチッと25W充電。遠いボードも席から5倍撮影しAI化（P.4）
+              <strong>画面共有相談＆第2の脳</strong>
+              チャートや配線を映して壁打ち＆スクショ記憶検索
             </div>
           </div>
           <div class="film-card">
-            <img src="./assets/scene-agent-train.jpg" alt="Evening Train Agent" />
-            <span class="film-time">🌆 18:30 帰りの電車</span>
+            <img src="./assets/scene-camera-food.jpg" alt="Studio & Agent" />
+            <span class="film-time">P.5〜7 代行＆生成</span>
             <div class="film-cap">
-              <strong>裏画面でAIが手配代行</strong>
-              窓の外を眺める間にGeminiが仮想画面で予約準備（P.3）
+              <strong>操作代行・AI電卓・湯気生成</strong>
+              料理が化ける生成AI＆アプリ横断12大プロンプト
             </div>
           </div>
           <div class="film-card">
-            <img src="./assets/scene-solver-study.jpg" alt="Night Study Strategy" />
-            <span class="film-time">🥃 22:00 秘密基地</span>
+            <img src="./assets/scene-stealth-thumb.jpg" alt="Stealth Vault" />
+            <span class="film-time">P.8〜10 5倍眼＆要塞</span>
             <div class="film-cap">
-              <strong>専用指紋の要塞＆AI電卓</strong>
-              ガタつきゼロ平置きでAI電卓が2秒で適正ロット逆算（P.3/P.5）
+              <strong>光学5倍＆2階建て秘密金庫</strong>
+              会議室ズーム＋指紋3秒のFX要塞＋開封10クエスト
             </div>
           </div>
         </div>
 
-        <!-- Crisp 6-Row Matrix -->
         <div class="mini-matrix">
           <div class="mini-matrix-head">
-            <span>⚡ Pixel 9（これまで）→ 無印 Pixel 11（これから）の決定的な飛び級ポイント</span>
-            <span style="color:#fbbf24;">※Pro不要！無印256GBで全て解放</span>
+            <span>⚡ なぜ「Pixel 9 → Pixel 11」でAI体験が別物に激変するのか？（足切りライン早見表）</span>
+            <span style="color:#fbbf24;">Tensor G4 → Tensor G6（2世代ジャンプ）</span>
           </div>
           <table>
             <tbody>
               <tr>
-                <td class="mm-cat">🎤 音声入力</td>
-                <td class="mm-old">言い淀み・言い直しを手で消して修正</td>
-                <td class="mm-new">【足切り突破】文脈を読んで「言い直し」まで自動清書</td>
+                <td class="mm-cat">🧠 端末内AI頭脳</td>
+                <td class="mm-old">Tensor G4（旧Gemini Nano・発熱あり）</td>
+                <td class="mm-new">Tensor G6（最新Gemini Nano v3・最大3.5倍速＆省電力）</td>
               </tr>
               <tr>
-                <td class="mm-cat">📅 日程調整</td>
-                <td class="mm-old">LINEとカレンダーを何度も往復して手打ち</td>
-                <td class="mm-new">【足切り突破】LINEの上に空き枠＆1タップ返信文が出現</td>
+                <td class="mm-cat">🎤 声＆LINE支援</td>
+                <td class="mm-old">生文字起こしのみ／カレンダー手動往復</td>
+                <td class="mm-new">【足切り突破】言い直し自動書き換え＋LINE上での予定＆返信生成</td>
               </tr>
               <tr>
-                <td class="mm-cat">🤖 アプリ操作</td>
-                <td class="mm-old">店舗検索のあと5〜6画面を自分でタップ</td>
-                <td class="mm-new">【11月日本解禁】仮想画面でAIが入力代行→最後に承認</td>
+                <td class="mm-cat">👁️ 視覚＆操作代行</td>
+                <td class="mm-old">連続画面共有で熱ダレ／アプリ操作代行不可</td>
+                <td class="mm-new">【11月日本解禁】低発熱Gemini Live画面壁打ち＋仮想画面アプリ自動操作</td>
               </tr>
               <tr>
-                <td class="mm-cat">🧮 資金・単価試算</td>
-                <td class="mm-old">四則演算のみ（ロット計算はシート頼み）</td>
-                <td class="mm-new">【11専売】AI電卓「Pixel Solver」が会話で逆算＆保存</td>
+                <td class="mm-cat">🧮 試算＆スクショ</td>
+                <td class="mm-old">四則電卓のみ／スクショが写真に埋もれる</td>
+                <td class="mm-new">【11専売】AI電卓「Pixel Solver」＋背面2タップAIスクショ記憶庫</td>
               </tr>
               <tr>
-                <td class="mm-cat">🔭 カメラ＆充電</td>
-                <td class="mm-old">望遠なし・磁石なし15W・机でガタつく</td>
-                <td class="mm-new">【無印初】光学5倍望遠＋400枚AI切り出し＋Qi2磁石25W</td>
+                <td class="mm-cat">📸 撮影＆生成AI</td>
+                <td class="mm-old">望遠レンズなし／動画から静止画切り出し手間</td>
+                <td class="mm-new">【無印初×11専売】光学5倍＋カメラコーチ＋湯気・背景生成＋400枚解析</td>
               </tr>
               <tr>
-                <td class="mm-cat">🔒 FX完全隔離</td>
+                <td class="mm-cat">🔒 公私ステルス</td>
                 <td class="mm-old">Titan M2 / 128GB基準</td>
-                <td class="mm-new">【要塞化】Titan M3＋256GB＋2階建てステルス通知＆Linux</td>
+                <td class="mm-new">【要塞化】耐量子Titan M3＋256GB標準＋2階建てステルス通知＆Linux</td>
               </tr>
             </tbody>
           </table>
@@ -1022,67 +969,66 @@
       </div>
 
       <div class="page-foot">
-        <span>🔒 PRIVATE BASE ONLY — VISUAL EDITION v2</span>
-        <span>1 / 6</span>
+        <span>🔒 PRIVATE BASE ONLY — AI ULTRA-DEEP EDITION</span>
+        <span>1 / 10</span>
       </div>
     </section>
 
-    <!-- ==================== PAGE 2 : VOICE & LINE ZERO-FRICTION ==================== -->
+    <!-- ==================== PAGE 2 : AI 01 VOICE & LINE PROACTIVE ==================== -->
     <section class="a4-page" id="page-2">
       <div>
         <div class="page-head">
           <div class="page-kicker">
-            <span class="cat-tag" style="background:var(--violet);">SCENE 01 &amp; 02</span>
-            <span>VOICE FLOW &amp; INSTANT SCHEDULE</span>
+            <span class="cat-tag" style="background:var(--violet);">AI SPECIAL 01 / 06</span>
+            <span>ZERO-FRICTION VOICE &amp; LINE PROACTIVE AI</span>
           </div>
-          <span class="neuro-pill">🧠 脳科学効果：ワーキングメモリ（脳の短期記憶）消費ゼロへ</span>
+          <span class="neuro-pill">🧠 脳科学：前頭葉のワーキングメモリ（短期記憶）を1ミリも削らない</span>
         </div>
 
-        <h2 class="page-h2">思いついたまま喋り、開いた画面のまま返す。「親指の修正ストレス」が消滅</h2>
-        <p class="page-lead">Pixel 9（Tensor G4）が対象外となった新世代「Gemini Intelligence」により、毎日の声入力とLINE返信が別次元に変わります。</p>
+        <h2 class="page-h2">「言い直し」も「文体の書き換え」も「LINEの予定確認」も、親指いらずで即完結</h2>
+        <p class="page-lead">Pixel 9が対象外となった「Gemini Intelligence」の中核スキル。雑に喋るだけで完璧な日本語が生まれます。</p>
 
-        <!-- VISUAL SHOWCASE 01 : VOICE WALK -->
+        <!-- SCENE 01 -->
         <div class="visual-showcase">
           <div class="vs-top-photo-row">
             <div class="vs-photo-pane">
-              <img src="./assets/scene-voice-walk.jpg" alt="Walking Voice Input" />
+              <img src="./assets/scene-voice-walk.jpg" alt="Morning Walk Voice AI" />
               <div class="vs-photo-overlay">
                 <div class="vs-badge-top">
-                  <span class="time-trigger">🌅 AM 08:40 駅へ向かう道</span>
+                  <span class="time-trigger">🌅 AM 08:40 通勤ウォーク</span>
                   <span class="reward-chip">⚡ バックスペース 0回</span>
                 </div>
                 <div class="vs-scene-copy">
-                  <strong>① Gboard『AI音声入力』</strong>
-                  <span>前を向いて歩きながら独り言のように喋るだけ。途中の「あ、やっぱり変更！」までAIが綺麗に書き直します。</span>
+                  <strong>① Gboard『AI音声入力』×『文章作成ツール』</strong>
+                  <span>「あ、ごめん今のなし！」と途中で言い直してもAIが文脈を理解して自動修正。さらにボタン1つで「自分の普段の口調」や「謙虚な社内報告トーン」へ自在に変換！</span>
                 </div>
               </div>
             </div>
 
             <div class="vs-screen-pane">
               <div>
-                <div class="old-pain-bar">
-                  <b>Pixel 9</b>「<s style="color:#e11d48;">えーっと水曜あごめん</s>木曜14時で」→ そのまま出るため手で削除
-                </div>
+                <div class="old-pain-bar"><b>Pixel 9</b>「<s style="color:#e11d48;">えーと水曜あごめん</s>木曜14時」→ そのまま出るため手で消去</div>
                 <div class="phone-zoom">
-                  <div class="pz-bar"><span>9:41 Pixel 11</span><span class="pz-dot"></span><span style="color:#a7f3d0;">✨ AI清書ON</span></div>
+                  <div class="pz-bar"><span>9:41 Gboard AI</span><span class="pz-dot"></span><span style="color:#a7f3d0;">✨ 言い直し清書</span></div>
                   <div class="pz-body">
-                    <div style="font-size:8.5px; color:#64748b;">🎙️「えーっと水曜…あ違った木曜の14時でよろしく」</div>
-                    <div style="background:#ecfdf5; border:1.5px solid #10b981; border-radius:7px; padding:5px 7px; margin:4px 0; font-size:10.8px; font-weight:900; color:#064e3b;">
-                      来週の木曜日の14:00でお願いします。
+                    <div style="font-size:8.3px; color:#64748b;">🎙️「えーっと水曜…あ違った木曜14時で、あと資料も先に送ります」</div>
+                    <div style="background:#ecfdf5; border:1.5px solid #10b981; border-radius:6px; padding:4.5px 7px; margin:3.5px 0; font-size:10px; font-weight:900; color:#064e3b;">
+                      木曜日の14:00でお願いいたします。資料も事前にお送りいたします。
                     </div>
-                    <div style="background:linear-gradient(90deg,#1e3a8a,#6d28d9); color:#fff; border-radius:5px; padding:3px 7px; font-size:8.6px; font-weight:800; display:flex; justify-content:space-between;">
-                      <span>✨ フィラー除去＋言い直し自動反映済</span>
-                      <span>送信 ➔</span>
+                    <div style="display:flex; gap:4px; font-size:8px; font-weight:800;">
+                      <span style="background:#ede9fe; color:#5b21b6; padding:2px 6px; border-radius:4px;">✨ 丁寧ビジネス化</span>
+                      <span style="background:#dbeafe; color:#1e40af; padding:2px 6px; border-radius:4px;">📝 要点3行に短縮</span>
+                      <span style="background:#fef3c7; color:#92400e; padding:2px 6px; border-radius:4px;">👤 自分の文体</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="dopamine-footer">🔥 快感ポイント：話し終えた0.3秒後に「完成されたビジネス文」へパッと変わる瞬間、毎回ドーパミンが出ます！</div>
+              <div class="dopamine-footer">🔥 快感：キーボードはもはや「打つ場所」ではなく「声をプロ品質の文章に錬成する魔法陣」になります。</div>
             </div>
           </div>
         </div>
 
-        <!-- VISUAL SHOWCASE 02 : CAFE LINE ASSIST -->
+        <!-- SCENE 02 -->
         <div class="visual-showcase">
           <div class="vs-top-photo-row">
             <div class="vs-photo-pane">
@@ -1093,23 +1039,21 @@
                   <span class="reward-chip">⚡ アプリ往復 0回</span>
                 </div>
                 <div class="vs-scene-copy">
-                  <strong>② LINEに重なる『先回りアシスト』</strong>
-                  <span>「来週空いてる？」と聞かれた瞬間、LINEを閉じずにその場で予定チェックから返信文作成まで4秒で完了。</span>
+                  <strong>② LINEの上に浮き出る『先回りアシスト』</strong>
+                  <span>相手から日程を聞かれた瞬間、LINE画面の下にボタンが自動出現。タップ1回でGoogleカレンダーの空き枠と返信下書きがその場に重なります！</span>
                 </div>
               </div>
             </div>
 
             <div class="vs-screen-pane">
               <div>
-                <div class="old-pain-bar">
-                  <b>Pixel 9</b> LINEを閉じる → カレンダー検索 → 空き時間を暗記してLINEへ戻る
-                </div>
+                <div class="old-pain-bar"><b>Pixel 9</b> LINEを閉じる → 予定表を開く → 記憶してLINEへ戻って手打ち</div>
                 <div class="phone-zoom">
                   <div class="pz-bar"><span>12:15 LINE</span><span class="pz-dot"></span><span style="color:#7dd3fc;">先回りアシスト</span></div>
                   <div class="pz-body">
-                    <div style="background:#f1f5f9; border-radius:7px; padding:4px 7px; font-size:9.2px; margin-bottom:4px;">相手：「来週の日曜、ランチか打合せ空いてる？」</div>
-                    <div style="display:inline-block; background:#dbeafe; color:#1e3a8a; font-size:8.6px; font-weight:900; padding:2px 7px; border-radius:999px; margin-bottom:4px;">✨ スケジュールの確認（自動出現）</div>
-                    <div style="background:#0f172a; color:#fff; border-radius:7px; padding:5px 7px; font-size:8.6px;">
+                    <div style="background:#f1f5f9; border-radius:6px; padding:3.5px 7px; font-size:9px; margin-bottom:3.5px;">相手：「来週の日曜、打ち合わせかランチ空いてる？」</div>
+                    <div style="display:inline-block; background:#dbeafe; color:#1e3a8a; font-size:8.4px; font-weight:900; padding:1.5px 7px; border-radius:999px; margin-bottom:3.5px;">✨ スケジュールの確認（自動出現）</div>
+                    <div style="background:#0f172a; color:#fff; border-radius:6px; padding:4.5px 7px; font-size:8.4px;">
                       <div style="display:flex; justify-content:space-between; color:#fca5a5;"><span>10:00-12:30</span><span>家族予定あり</span></div>
                       <div style="display:flex; justify-content:space-between; color:#6ee7b7; font-weight:900;"><span>13:30 以降</span><span>⭕ 空き枠！</span></div>
                       <div style="margin-top:3px; padding-top:3px; border-top:1px solid #334155; color:#fde68a; font-weight:800;">
@@ -1119,94 +1063,332 @@
                   </div>
                 </div>
               </div>
-              <div class="dopamine-footer">🔥 快感ポイント：「あとで予定見て返そう」の先延ばし負債がゼロになり、脳がずっと軽いまま過ごせます。</div>
+              <div class="dopamine-footer">🔥 快感：店名の話題が出ればマップボタン、電話をかける時は「前回の連絡メモ」まで自動で先回り表示！</div>
             </div>
           </div>
         </div>
 
-        <div class="photo-bonus-row">
-          <div class="bonus-card">
-            <h4>✍️ 自分の口調をコピーする『文章作成ツール』</h4>
-            <p>雑なメモから「いつも自分が書く自然なトーン」で社内連絡や丁寧なお礼文をGboard上で一発生成します。</p>
+        <!-- KILLER PROMPTS -->
+        <div class="prompt-trio-box">
+          <div class="pt-head">
+            <span>🗣️ 届いた初日にそのまま声に出して試す「キラーフレーズ 3選」</span>
+            <span style="font-size:8.8px; color:#93c5fd;">Gboardマイク ＆ 文章作成ツール用</span>
           </div>
-          <div class="bonus-card">
-            <h4>🚃 御堂筋線で無双する『電車内モード × AI電話応答』</h4>
-            <p>乗車を自動検知してマナー化＋着信にAIが代理応答し、相手の声をリアルタイム文字起こし＆タップ返信できます。</p>
+          <div class="pt-grid">
+            <div class="pt-card">
+              <span class="pt-tag pt-fde">🏢 社内FDE・日報連絡</span><br />
+              「えーっと今日やったのは在庫シートの修正…あ違った発注フォームの入力チェック追加で、現場の手入力欄は触ってません」→ <strong>一発で綺麗な業務報告文に！</strong>
+            </div>
+            <div class="pt-card">
+              <span class="pt-tag pt-life">🏠 家族・LINE返信</span><br />
+              雑に「帰りに牛乳と卵買う、19時半に着く」とだけ喋り、Gboardの<strong>［文章作成ツール ＞ フレンドリー］</strong>を1タップ！
+            </div>
+            <div class="pt-card">
+              <span class="pt-tag pt-fx">🔒 秘密基地・プロンプト吹き込み</span><br />
+              Antigravityへの長文指示も「ここ赤にして…いや青バッジに変えて」と<strong>思考垂れ流しで喋るだけ</strong>で構造化プロンプト完成！
+            </div>
           </div>
-        </div>
-
-        <div class="micro-trigger-strip">
-          <span class="mt-badge">🎯 30秒ドーパミン実験</span>
-          <div class="mt-text">届いたらメモ帳を開き、わざと<strong>「えーっと水曜…あ違った金曜の15時で！」</strong>と吹き込んで一発清書を体験してください！</div>
         </div>
       </div>
 
       <div class="page-foot">
-        <span>🔒 PRIVATE BASE ONLY — VOICE &amp; PROACTIVE AI</span>
-        <span>2 / 6</span>
+        <span>🔒 PRIVATE BASE ONLY — AI SPECIAL 01 (VOICE &amp; PROACTIVE)</span>
+        <span>2 / 10</span>
       </div>
     </section>
 
-    <!-- ==================== PAGE 3 : EVENING AGENT & NIGHT SOLVER ==================== -->
+    <!-- ==================== PAGE 3 : AI 02 GEMINI LIVE CAMERA & SCREEN VISION ==================== -->
     <section class="a4-page" id="page-3">
       <div>
         <div class="page-head">
           <div class="page-kicker">
-            <span class="cat-tag" style="background:var(--blue);">SCENE 03 &amp; 04</span>
-            <span>AGENT AUTOMATION &amp; PIXEL SOLVER</span>
+            <span class="cat-tag" style="background:#0284c7;">AI SPECIAL 02 / 06</span>
+            <span>GEMINI LIVE — REALTIME CAMERA &amp; SCREEN SHARING</span>
           </div>
-          <span class="neuro-pill">🧠 脳科学効果：決断疲れ（ウィルパワー枯渇）を温存する</span>
+          <span class="neuro-pill">🧠 脳科学：「言語化する負荷」すら不要！見せて喋ればAIが隣にいる感覚</span>
         </div>
 
-        <h2 class="page-h2">帰りの電車でAIがアプリを自動操作し、夜の書斎では2秒で適正ロットを逆算</h2>
-        <p class="page-lead">仕事終わりに残ったエネルギーを雑務や計算に使わない。「操作代行エージェント」と「Pixel 11専売AI電卓」の威力です。</p>
+        <h2 class="page-h2">「ねぇ、今これ見えてる？」カメラとスマホ画面を共有しながらAIと生電話で壁打ち</h2>
+        <p class="page-lead">文字で状況を説明する時代は終了。Tensor G6の圧倒的な低発熱・高速処理で、映像を見せながらの連続会話がヌルヌル動きます。</p>
 
-        <!-- VISUAL SHOWCASE 03 : TRAIN AGENT -->
+        <!-- SCENE 03 : GEMINI LIVE CAMERA -->
         <div class="visual-showcase">
           <div class="vs-top-photo-row">
             <div class="vs-photo-pane">
-              <img src="./assets/scene-agent-train.jpg" alt="Train Window Agent Automation" />
+              <img src="./assets/scene-live-cam.jpg" alt="Gemini Live Camera Sharing" />
               <div class="vs-photo-overlay">
                 <div class="vs-badge-top">
-                  <span class="time-trigger">🌆 PM 18:30 帰路の車窓</span>
-                  <span class="reward-chip">🆕 11月 日本語解禁！</span>
+                  <span class="time-trigger">🔧 現場・機材・書類の前で</span>
+                  <span class="reward-chip">👁️ リアルタイム視覚AI</span>
                 </div>
                 <div class="vs-scene-copy">
-                  <strong>③『スクリーンオートメーション』</strong>
-                  <span>夜景を眺めて休んでいる間に、Geminiがスマホ内の「仮想画面」でアプリを開き、予約や注文の入力を進めてくれます。</span>
+                  <strong>③ Gemini Live『カメラ映像共有（Guided Vision）』</strong>
+                  <span>ルーターの裏配線、倉庫の複雑な伝票、英語のエラー画面をカメラで映したまま「どれ抜けばいい？」「要点だけ教えて」と相槌付きで会話！</span>
                 </div>
               </div>
             </div>
 
             <div class="vs-screen-pane">
               <div>
-                <div class="old-pain-bar">
-                  <b>Pixel 9</b> 非対応（店リストが出るだけで、5〜6画面の入力操作はすべて人間任せ）
-                </div>
+                <div class="old-pain-bar"><b>Pixel 9以前</b> 写真を撮る → チャットに添付 → 質問文をフリック入力して待つ</div>
                 <div class="phone-zoom">
-                  <div class="pz-bar"><span>18:30 Gemini Agent</span><span class="pz-dot"></span><span style="color:#38bdf8;">STEP 3/4</span></div>
-                  <div class="pz-body">
-                    <div style="background:#0f172a; color:#fff; border-radius:7px; padding:6px 8px;">
-                      <div style="font-size:8.8px; color:#93c5fd; font-weight:900; margin-bottom:3px;">🤖 仮想画面でアプリ自動操作中…</div>
-                      <div style="font-size:8.8px; color:#e2e8f0; line-height:1.38;">
-                        ✅ 対応アプリを起動し「梅田・19時」を選択<br />
-                        ✅ 2名席の空き枠を確保して入力完了<br />
-                        ⏸️ <strong style="color:#fde68a;">最終確定ボタンの手前で待機中</strong>
-                      </div>
-                      <div style="display:flex; gap:5px; margin-top:5px;">
-                        <div style="flex:1; background:#38bdf8; color:#0f172a; text-align:center; font-weight:900; font-size:8.8px; padding:3.5px; border-radius:4px;">✔ 内容を見て承認</div>
-                        <div style="background:#334155; color:#fff; font-size:8.5px; padding:3.5px 6px; border-radius:4px;">引き継ぐ</div>
-                      </div>
+                  <div class="pz-bar"><span>Gemini Live [🎥 カメラ共有中]</span><span class="pz-dot"></span><span style="color:#38bdf8;">● LIVE対話</span></div>
+                  <div class="pz-body" style="background:#0f172a; color:#fff;">
+                    <div style="background:#1e293b; border-radius:6px; padding:5px 7px; font-size:8.6px; color:#e2e8f0; margin-bottom:4px;">
+                      👤 <strong>あなた：</strong>「今映してる配線図と実物、どこが食い違ってる？」<br />
+                      ✨ <strong style="color:#7dd3fc;">Gemini：</strong>「右から2番目の黄色いLANケーブルがWANではなくLAN3に刺さっています。隣へ差し替えてみてください！」
+                    </div>
+                    <div style="background:linear-gradient(90deg,#0284c7,#6d28d9); border-radius:999px; padding:3px 8px; text-align:center; font-size:8.4px; font-weight:900;">
+                      〰️ 話の途中で割り込んで「じゃあこっちは？」と聞いても即応答！
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="dopamine-footer">🔥 快感ポイント：決済・確定の直前で必ず止まって確認してくれる安心設計。自分の分身がスマホの中に宿る感覚です！</div>
+              <div class="dopamine-footer">🔥 快感：専属のベテラン技術者・通訳・整理アドバイザーが、自分の肩の上に乗って同じ景色を見ている体験です！</div>
             </div>
           </div>
         </div>
 
-        <!-- VISUAL SHOWCASE 04 : NIGHT STUDY SOLVER -->
+        <!-- SCENE 04 : GEMINI LIVE SCREEN SHARING -->
+        <div class="visual-showcase">
+          <div class="vs-top-photo-row">
+            <div class="vs-photo-pane">
+              <img src="./assets/scene-live-screen.jpg" alt="Gemini Live Screen Sharing Chart" />
+              <div class="vs-photo-overlay">
+                <div class="vs-badge-top">
+                  <span class="time-trigger">📊 アプリ検品・チャート分析中</span>
+                  <span class="reward-chip" style="background:#fbbf24; color:#0f172a;">📱 画面丸ごと共有</span>
+                </div>
+                <div class="vs-scene-copy">
+                  <strong>④ Gemini Live『スマホ画面リアルタイム共有』</strong>
+                  <span>開発中のWebアプリや長いPDF、TradingViewチャートを表示したままLiveを起動。スクロールして見せながら口頭でレビュー・壁打ちができます！</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="vs-screen-pane">
+              <div>
+                <div class="old-pain-bar"><b>従来の手間</b> 何枚もスクショを撮って貼り付け、どこを指しているか文章で説明</div>
+                <div class="phone-zoom">
+                  <div class="pz-bar"><span>Gemini Live [📲 画面共有中]</span><span class="pz-dot"></span><span style="color:#a7f3d0;">低発熱G6</span></div>
+                  <div class="pz-body" style="background:#0f172a; color:#fff;">
+                    <div style="font-size:8.5px; color:#fde68a; font-weight:800; margin-bottom:3px;">📲 現在の表示画面（スプレッドシート / チャート）をリアルタイム認識中</div>
+                    <div style="background:#1e293b; border-radius:6px; padding:5px 7px; font-size:8.5px; color:#e2e8f0; line-height:1.36;">
+                      👤「今スクロールしてるこの画面、現場の人がスマホで押す時に迷いそうな箇所ある？」<br />
+                      ✨「上部の保存ボタンとリセットが近すぎるので、誤タップ防止で離すのがおすすめです」
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dopamine-footer">🔥 安全ポイント：画面ロックや終了ボタン1つで共有は即時停止。秘密基地内でのチャート壁打ちにも最強です。</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KILLER PROMPTS -->
+        <div class="prompt-trio-box">
+          <div class="pt-head">
+            <span>🗣️ 電源ボタン長押し ➔ Liveアイコンからそのまま言える「視覚壁打ちフレーズ 3選」</span>
+            <span style="font-size:8.8px; color:#93c5fd;">カメラ共有 ＆ 画面共有用</span>
+          </div>
+          <div class="pt-grid">
+            <div class="pt-card">
+              <span class="pt-tag pt-fde">🏢 社内Webアプリ目視検品</span><br />
+              （<code>/dev</code>画面を共有して）<strong>「非ITの現場スタッフ目線で、この画面の分かりにくい表現を3つ辛口で指摘して！」</strong>
+            </div>
+            <div class="pt-card">
+              <span class="pt-tag pt-life">🏠 書類・家電・買い物相談</span><br />
+              （役所の手続き書類や裏面成分表をカメラで映して）<strong>「私が書かなきゃいけない欄と期限だけ順番に教えて！」</strong>
+            </div>
+            <div class="pt-card">
+              <span class="pt-tag pt-fx">🔒 チャート環境認識の言語化</span><br />
+              （プライベートスペース内でチャート共有し）<strong>「今の4時間足のダウ目線と、飛び乗り厳禁な理由を客観的に整理して」</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-foot">
+        <span>🔒 PRIVATE BASE ONLY — AI SPECIAL 02 (GEMINI LIVE VISION)</span>
+        <span>3 / 10</span>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 4 : AI 03 SECOND BRAIN SCREENSHOTS & RECORDER/NOTEBOOK ==================== -->
+    <section class="a4-page" id="page-4">
+      <div>
+        <div class="page-head">
+          <div class="page-kicker">
+            <span class="cat-tag" style="background:#0d9488;">AI SPECIAL 03 / 06</span>
+            <span>SECOND-BRAIN SCREENSHOTS • AI RECORDER • AUDIO OVERVIEW</span>
+          </div>
+          <span class="neuro-pill">🧠 脳科学：「覚える努力」を放棄し、外部海馬（AI記憶庫）へ丸投げする</span>
+        </div>
+
+        <h2 class="page-h2">背面トントンで「記憶」を保存し、会議は自動議事録、難しい資料は「耳ラジオ」に変換</h2>
+        <p class="page-lead">情報収集とインプットの効率が3倍に跳ね上がる、「忘れないAI記憶庫」と「オフライン話者分離×ポッドキャスト学習」です。</p>
+
+        <!-- SCENE 05 : PIXEL SCREENSHOTS -->
+        <div class="visual-showcase">
+          <div class="vs-top-photo-row">
+            <div class="vs-photo-pane">
+              <img src="./assets/scene-screenshots-brain.jpg" alt="Pixel Screenshots Second Brain" />
+              <div class="vs-photo-overlay">
+                <div class="vs-badge-top">
+                  <span class="time-trigger">👆 背面を「トントン」2回タップ</span>
+                  <span class="reward-chip">🧠 曖昧な記憶で1秒検索</span>
+                </div>
+                <div class="vs-scene-copy">
+                  <strong>⑤ 第2の脳『Pixel スクリーンショット』</strong>
+                  <span>気になった記事・図解・予約番号・クーポンはとりあえずスクショ！端末内AIが文字・日付・URLを自動解析し、うろ覚えの言葉で一発発掘します。</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="vs-screen-pane">
+              <div>
+                <div class="old-pain-bar"><b>従来の悲劇</b> カメラロールの写真数千枚にスクショが埋もれ、二度と見つからない</div>
+                <div class="phone-zoom">
+                  <div class="pz-bar"><span>Pixel Screenshots</span><span class="pz-dot"></span><span style="color:#6ee7b7;">On-Device AI</span></div>
+                  <div class="pz-body">
+                    <div style="background:#f1f5f9; border:1px solid #94a3b8; border-radius:999px; padding:3px 8px; font-size:8.8px; font-weight:800; color:#0f172a; margin-bottom:4px;">
+                      🔍 検索：「先月見た青いグラフのAI論文」
+                    </div>
+                    <div style="background:#ecfdf5; border:1.5px solid #10b981; border-radius:6px; padding:5px 7px; font-size:8.6px; color:#064e3b;">
+                      <strong>✨ 0.2秒で一致スクショを発見！</strong><br />
+                      ・画像内テキスト要約＆元ページのURLリンクを自動保持<br />
+                      ・有効期限があるスクショは<strong>期限前に自動でリマインド通知！</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dopamine-footer">🔥 快感：本体背面の「クイックタップ（2回トントン）＝スクショ」に設定すれば、片手0.5秒で何でも脳外メモリへ放り込めます！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCENE 06 : AI RECORDER & NOTEBOOK PODCAST -->
+        <div class="visual-showcase">
+          <div class="vs-top-photo-row">
+            <div class="vs-photo-pane">
+              <img src="./assets/scene-recorder-podcast.jpg" alt="AI Recorder and Earbuds Podcast" />
+              <div class="vs-photo-overlay">
+                <div class="vs-badge-top">
+                  <span class="time-trigger">🎙️ 会議室 ➔ 🎧 通勤の耳時間</span>
+                  <span class="reward-chip" style="background:#fbbf24; color:#0f172a;">⚡ 完全オフライン要約</span>
+                </div>
+                <div class="vs-scene-copy">
+                  <strong>⑥『AIレコーダー（話者分離）』×『Gemini Notebook耳学』</strong>
+                  <span>機密会議もネット遮断のまま端末内Gemini Nanoが話者別に文字起こし＆決定事項3行に要約！さらに長文資料は「AI対話ラジオ」にして移動中に耳から吸収。</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="vs-screen-pane">
+              <div>
+                <div class="old-pain-bar"><b>従来の限界</b> 1時間の録音を聞き返す時間がない／社外クラウド文字起こしは情報漏洩が心配</div>
+                <div class="phone-zoom">
+                  <div class="pz-bar"><span>Pixel レコーダー ＆ Notebook</span><span class="pz-dot"></span><span style="color:#fbbf24;">機内モードOK</span></div>
+                  <div class="pz-body" style="background:#0f172a; color:#fff;">
+                    <div style="font-size:8.4px; color:#93c5fd; font-weight:800; margin-bottom:3px;">🎙️ 端末内オンデバイス要約（外部通信ゼロで安心）：</div>
+                    <div style="background:#1e293b; border-radius:5px; padding:4px 6px; font-size:8.4px; color:#e2e8f0; margin-bottom:4px;">
+                      👤 話者A / 話者B を自動色分け ➔ <strong>「決定事項3点・次回宿題」を1タップ生成</strong>
+                    </div>
+                    <div style="background:#312e81; border:1px solid #818cf8; border-radius:5px; padding:4px 6px; font-size:8.3px; color:#e0e7ff;">
+                      🎧 <strong>Notebook 音声概要：</strong>難解なPDFやFX定量論文を渡すと、AI男女2人の掛け合いラジオ番組に変換！歩きながら楽しく耳学できます。
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dopamine-footer">🔥 快感：外部サーバーに音声を送らないオンデバイス処理なので、社内の大事な打ち合わせメモにも安心して使えます！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KILLER PROMPTS -->
+        <div class="prompt-trio-box">
+          <div class="pt-head">
+            <span>🗣️ 記憶とインプットが爆速化する「検索＆耳学キラーフレーズ 3選」</span>
+            <span style="font-size:8.8px; color:#93c5fd;">Screenshots ＆ Gemini Notebook用</span>
+          </div>
+          <div class="pt-grid">
+            <div class="pt-card">
+              <span class="pt-tag pt-fde">🏢 スクショから一瞬で数値救出</span><br />
+              （Pixel Screenshotsで）<strong>「先週撮った見積もりの金額」</strong>や<strong>「Wi-Fiパスワードの紙」</strong>と打つだけで画像内の文字まで直撃検索！
+            </div>
+            <div class="pt-card">
+              <span class="pt-tag pt-life">🏠 会議直後の10秒議事録</span><br />
+              録音停止 ➔ <strong>［要約を作成］</strong>をタップ ➔ Gboardで<strong>「これをサイボウズ投稿用の謙虚な箇条書きに整えて」</strong>で即完了！
+            </div>
+            <div class="pt-card">
+              <span class="pt-tag pt-fx">🔒 英語の定量検証論文を耳学</span><br />
+              英語のFX・統計論文PDFをNotebookに入れ、<strong>「初心者にもわかる具体例多めで音声概要（ポッドキャスト）を作って」</strong>！
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-foot">
+        <span>🔒 PRIVATE BASE ONLY — AI SPECIAL 03 (MEMORY &amp; AUDIO AI)</span>
+        <span>4 / 10</span>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 5 : AI 04 AGENT AUTOMATION & PIXEL SOLVER ==================== -->
+    <section class="a4-page" id="page-5">
+      <div>
+        <div class="page-head">
+          <div class="page-kicker">
+            <span class="cat-tag" style="background:var(--blue);">AI SPECIAL 04 / 06</span>
+            <span>SCREEN AUTOMATION AGENT &amp; PIXEL SOLVER</span>
+          </div>
+          <span class="neuro-pill">🧠 脳科学：夕方の「決断疲れ（ウィルパワー枯渇）」をAI代行で徹底保護</span>
+        </div>
+
+        <h2 class="page-h2">帰りの電車でAIがアプリ操作を代行し、夜の書斎では電卓と会話して2秒でロット逆算</h2>
+        <p class="page-lead">2026年11月についに日本上陸した「仮想画面オートメーション」と、Pixel 10すら非対応の「Pixel 11専売・生成AI電卓」です。</p>
+
+        <!-- SCENE 07 : SCREEN AUTOMATION -->
+        <div class="visual-showcase">
+          <div class="vs-top-photo-row">
+            <div class="vs-photo-pane">
+              <img src="./assets/scene-agent-train.jpg" alt="Evening Train Agent Automation" />
+              <div class="vs-photo-overlay">
+                <div class="vs-badge-top">
+                  <span class="time-trigger">🌆 PM 18:30 帰路の車窓</span>
+                  <span class="reward-chip">🆕 11月 日本語解禁！</span>
+                </div>
+                <div class="vs-scene-copy">
+                  <strong>⑦『スクリーンオートメーション（AI操作代行）』</strong>
+                  <span>スマホ内の「仮想画面」でGeminiがアプリを起動し、検索・日時選択・カート投入まで自動進行。人間は最後に「承認」を押すだけ！</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="vs-screen-pane">
+              <div>
+                <div class="old-pain-bar"><b>Pixel 9</b> 足切り非対応（店のURLが出るだけで、5〜6画面のタップ入力は人間任せ）</div>
+                <div class="phone-zoom">
+                  <div class="pz-bar"><span>18:30 Gemini Agent</span><span class="pz-dot"></span><span style="color:#38bdf8;">STEP 3/4</span></div>
+                  <div class="pz-body" style="background:#0f172a; color:#fff;">
+                    <div style="font-size:8.6px; color:#93c5fd; font-weight:900; margin-bottom:3px;">🤖 仮想画面でアプリ自動操作中…</div>
+                    <div style="font-size:8.6px; color:#e2e8f0; line-height:1.36;">
+                      ✅ 対応アプリを起動し「梅田・19:00・2名」を入力済<br />
+                      ⏸️ <strong style="color:#fde68a;">最終確定ボタンの手前で安全停止しています</strong>
+                    </div>
+                    <div style="display:flex; gap:5px; margin-top:5px;">
+                      <div style="flex:1; background:#38bdf8; color:#0f172a; text-align:center; font-weight:900; font-size:8.6px; padding:3.5px; border-radius:4px;">✔ 画面を見て承認</div>
+                      <div style="background:#334155; color:#fff; font-size:8.4px; padding:3.5px 6px; border-radius:4px;">自分で引き継ぐ</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dopamine-footer">🔥 快感：いつでも途中で操作を引き継げるうえ、決済前に必ず止まる安全設計。まさにポケットの中の秘書です！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCENE 08 : PIXEL SOLVER -->
         <div class="visual-showcase">
           <div class="vs-top-photo-row">
             <div class="vs-photo-pane">
@@ -1217,76 +1399,313 @@
                   <span class="reward-chip" style="background:#fbbf24; color:#0f172a;">💎 Pixel 11 専売</span>
                 </div>
                 <div class="vs-scene-copy">
-                  <strong>④ AI電卓『Pixel Solver』</strong>
-                  <span>カメラ突起が40%薄くなり机にピタッと平置き。証拠金維持率からのロット逆算も、拠点別の利益試算も会話1発で算出！</span>
+                  <strong>⑧ Pixel 11限定・生成AI電卓『Pixel Solver』</strong>
+                  <span>普通の言葉で条件を伝えるだけで多段階の逆算を実行し、スライダー付きの「自分専用シミュレーター」として電卓内に永久保存できます！</span>
                 </div>
               </div>
             </div>
 
             <div class="vs-screen-pane">
               <div>
-                <div class="old-pain-bar">
-                  <b>Pixel 9</b> ただの電卓のみ（ロット計算のたびにスプレッドシートを開く手間）
-                </div>
+                <div class="old-pain-bar"><b>Pixel 9 / 10</b> 普通の電卓のみ（証拠金ロット計算や粗利試算はスプレッドシート頼み）</div>
                 <div class="phone-zoom">
                   <div class="pz-bar"><span>22:05 Pixel Solver</span><span class="pz-dot"></span><span style="color:#fbbf24;">11 Exclusive</span></div>
                   <div class="pz-body">
-                    <div style="background:#f5f3ff; border:1px solid #c4b5fd; border-radius:5px; padding:3.5px 6px; font-size:8.6px; font-weight:800; color:#4c1d95; margin-bottom:4px;">
-                      💬「残高150万・許容損失1.5%・損切り25pipsの適正ロットは？」
+                    <div style="background:#f5f3ff; border:1px solid #c4b5fd; border-radius:5px; padding:3px 6px; font-size:8.4px; font-weight:800; color:#4c1d95; margin-bottom:4px;">
+                      💬「残高150万・許容損失1.5%・損切り25pips（クロス円）の適正ロットは？」
                     </div>
-                    <div style="background:#0f172a; color:#fff; border-radius:7px; padding:5px 8px;">
+                    <div style="background:#0f172a; color:#fff; border-radius:6px; padding:5px 8px;">
                       <div style="display:flex; justify-content:space-between; align-items:baseline;">
-                        <span style="font-size:8.5px; color:#6ee7b7; font-weight:800;">✨ 適正ポジション量</span>
-                        <span style="font-size:13.5px; font-weight:900; color:#38bdf8;">0.90 Lot（9万通貨）</span>
+                        <span style="font-size:8.4px; color:#6ee7b7; font-weight:800;">✨ 算出結果（テンプレ固定済）</span>
+                        <span style="font-size:13px; font-weight:900; color:#38bdf8;">0.90 Lot（9万通貨）</span>
                       </div>
-                      <div style="font-size:8.3px; color:#cbd5e1; margin-top:2px;">許容損失額 ¥22,500 ÷ 25pips ＝ 0.90 Lot（テンプレ保存済）</div>
+                      <div style="font-size:8.2px; color:#cbd5e1; margin-top:2px;">最大許容損失 ¥22,500 ÷ 25pips ＝ 0.90 Lot（数値変更も1タップ）</div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="dopamine-footer">🔥 快感ポイント：一度作れば「自分専用ロット計算機」として電卓内に常駐。エントリー前の資金管理が2秒で整います！</div>
+              <div class="dopamine-footer">🔥 快感：FXの資金管理だけでなく、社内の「仕入原価・送料・歩留まりを入れた損益分岐シミュレーション」も3秒で作れます！</div>
             </div>
           </div>
         </div>
 
-        <div class="photo-bonus-row">
-          <div class="bonus-card">
-            <h4>📚 資料根拠だけで答える『Gemini Notebook』</h4>
-            <p>検証データや業務マニュアルPDFを渡せば、推測ゼロ（渡した資料のみ根拠）で正確に要約・比較してくれます。</p>
+        <!-- KILLER PROMPTS -->
+        <div class="prompt-trio-box">
+          <div class="pt-head">
+            <span>🗣️ 電卓（Pixel Solver）にそのまま打ち込む「一撃シミュレーター作成フレーズ 3選」</span>
+            <span style="font-size:8.8px; color:#93c5fd;">一度作ればマイテンプレ保存可能！</span>
           </div>
-          <div class="bonus-card">
-            <h4>🛡️ 金融・宅配フィッシングを即遮断『AI詐欺検出』</h4>
-            <p>巧妙なSMSや不審通知をクラウドへ送らず端末内AIが瞬時に見抜き、タップする前に警告バナーを出します。</p>
+          <div class="pt-grid">
+            <div class="pt-card">
+              <span class="pt-tag pt-fx">🔒 FX資金管理・複利ロット計算機</span><br />
+              <strong>「口座残高・許容リスク％・損切りpipsを入れると、クロス円の適正ロット数と最大損失額が出る計算機を作って」</strong>
+            </div>
+            <div class="pt-card">
+              <span class="pt-tag pt-fde">🏢 事業推進・粗利＆単価逆算機</span><br />
+              <strong>「仕入原価・梱包送料・目標粗利率35%を入れたら、必要な販売単価と100件時の利益が出るテンプレを作って」</strong>
+            </div>
+            <div class="pt-card">
+              <span class="pt-tag pt-life">🏠 外食・傾斜割り勘＆家計比較</span><br />
+              <strong>「合計金額と人数を入れて、幹事1人だけ2,000円安くし端数を100円単位に丸める割り勘電卓を作って」</strong>
+            </div>
           </div>
-        </div>
-
-        <div class="micro-trigger-strip">
-          <span class="mt-badge">🎯 30秒ドーパミン実験</span>
-          <div class="mt-text">電卓アプリの <strong>✨ Pixel Solver</strong> を開き、<strong>「資金管理1.5%ルール用のロット計算機を作って」</strong>と頼んでみてください！</div>
         </div>
       </div>
 
       <div class="page-foot">
-        <span>🔒 PRIVATE BASE ONLY — AGENT &amp; STRATEGY AI</span>
-        <span>3 / 6</span>
+        <span>🔒 PRIVATE BASE ONLY — AI SPECIAL 04 (AGENT &amp; PIXEL SOLVER)</span>
+        <span>5 / 10</span>
       </div>
     </section>
 
-    <!-- ==================== PAGE 4 : 5X ZOOM, MAGIC CAPTURE & PIXELSNAP ==================== -->
-    <section class="a4-page" id="page-4">
+    <!-- ==================== PAGE 6 : AI 05 CREATIVE CAMERA & GENERATIVE PHOTO STUDIO ==================== -->
+    <section class="a4-page" id="page-6">
       <div>
         <div class="page-head">
           <div class="page-kicker">
-            <span class="cat-tag" style="background:var(--emerald);">SCENE 05 &amp; 06</span>
-            <span>5X OPTICAL EYE • MAGIC CAPTURE • PIXELSNAP</span>
+            <span class="cat-tag" style="background:#d97706;">AI SPECIAL 05 / 06</span>
+            <span>CAMERA COACH • REIMAGINE AI • MAGIC CAPTURE 400</span>
           </div>
-          <span class="neuro-pill">🧠 脳科学効果：スマホ画面を睨まず「目の前の現実」に没頭できる</span>
+          <span class="neuro-pill">🧠 脳科学：センス不要！AI監督のガイドに乗るだけで「プロの作品」が生まれる</span>
         </div>
 
-        <h2 class="page-h2">会議室の最後列から5倍ズーム解析、休日は「画面を見ずに」最高の笑顔を自動回収</h2>
-        <p class="page-lead">無印モデルなのに「光学5倍望遠」と「Pixelsnapマグネット充電」を初搭載。仕事も家族時間も劇的にスマートになります。</p>
+        <h2 class="page-h2">料理や商材はAI監督が構図を指示し「湯気」まで生成、家族写真は400枚から自動厳選</h2>
+        <p class="page-lead">販促用の料理・商品撮影からショート動画収録、子どものイベントまで、Pixel 11の生成AIカメラがすべてプロ級に仕上げます。</p>
 
-        <!-- VISUAL SHOWCASE 05 : CONFERENCE 5X ZOOM -->
+        <!-- SCENE 09 : CAMERA COACH & REIMAGINE FOOD -->
+        <div class="visual-showcase">
+          <div class="vs-top-photo-row">
+            <div class="vs-photo-pane">
+              <img src="./assets/scene-camera-food.jpg" alt="Culinary Camera Coach & Reimagine AI" />
+              <div class="vs-photo-overlay">
+                <div class="vs-badge-top">
+                  <span class="time-trigger">🍽️ 商材撮影・グルメ記録で</span>
+                  <span class="reward-chip">🎨 構図指導＋生成編集</span>
+                </div>
+                <div class="vs-scene-copy">
+                  <strong>⑨『カメラコーチ』× 生成AI編集『イマジネーション』</strong>
+                  <span>撮影時はAIが「斜め45度から寄るとシズル感が出ます」とアングル指導！撮影後はプロンプト1行で「湯気を足す」「余計なおしぼりを消す」「背景変更」が自在！</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="vs-screen-pane">
+              <div>
+                <div class="old-pain-bar"><b>従来の悩み</b> 蛍光灯の下で撮ると料理が暗く冷めて見え、背景に余計な物が写り込む</div>
+                <div class="phone-zoom">
+                  <div class="pz-bar"><span>Google フォト［イマジネーション］</span><span class="pz-dot"></span><span style="color:#fbbf24;">生成AI</span></div>
+                  <div class="pz-body" style="background:#0f172a; color:#fff;">
+                    <div style="font-size:8.4px; color:#fde68a; font-weight:800; margin-bottom:3px;">📐 Step 1 カメラコーチ：光と被写体を解析しベスト角度をガイド</div>
+                    <div style="background:#1e293b; border:1px solid #f59e0b; border-radius:5px; padding:4px 6px; font-size:8.5px; color:#fef3c7; margin-bottom:4px;">
+                      🪄 <strong>Step 2 イマジネーション入力：</strong>「焼きたての温かい湯気を追加して、背景を落ち着いた木のカウンターにして」
+                    </div>
+                    <div style="font-size:8.2px; color:#a7f3d0; font-weight:700;">
+                      ✨ 周囲の皿を消す「編集マジック」＆動画の空調音だけ消す「音声消しゴム」も完備！
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dopamine-footer">🔥 快感：鮮魚や料理のEC・SNS用写真が、照明機材なしで「思わず注文したくなる極上シズル写真」に化けます！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SCENE 10 : MAGIC CAPTURE & CREATOR SUITE -->
+        <div class="visual-showcase">
+          <div class="vs-top-photo-row">
+            <div class="vs-photo-pane">
+              <img src="./assets/scene-family-capture.jpg" alt="Magic Capture 400 Frames" />
+              <div class="vs-photo-overlay">
+                <div class="vs-badge-top">
+                  <span class="time-trigger">🍂 家族イベント・ショート動画収録</span>
+                  <span class="reward-chip" style="background:#fbbf24; color:#0f172a;">💎 Pixel 11 専売</span>
+                </div>
+                <div class="vs-scene-copy">
+                  <strong>⑩『マジック キャプチャー』×『クリエイター スイート』</strong>
+                  <span>1タップで動画を回すだけで、AIが約400フレームを走査して最高の笑顔写真を自動切り出し！さらにカメラ画面に「自動スクロール台本（プロンプター）」も内蔵。</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="vs-screen-pane">
+              <div>
+                <div class="old-pain-bar"><b>Pixel 9</b> 画面ばかり見て肉眼で楽しめない／動画と写真を別々に撮る二度手間</div>
+                <div class="phone-zoom">
+                  <div class="pz-bar"><span>Magic Capture &amp; Creator Suite</span><span class="pz-dot"></span><span style="color:#7dd3fc;">400 Frames</span></div>
+                  <div class="pz-body" style="background:#0f172a; color:#fff;">
+                    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:4px; text-align:center; font-size:8px; margin-bottom:4px;">
+                      <div style="background:#1e293b; border:1px solid #38bdf8; border-radius:4px; padding:4px;">🏆 Best #1<br /><span style="color:#94a3b8;">最高笑顔切り出し</span></div>
+                      <div style="background:#1e293b; border:1px solid #38bdf8; border-radius:4px; padding:4px;">✨ Best #2<br /><span style="color:#94a3b8;">ブレ補正＆構図済</span></div>
+                      <div style="background:#1e293b; border:1px solid #64748b; border-radius:4px; padding:4px;">🎬 元動画<br /><span style="color:#94a3b8;">4Kボケ同時保存</span></div>
+                    </div>
+                    <div style="font-size:8.3px; color:#e2e8f0; background:#1e293b; padding:4px 6px; border-radius:4px;">
+                      👥 <strong>一緒に写る（Add Me）：</strong>撮影者が後からフレームに入って全員集合写真に合成！
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="dopamine-footer">🔥 快感：カメラの「カメラスタイル（ナチュラル／シャドー／バニラ等）」で自分好みの色味も初期固定できます！</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KILLER PROMPTS -->
+        <div class="prompt-trio-box">
+          <div class="pt-head">
+            <span>🗣️ Googleフォト『イマジネーション』でそのまま打てる「魔法の生成プロンプト 3選」</span>
+            <span style="font-size:8.8px; color:#93c5fd;">被写体の周囲をなぞって入力！</span>
+          </div>
+          <div class="pt-grid">
+            <div class="pt-card">
+              <span class="pt-tag pt-fde">🏢 料理・食品のシズル感200%化</span><br />
+              背景や器の上をなぞって<strong>「ふんわり立ち上る温かい湯気と、柔らかい朝の自然光を追加して」</strong>
+            </div>
+            <div class="pt-card">
+              <span class="pt-tag pt-fde">🏢 机の上のブツ撮りをスタジオ化</span><br />
+              商品の周りの机をなぞって<strong>「高級感のある落ち着いた木目テーブルと観葉植物のボケ背景に変えて」</strong>
+            </div>
+            <div class="pt-card">
+              <span class="pt-tag pt-life">🏠 観光地・公園写真の快晴化</span><br />
+              曇り空をなぞって<strong>「夕暮れのドラマチックなゴールデンアワーの空に変えて」</strong>（一瞬で映画のワンシーンに！）
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-foot">
+        <span>🔒 PRIVATE BASE ONLY — AI SPECIAL 05 (GENERATIVE CAMERA STUDIO)</span>
+        <span>6 / 10</span>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 7 : AI 06 12-PROMPT ORCHESTRA COOKBOOK ==================== -->
+    <section class="a4-page" id="page-7">
+      <div>
+        <div class="page-head">
+          <div class="page-kicker">
+            <span class="cat-tag" style="background:#4f46e5;">AI SPECIAL 06 / 06</span>
+            <span>ONE-VOICE WORKSPACE ORCHESTRA &amp; 12 KILLER PROMPTS</span>
+          </div>
+          <span class="neuro-pill">🧠 永久保存版：電源ボタン長押し ➔ そのまま読み上げるだけで複数アプリが連動！</span>
+        </div>
+
+        <h2 class="page-h2">声1本でGmail・予定表・Keep・マップ・Deep Researchを同時指揮する「黄金12選」</h2>
+        <p class="page-lead">AIヘビーユーザーの真骨頂は「単発質問」ではなく「複数アプリの連鎖実行」。場面別に一番効く12フレーズを厳選しました。</p>
+
+        <!-- Hero Photo -->
+        <div class="conductor-hero">
+          <img src="./assets/scene-workspace-conductor.jpg" alt="AI Orchestra Conductor Morning Coffee" />
+          <div class="conductor-grad">
+            <div style="max-width:44%;">
+              <span style="background:#fbbf24; color:#0f172a; font-size:8.8px; font-weight:900; padding:2px 8px; border-radius:999px;">🎼 電源ボタン長押し ➔ 1フレーズ連鎖起動</span>
+              <h3 style="margin:6px 0 2px; font-size:16.5px; font-weight:900; color:#ffffff; line-height:1.3;">アプリを1個ずつ開く習慣を手放し、「AI指揮者」になる</h3>
+            </div>
+            <div style="font-size:9.5px; color:#e0f2fe; max-width:44%; line-height:1.4; font-weight:600;">
+              Gemini拡張機能（Gmail / Drive / 予定表 / Keep / マップ / YouTube）をONにすれば、声1つで「検索→要約→予定登録→メモ保存」まで一気通貫！
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 1: FDE -->
+        <div class="cookbook-section" style="background:#eff6ff; border-color:#93c5fd;">
+          <div class="cb-sec-title" style="color:#1e3a8a;">
+            <span>🏢 ① 社内FDE・事業推進が爆速化する「一気通貫フレーズ」4選</span>
+            <span style="font-size:8.8px;">Gmail × Drive × Keep × Deep Research</span>
+          </div>
+          <div class="cb-2col">
+            <div class="cb-item">
+              <strong>① メール横断検索 ➔ ToDo即時抽出</strong>
+              <span class="cb-voice">「今週届いた〇〇案件のメールをGmailから探して、私がやるべき宿題だけGoogle ToDoリストに追加して」</span>
+            </div>
+            <div class="cb-item">
+              <strong>② 移動前のDeep Research仕込み</strong>
+              <span class="cb-voice">「これから会う〇〇業界の2026年最新動向とDX課題をDeep Researchで調べて、結論3行を先頭に置いて」</span>
+            </div>
+            <div class="cb-item">
+              <strong>③ 現場ホワイトボード ➔ 要件シート化</strong>
+              <span class="cb-voice">（写真を見せて）「この手書き図から『目的・守る既存運用・入力列定義』を整理してKeepメモに保存して」</span>
+            </div>
+            <div class="cb-item">
+              <strong>④ 乗換ルート検索 ➔ 到着時刻メッセージ作成</strong>
+              <span class="cb-voice">「現在地から江坂駅までの最短ルートをマップで調べて、到着予想時刻を入れた連絡文を作って」</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Family & Daily -->
+        <div class="cookbook-section" style="background:#ecfdf5; border-color:#6ee7b7;">
+          <div class="cb-sec-title" style="color:#065f46;">
+            <span>🏠 ② 日常・家族時間がゆとりだらけになる「秒速フレーズ」4選</span>
+            <span style="font-size:8.8px;">カメラ × カレンダー × Keep × YouTube</span>
+          </div>
+          <div class="cb-2col">
+            <div class="cb-item">
+              <strong>⑤ 学校・園のプリント ➔ カレンダー一括登録</strong>
+              <span class="cb-voice">（お便りをカメラで映して）「ここに書いてある行事日程と持ち物を全部Googleカレンダーに登録して！」</span>
+            </div>
+            <div class="cb-item">
+              <strong>⑥ 30分の長尺YouTube ➔ 15秒で結論回収</strong>
+              <span class="cb-voice">（YouTube視聴中にGeminiを開き）「この動画の結論と、一番大事なノウハウ3つだけタイムスタンプ付きで教えて」</span>
+            </div>
+            <div class="cb-item">
+              <strong>⑦ 冷蔵庫カメラ共有 ➔ 15分献立＆買い物メモ</strong>
+              <span class="cb-voice">（冷蔵庫を映して）「今ある食材で子どもが喜ぶ15分レシピを2つ出して、足りない物をKeepの買い物リストに足して」</span>
+            </div>
+            <div class="cb-item">
+              <strong>⑧ 駐車場・ホテル番号の「声メモ」ピン留め</strong>
+              <span class="cb-voice">「車を停めたのは立体駐車場3階のD-12番。あとで聞いたらすぐ教えてね（ToDoの17時にリマインドして）」</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Secret Base FX & Quant -->
+        <div class="cookbook-section" style="background:#0f172a; border-color:#f59e0b; color:#ffffff; margin-bottom:0;">
+          <div class="cb-sec-title" style="color:#fbbf24;">
+            <span>🔒 ③ 秘密基地・自動売買研究が深まる「クオンツ壁打ちフレーズ」4選（※個人アカウント専用）</span>
+            <span style="font-size:8.8px; color:#fde68a;">Deep Research × Notebook × Solver</span>
+          </div>
+          <div class="cb-2col">
+            <div class="cb-item" style="background:#1e293b; border-color:#334155; color:#f1f5f9;">
+              <strong style="color:#fde68a;">⑨ 今週の重要指標（ボラ急変時間）ロックオン</strong>
+              <span style="color:#7dd3fc; font-weight:800;">「今週の米・英・日の重要経済指標の日本時間一覧を出して、自動売買を止めるべき要注意時間を教えて」</span>
+            </div>
+            <div class="cb-item" style="background:#1e293b; border-color:#334155; color:#f1f5f9;">
+              <strong style="color:#fde68a;">⑩ ロジック仮説の「悪魔の代弁者」監査</strong>
+              <span style="color:#7dd3fc; font-weight:800;">「上位1時間足順張り×5分足押し目ルールが『ダマシで連敗しやすい相場環境』を3パターン意地悪く指摘して」</span>
+            </div>
+            <div class="cb-item" style="background:#1e293b; border-color:#334155; color:#f1f5f9;">
+              <strong style="color:#fde68a;">⑪ 勝率×リスクリワードの破産確率チェック</strong>
+              <span style="color:#7dd3fc; font-weight:800;">（Pixel Solverで）「勝率44%・平均利確45pips・損切り22pipsの期待値と、10連敗する確率を計算して」</span>
+            </div>
+            <div class="cb-item" style="background:#1e293b; border-color:#334155; color:#f1f5f9;">
+              <strong style="color:#fde68a;">⑫ TradingView Pine v6 構文エラー即特定</strong>
+              <span style="color:#7dd3fc; font-weight:800;">「request.securityで未来参照リペイントを絶対に起こさない確定足［1］の書き方だけコードで出して」</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-foot">
+        <span>🔒 PRIVATE BASE ONLY — AI SPECIAL 06 (12 KILLER VOICE PROMPTS)</span>
+        <span>7 / 10</span>
+      </div>
+    </section>
+
+    <!-- ==================== PAGE 8 : FDE HARDWARE LEAP (5X ZOOM, PIXELSNAP, 90:10) ==================== -->
+    <section class="a4-page" id="page-8">
+      <div>
+        <div class="page-head">
+          <div class="page-kicker">
+            <span class="cat-tag" style="background:var(--emerald);">FDE HARDWARE 07</span>
+            <span>5X OPTICAL TELEPHOTO • PIXELSNAP Qi2.2 • 90:10 MULTITASK</span>
+          </div>
+          <span class="neuro-pill">🧠 脳科学：物理的な「立つ・挿す・切り替える」の微細ストレスを根絶</span>
+        </div>
+
+        <h2 class="page-h2">無印初の「光学5倍の眼」と「カチッと吸い付く25W磁石充電」が現場FDEを加速する</h2>
+        <p class="page-lead">Pixel 9（無印）から一番わかりやすいハードウェアの進化。Proに課金しなくても欲しかった武器が全部入っています。</p>
+
+        <!-- 5x Optical Zoom -->
         <div class="visual-showcase">
           <div class="vs-top-photo-row">
             <div class="vs-photo-pane">
@@ -1297,17 +1716,15 @@
                   <span class="reward-chip">🔭 無印初・光学5倍！</span>
                 </div>
                 <div class="vs-scene-copy">
-                  <strong>⑤『光学5倍望遠』× 直結『かこって検索』</strong>
-                  <span>席を立って前に歩み寄る必要なし。座ったまま5倍レンズで引き寄せ、シャッターすら切らず指で囲んで即テキスト化！</span>
+                  <strong>⑪『光学5倍望遠（最大30倍）』× 直結『かこって検索』</strong>
+                  <span>席を立ってホワイトボードの前に行く必要なし。座ったまま光学5倍で引き寄せ、シャッターすら切らず指で囲んで即テキスト抽出！</span>
                 </div>
               </div>
             </div>
 
             <div class="vs-screen-pane">
               <div>
-                <div class="old-pain-bar">
-                  <b>Pixel 9</b> 望遠レンズ非搭載（デジタル引き伸ばしで遠いボードや棚番が滲む）
-                </div>
+                <div class="old-pain-bar"><b>Pixel 9</b> 望遠レンズ非搭載（デジタルズームで遠いボードや倉庫の棚番が滲む）</div>
                 <div class="phone-zoom">
                   <div class="pz-bar"><span>14:00 Camera [5x 光学]</span><span class="pz-dot"></span><span style="color:#fbbf24;">Super Zoom 30x</span></div>
                   <div class="pz-body" style="background:#1e293b; color:#fff;">
@@ -1315,7 +1732,7 @@
                       <div style="border:2px dashed #0284c7; background:#e0f2fe; border-radius:999px; padding:2px 7px; display:inline-block;">
                         【新フロー】受注取込 ➔ 在庫引当 ➔ 自動通知
                       </div>
-                      <div style="color:#0369a1; font-size:8.2px; margin-top:2px;">✨ 指で丸く囲むだけ → 議事録・要件テキストへ一発変換！</div>
+                      <div style="color:#0369a1; font-size:8.2px; margin-top:2px;">✨ カメラファインダー上から直接「かこって検索」＆翻訳・テキスト化！</div>
                     </div>
                     <div style="display:flex; justify-content:center; gap:5px; margin-top:5px; font-size:8.2px;">
                       <span style="opacity:0.6;">.5</span><span style="opacity:0.6;">1x</span><span style="opacity:0.6;">2x</span>
@@ -1325,86 +1742,77 @@
                   </div>
                 </div>
               </div>
-              <div class="dopamine-footer">🔥 快感ポイント：倉庫の高い棚ラベルやプロジェクター投影資料も、手元でクッキリ読めてFDE現場調査が秒速化！</div>
+              <div class="dopamine-footer">🔥 快感：3,000ニトの高輝度Actua画面で、屋外の現場でも画面がクッキリ読めます！</div>
             </div>
           </div>
         </div>
 
-        <!-- VISUAL SHOWCASE 06 : FAMILY MAGIC CAPTURE -->
+        <!-- Pixelsnap Magnetic Desk -->
         <div class="visual-showcase">
           <div class="vs-top-photo-row">
             <div class="vs-photo-pane">
-              <img src="./assets/scene-family-capture.jpg" alt="Family Golden Hour Magic Capture" />
+              <img src="./assets/scene-pixelsnap-desk.jpg" alt="Pixelsnap Magnetic Charging Stand" />
               <div class="vs-photo-overlay">
                 <div class="vs-badge-top">
-                  <span class="time-trigger">🍂 休日の公園・イベント</span>
-                  <span class="reward-chip" style="background:#fbbf24; color:#0f172a;">✨ 400フレームAI解析</span>
+                  <span class="time-trigger">⚡ オフィス＆書斎デスク</span>
+                  <span class="reward-chip" style="background:#38bdf8; color:#0f172a;">🧲 Qi2.2 磁石25W急速</span>
                 </div>
                 <div class="vs-scene-copy">
-                  <strong>⑥ Pixel 11専売『マジック キャプチャー』</strong>
-                  <span>シャッターチャンスを狙って画面を凝視しなくてOK。片手でラフに動画を回せば、AIが最高の一瞬を写真でも自動納品！</span>
+                  <strong>⑫ 本体磁石『Pixelsnap』× カメラ突起40%薄型化</strong>
+                  <span>ケーブルを挿す手間ゼロ！スタンドに近づけるだけで「カチッ」と吸着して25W急速充電。机に置いた時のガタつきも解消。</span>
                 </div>
               </div>
             </div>
 
             <div class="vs-screen-pane">
               <div>
-                <div class="old-pain-bar">
-                  <b>Pixel 9</b>「あっ目をつぶった！」「動画を撮っていたから静止画がない…」
-                </div>
+                <div class="old-pain-bar"><b>Pixel 9</b> 本体マグネットなし（15W低速）＆カメラバーの出っ張りで机でカタカタ揺れる</div>
                 <div class="phone-zoom">
-                  <div class="pz-bar"><span>Magic Capture</span><span class="pz-dot"></span><span style="color:#fde68a;">400 Frames AI</span></div>
-                  <div class="pz-body" style="background:#0f172a; color:#fff;">
-                    <div style="font-size:8.5px; color:#fde68a; font-weight:800; margin-bottom:4px;">✨ 録画データからAIがベスト瞬間を自動切り出し完了！</div>
-                    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:4px; text-align:center; font-size:8px;">
-                      <div style="background:#1e293b; border:1px solid #38bdf8; border-radius:4px; padding:4px;">🏆 最高笑顔<br /><span style="color:#94a3b8;">ブレ補正済</span></div>
-                      <div style="background:#1e293b; border:1px solid #38bdf8; border-radius:4px; padding:4px;">✨ 空中瞬間<br /><span style="color:#94a3b8;">黄金比構図</span></div>
-                      <div style="background:#1e293b; border:1px solid #64748b; border-radius:4px; padding:4px;">🎬 元動画<br /><span style="color:#94a3b8;">同時保存済</span></div>
+                  <div class="pz-bar"><span>Android 17 新機能『90:10 分割画面』</span><span style="color:#a7f3d0;">FDE検品神機能</span></div>
+                  <div class="pz-body">
+                    <div style="background:#dbeafe; border:1px solid #60a5fa; border-radius:5px; padding:3px 7px; font-size:8.3px; font-weight:900; color:#1e3a8a; margin-bottom:4px; display:flex; justify-content:space-between;">
+                      <span>📋 上10%チラ見バー：サイボウズ修正指示メモ</span>
+                      <span>⇅ 1タップ入替</span>
                     </div>
-                    <div style="font-size:8.2px; color:#cbd5e1; margin-top:4px; border-top:1px solid #334155; padding-top:3px;">
-                      📜 <strong>クリエイタースイート：</strong>カメラ画面に原稿を自動スクロール表示（ショート動画収録に最適）
+                    <div style="background:#0f172a; color:#fff; border-radius:6px; padding:7px 8px; font-size:8.6px;">
+                      <strong style="color:#38bdf8;">🌐 下90%メイン画面：テスト中の GAS Webアプリ（/dev）</strong><br />
+                      <span style="color:#cbd5e1; font-size:8.2px;">狭い50:50分割と違い、90%の大画面でアプリを操作しながら上10%をタップするだけで指示書と一瞬で入れ替わります！</span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="dopamine-footer">🔥 快感ポイント：自分の肉眼で子どもや風景を楽しみながら、後から開くとプロカメラマン並みの写真が並んでいます！</div>
+              <div class="dopamine-footer">🔥 快感：大容量4,985mAh電池＋急ぎの時の「Extreme Charging Mode」＋256GB高速UFSストレージ標準搭載！</div>
             </div>
           </div>
         </div>
 
-        <!-- 3rd Photo Strip: Pixelsnap Desk + 90:10 Split -->
-        <div class="pixelsnap-wide">
-          <img src="./assets/scene-pixelsnap-desk.jpg" alt="Pixelsnap Magnetic Charging Stand" />
-          <div class="pixelsnap-copy">
-            <h4>🧲 毎日10回気持ちいい！本体磁石『Pixelsnap (Qi2.2・25W)』＆『90:10 分割画面』</h4>
-            <p>デスクの充電スタンドに近づけるだけで<strong>「カチッ！」と吸い付き25W急速充電</strong>。さらにAndroid 17の<strong>「90:10 分割画面」</strong>なら、9割で <code>/dev</code> 画面を触りながら上部10%の指示メモと1タップで主役を入れ替えられます。</p>
-          </div>
+        <div class="micro-trigger-strip">
+          <span class="mt-badge">🧲 おすすめ装備</span>
+          <div class="mt-text">デスクに<strong>Qi2対応マグネット充電スタンド</strong>を1台置くと、Pixel 11が「常時フル充電のAIサブモニター」に進化します！</div>
         </div>
       </div>
 
       <div class="page-foot">
-        <span>🔒 PRIVATE BASE ONLY — 5X CAMERA &amp; PIXELSNAP HARDWARE</span>
-        <span>4 / 6</span>
+        <span>🔒 PRIVATE BASE ONLY — FDE HARDWARE &amp; MULTITASKING</span>
+        <span>8 / 10</span>
       </div>
     </section>
 
-    <!-- ==================== PAGE 5 : TWO-STORY STEALTH FX VAULT ==================== -->
-    <section class="a4-page" id="page-5">
+    <!-- ==================== PAGE 9 : TWO-STORY STEALTH FX VAULT ==================== -->
+    <section class="a4-page" id="page-9">
       <div>
         <div class="page-head">
           <div class="page-kicker">
-            <span class="cat-tag" style="background:#0f172a; color:#fbbf24;">🔒 SECRET BASE 07</span>
-            <span>TITAN M3 × TWO-STORY STEALTH VAULT</span>
+            <span class="cat-tag" style="background:#0f172a; color:#fbbf24;">🔒 SECRET BASE 08</span>
+            <span>TITAN M3 × TWO-STORY STEALTH FX ARCHITECTURE</span>
           </div>
-          <span class="neuro-pill">🧠 脳科学効果：「見られるかも」という無意識の警戒ストレスを完全ゼロ化</span>
+          <span class="neuro-pill">🧠 脳科学：「見られるかも」という無意識の警戒コストを完全にゼロにする</span>
         </div>
 
         <h2 class="page-h2">社員にスマホを渡してもFXの影ゼロ × 重要サインだけは1秒で察知する要塞</h2>
-        <p class="page-lead">「表のデスクモード」と「専用指紋で3秒だけ開く地下コックピット」。2つの顔を使い分ける究極のステルス設計です。</p>
+        <p class="page-lead">「表のデスクモード」と「専用指紋で3秒だけ開く地下コックピット」。公私4重隔離をハードとOSで完全自動化します。</p>
 
-        <!-- Dual Lifestyle Photos + Real Screen Cards -->
         <div class="stealth-dual-grid">
-          <!-- Daytime Clean Office Face -->
           <div class="stealth-col stealth-day">
             <div class="sc-photo-top">
               <img src="./assets/scene-pixelsnap-desk.jpg" alt="Clean Office Desk Mode" />
@@ -1429,13 +1837,12 @@
                   </div>
                 </div>
               </div>
-              <div style="font-size:9.3px; color:#0c4a6e; font-weight:700; margin-top:5px; line-height:1.36;">
+              <div style="font-size:9.2px; color:#0c4a6e; font-weight:700; margin-top:5px; line-height:1.35;">
                 💡 プライベートスペースはロック中、通知も止まります。だから<strong>TradingViewのアラートだけをWebhookで「サーバー監視ログ風の英語1行」に変換</strong>して1階で受け取るのがプロの技！
               </div>
             </div>
           </div>
 
-          <!-- Biometric Unlock Private Vault Face -->
           <div class="stealth-col stealth-night">
             <div class="sc-photo-top">
               <img src="./assets/scene-stealth-thumb.jpg" alt="Fingerprint Unlocking Secret Vault" />
@@ -1454,25 +1861,24 @@
                       <div style="background:#1e293b; border:1px solid #f59e0b; padding:4px 2px; border-radius:5px;">🏦<br />証券口座</div>
                       <div style="background:#1e293b; border:1px solid #f59e0b; padding:4px 2px; border-radius:5px;">🔐<br />秘密基地</div>
                     </div>
-                    <div style="margin-top:5px; background:#1e293b; border-radius:5px; padding:4px 6px; font-size:8.4px; color:#a7f3d0; font-weight:700;">
+                    <div style="margin-top:5px; background:#1e293b; border-radius:5px; padding:4px 6px; font-size:8.3px; color:#a7f3d0; font-weight:700;">
                       ✅ 緊急決済・ポジション確認 ➔ 電源ボタン1回で再び完全透明化（タスク履歴にも残りません）
                     </div>
                   </div>
                 </div>
               </div>
-              <div style="font-size:9.3px; color:#fde68a; font-weight:700; margin-top:5px; line-height:1.36;">
+              <div style="font-size:9.2px; color:#fde68a; font-weight:700; margin-top:5px; line-height:1.35;">
                 💡 万が一「ちょっとスマホ貸して」と言われても、アプリ一覧・検索・写真フォルダのどこにも痕跡ゼロ。心臓がヒヤッとすることが二度とありません。
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Architecture Diagram + Titan M3 / Linux Strip -->
         <div class="vault-arch-strip">
           <img src="./assets/pixel11-vault.jpg" alt="Titan M3 Two-Layer Shield" />
           <div>
             <div style="font-size:11.5px; font-weight:900; color:#fbbf24; margin-bottom:3px;">🛡️ 耐量子暗号チップ『Titan M3』× 外出先ガード × 緊急Linux母艦</div>
-            <div style="font-size:9.5px; color:#e2e8f0; line-height:1.42;">
+            <div style="font-size:9.4px; color:#e2e8f0; line-height:1.4;">
               ・<strong>本人確認（Identity Check）：</strong>自宅・会社以外の場所では、仮にPINを見られても生体認証なしの設定変更・金庫解錠を完全ブロック。<br />
               ・<strong>内蔵Linuxターミナル（Debian）：</strong>PCがない外出先でも、スマホ単体で <code>git</code> / <code>python3</code> / SSH を叩いて自動売買コードを緊急保守できるポケット母艦。
             </div>
@@ -1487,32 +1893,31 @@
 
       <div class="page-foot">
         <span>🔒 PRIVATE BASE ONLY — TITAN M3 STEALTH ARCHITECTURE</span>
-        <span>5 / 6</span>
+        <span>9 / 10</span>
       </div>
     </section>
 
-    <!-- ==================== PAGE 6 : UNBOXING DOPAMINE QUEST BOARD ==================== -->
-    <section class="a4-page" id="page-6">
+    <!-- ==================== PAGE 10 : 10-STAGE UNBOXING QUEST BOARD ==================== -->
+    <section class="a4-page" id="page-10">
       <div>
         <div class="page-head">
           <div class="page-kicker">
-            <span class="cat-tag" style="background:var(--rose);">FINAL QUEST</span>
-            <span>UNBOXING 5-MINUTE DOPAMINE QUEST BOARD</span>
+            <span class="cat-tag" style="background:var(--rose);">FINAL QUEST 09</span>
+            <span>UNBOXING 10-STAGE AI &amp; STEALTH AWAKENING BOARD</span>
           </div>
           <span class="neuro-pill">🧠 行動科学：目標勾配効果（すでに32%クリア済からスタート！）</span>
         </div>
 
-        <!-- Unboxing Photo Banner with Endowed Progress Bar -->
         <div class="unbox-hero">
           <img src="./assets/scene-unboxing.jpg" alt="Unboxing Pixel 11 Morning Excitement" />
           <div class="unbox-overlay">
             <div>
-              <span style="background:#fbbf24; color:#0f172a; font-size:9px; font-weight:900; padding:2px 8px; border-radius:999px;">🎁 開封後たった5分のゲーム感覚セットアップ</span>
-              <h2 style="margin:4px 0 2px; font-size:17.5px; font-weight:900; color:#ffffff;">箱を開けたら上からクリアするだけ！『覚醒7クエスト』</h2>
+              <span style="background:#fbbf24; color:#0f172a; font-size:9px; font-weight:900; padding:2px 8px; border-radius:999px;">🎁 開封後すぐ遊べるゲーム感覚セットアップ</span>
+              <h2 style="margin:4px 0 2px; font-size:17.5px; font-weight:900; color:#ffffff;">箱を開けたら順番に解放！『AIフル覚醒＆要塞化 10クエスト』</h2>
             </div>
             <div class="endowed-bar-wrap">
               <div style="display:flex; justify-content:space-between; font-size:9px; font-weight:900; color:#fef3c7;">
-                <span>🔥 機種選定・ahamo戦略・バイブル読破クリア済！</span>
+                <span>🔥 機種選定・ahamo戦略・全10Pバイブル予習クリア済！</span>
                 <span>現在 LV.3（32% 完了済）</span>
               </div>
               <div class="endowed-track"><div class="endowed-fill"></div></div>
@@ -1520,92 +1925,87 @@
           </div>
         </div>
 
-        <!-- 1 Critical Boss Trap -->
         <div class="boss-trap-card">
-          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:3px;">
-            <strong style="font-size:11.5px; color:#9f1239;">👾 最初に封印する罠モンスター：「ダークモードの日の入り自動切替」だけは必ずOFF！</strong>
-            <span style="background:#e11d48; color:#fff; font-size:8.5px; font-weight:900; padding:1.5px 7px; border-radius:999px;">2026年11月 既知バグ対策</span>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2px;">
+            <strong style="font-size:11.2px; color:#9f1239;">👾 最初に封印する罠モンスター：「ダークモードの日の入り自動切替」だけは必ずOFF！</strong>
+            <span style="background:#e11d48; color:#fff; font-size:8.4px; font-weight:900; padding:1.5px 7px; border-radius:999px;">Android 17 QPR2 既知バグ対策</span>
           </div>
-          <div style="font-size:9.5px; color:#881337; line-height:1.38;">
-            Android 17（QPR2）では、朝夕にライト／ダークが自動切替わると「非表示にしたはずのプライベートスペース枠」がアプリ一覧下部にひょっこり現れる現象があります。<strong>QUEST 1で「ライト固定」または「ダーク固定」にするだけで100%完全封印できます！</strong>
-          </div>
-        </div>
-
-        <!-- 7 Gamified Quests -->
-        <div class="quest-grid">
-          <div class="quest-row">
-            <div class="quest-lv">QUEST 1</div>
-            <div class="quest-info">
-              <strong>画面テーマを「手動固定」にして露出バグを永久封印する</strong>
-              <span class="quest-path">設定 ＞ ディスプレイとタップ ＞ ダークテーマ ＞ スケジュール「なし」</span>
-            </div>
-            <span class="xp-pill" style="background:#ffe4e6; color:#be123c;">🛡️ 透明化結界 +150 XP</span>
-          </div>
-
-          <div class="quest-row">
-            <div class="quest-lv">QUEST 2</div>
-            <div class="quest-info">
-              <strong>地下金庫「プライベートスペース」を別アカウント＆専用指紋で建造</strong>
-              <span class="quest-path">設定 ＞ セキュリティとプライバシー ＞ プライベートスペース（画面オフでロック＋非表示ON）</span>
-            </div>
-            <span class="xp-pill" style="background:#fef3c7; color:#92400e;">🔑 秘密金庫解放 +250 XP</span>
-          </div>
-
-          <div class="quest-row">
-            <div class="quest-lv">QUEST 3</div>
-            <div class="quest-info">
-              <strong>MT4/MT5・TradingView本体を「地下金庫の中だけ」に召喚する</strong>
-              <span class="quest-path">アプリ一覧検索「プライベートスペース」＞ 専用指紋解錠 ＞ 金庫内Playストアから導入</span>
-            </div>
-            <span class="xp-pill" style="background:#fef3c7; color:#92400e;">📈 公私4重隔離 +200 XP</span>
-          </div>
-
-          <div class="quest-row">
-            <div class="quest-lv">QUEST 4</div>
-            <div class="quest-info">
-              <strong>ロック画面の機密通知遮断 ＆ 盗難対策「本人確認」をONにする</strong>
-              <span class="quest-path">設定 ＞ 通知 ＞ 機密通知OFF ／ セキュリティ ＞ デバイスのロック解除 ＞ 本人確認ON</span>
-            </div>
-            <span class="xp-pill" style="background:#e0f2fe; color:#0369a1;">💎 Titan M3武装 +150 XP</span>
-          </div>
-
-          <div class="quest-row">
-            <div class="quest-lv">QUEST 5</div>
-            <div class="quest-info">
-              <strong>Gboard「AI音声入力（言い直し清書）」＆「文章作成ツール」を覚醒</strong>
-              <span class="quest-path">キーボードの⚙️設定 ＞ 音声入力 ＞ AI音声入力（シームレス整形）をON</span>
-            </div>
-            <span class="xp-pill" style="background:#f3e8ff; color:#6d28d9;">🎤 爆速音声スキル +200 XP</span>
-          </div>
-
-          <div class="quest-row">
-            <div class="quest-lv">QUEST 6</div>
-            <div class="quest-info">
-              <strong>LINE日程調整が出るよう「パーソナルインテリジェンス」をON</strong>
-              <span class="quest-path">Geminiアプリ ＞ 右上アイコン ＞ 設定 ＞ パーソナルインテリジェンス（表アカウントのみ）</span>
-            </div>
-            <span class="xp-pill" style="background:#f3e8ff; color:#6d28d9;">✨ 先回り眼解放 +150 XP</span>
-          </div>
-
-          <div class="quest-row">
-            <div class="quest-lv">QUEST 7</div>
-            <div class="quest-info">
-              <strong>電卓「Pixel Solver」で自分専用ロット逆算機を1個作っておく</strong>
-              <span class="quest-path">電卓アプリ ＞ ✨ Pixel Solver ＞「許容損失％と損切りpipsのロット計算機」を固定</span>
-            </div>
-            <span class="xp-pill" style="background:#dcfce7; color:#047857;">🏆 MASTER達成 +300 XP</span>
+          <div style="font-size:9.3px; color:#881337; line-height:1.36;">
+            時間帯でライト／ダークが自動切替わると「非表示にしたはずのプライベートスペース枠」がアプリ一覧下部に露出する現象があります。<strong>QUEST 01で「ライト固定」または「ダーク固定」にすれば100%完全封印！</strong>
           </div>
         </div>
 
-        <div class="micro-trigger-strip" style="margin-top:7px;">
-          <span class="mt-badge">👑 LEVEL MAX!</span>
-          <div class="mt-text">全7クエスト達成（約5分）で <strong>「社内最強のAI推進エンジン」兼「誰にも見えない自動売買コックピット」</strong> が完全起動します！</div>
+        <div class="quest-grid-10">
+          <div class="quest-card-sm">
+            <div class="qc-top"><span class="qc-lv">QUEST 01</span><span class="qc-xp" style="background:#ffe4e6; color:#be123c;">🛡️ 透明結界 +100 XP</span></div>
+            <div class="qc-title">画面テーマを「手動固定」にしてバグ封印</div>
+            <div class="qc-path">設定 ＞ ディスプレイ ＞ ダークテーマ ＞ スケジュールなし</div>
+          </div>
+
+          <div class="quest-card-sm">
+            <div class="qc-top"><span class="qc-lv">QUEST 02</span><span class="qc-xp" style="background:#fef3c7; color:#92400e;">🔑 地下金庫 +200 XP</span></div>
+            <div class="qc-title">「プライベートスペース」を別指紋で建造</div>
+            <div class="qc-path">設定 ＞ セキュリティ ＞ プライベートスペース（画面オフ即ロック）</div>
+          </div>
+
+          <div class="quest-card-sm">
+            <div class="qc-top"><span class="qc-lv">QUEST 03</span><span class="qc-xp" style="background:#fef3c7; color:#92400e;">📈 完全隔離 +200 XP</span></div>
+            <div class="qc-title">MT5・TradingViewを地下金庫内だけに導入</div>
+            <div class="qc-path">プライベートスペース解錠 ＞ 金庫内Playストアから入れる</div>
+          </div>
+
+          <div class="quest-card-sm">
+            <div class="qc-top"><span class="qc-lv">QUEST 04</span><span class="qc-xp" style="background:#e0f2fe; color:#0369a1;">💎 Titan防衛 +150 XP</span></div>
+            <div class="qc-title">機密通知遮断 ＆ 外出先「本人確認」をON</div>
+            <div class="qc-path">設定 ＞ 通知 ＞ 機密通知OFF ／ ロック解除 ＞ 本人確認ON</div>
+          </div>
+
+          <div class="quest-card-sm">
+            <div class="qc-top"><span class="qc-lv">QUEST 05</span><span class="qc-xp" style="background:#f3e8ff; color:#6d28d9;">🎤 爆速音声 +200 XP</span></div>
+            <div class="qc-title">Gboard「AI音声入力（言い直し清書）」ON</div>
+            <div class="qc-path">Gboardの⚙️ ＞ 音声入力 ＞ AI音声入力・シームレス整形ON</div>
+          </div>
+
+          <div class="quest-card-sm">
+            <div class="qc-top"><span class="qc-lv">QUEST 06</span><span class="qc-xp" style="background:#f3e8ff; color:#6d28d9;">✨ 先回り眼 +150 XP</span></div>
+            <div class="qc-title">LINE日程調整「先回りアシスト」をON</div>
+            <div class="qc-path">Gemini ＞ 右上アイコン ＞ 設定 ＞ パーソナルインテリジェンス</div>
+          </div>
+
+          <div class="quest-card-sm">
+            <div class="qc-top"><span class="qc-lv">QUEST 07</span><span class="qc-xp" style="background:#dbeafe; color:#1e40af;">🎼 横断指揮 +150 XP</span></div>
+            <div class="qc-title">Geminiの「Workspaceアプリ連携」を全ON</div>
+            <div class="qc-path">Gemini ＞ 設定 ＞ 拡張機能 ＞ Google Workspace・マップON</div>
+          </div>
+
+          <div class="quest-card-sm">
+            <div class="qc-top"><span class="qc-lv">QUEST 08</span><span class="qc-xp" style="background:#ccfbf1; color:#0f766e;">🧠 第2の海馬 +150 XP</span></div>
+            <div class="qc-title">背面2回トントン＝「スクショ記憶保存」に設定</div>
+            <div class="qc-path">設定 ＞ システム ＞ ジェスチャー ＞ クイックタップ ＞ スクショ</div>
+          </div>
+
+          <div class="quest-card-sm">
+            <div class="qc-top"><span class="qc-lv">QUEST 09</span><span class="qc-xp" style="background:#e0f2fe; color:#0284c7;">👁️ 視覚相棒 +150 XP</span></div>
+            <div class="qc-title">電源長押し ➔「Gemini Live カメラ共有」初体験</div>
+            <div class="qc-path">電源長押し ＞ Live波形アイコン ＞ 🎥 カメラ共有で何か映す</div>
+          </div>
+
+          <div class="quest-card-sm">
+            <div class="qc-top"><span class="qc-lv">QUEST 10</span><span class="qc-xp" style="background:#dcfce7; color:#047857;">🏆 MASTER +300 XP</span></div>
+            <div class="qc-title">電卓「Pixel Solver」でマイロット逆算機を固定</div>
+            <div class="qc-path">電卓アプリ ＞ ✨ Solver ＞ 許容損失％×損切りpips計算機を保存</div>
+          </div>
+        </div>
+
+        <div class="micro-trigger-strip">
+          <span class="mt-badge">👑 ALL CLEAR!</span>
+          <div class="mt-text">全10クエスト達成で <strong>「12人のAIチームを従えた社内FDE推進機」兼「完全無欠の自動売買ステルス要塞」</strong> が完成します！</div>
         </div>
       </div>
 
       <div class="page-foot">
-        <span>🔒 PRIVATE BASE ONLY — ALL 7 QUESTS COMPLETE</span>
-        <span>6 / 6</span>
+        <span>🔒 PRIVATE BASE ONLY — ALL 10 QUESTS COMPLETE</span>
+        <span>10 / 10</span>
       </div>
     </section>
 
